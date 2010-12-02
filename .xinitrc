@@ -4,17 +4,19 @@
 #
 # Executed by startx (run your window manager from here)
 
-# exec gnome-session
-# exec startkde
-# exec startxfce4
-# ...or the Window Manager of your choice
-
-#xbacklight -set 33 &
-dropboxd &
-xxkb &
-xset r rate 200 30 &
-#exec wmii
-exec ck-launch-session dbus-launch ssh-agent startlxde
-#xsetroot -cursor_name left_ptr
 #xrandr --output LVDS1 --off --output VGA1 --mode 1024x768
-#exec ck-launch-session dbus-launch xmonad
+
+xset r rate 200 30 &
+if [ `hostname` = "archwork" ]; then
+    dropboxd &
+    xxkb &
+    exec ck-launch-session dbus-launch ssh-agent startlxde
+elif [ `hostname` = "archdesktop" ]; then
+    dropboxd &
+    xsetroot -cursor_name left_ptr
+    exec dbus-launch ssh-agent xmonad
+elif [ `hostname` = "archeeepc" ]; then
+    xbacklight -set 33 &
+    xsetroot -cursor_name left_ptr
+    exec ck-launch-session dbus-launch ssh-agent xmonad
+fi
