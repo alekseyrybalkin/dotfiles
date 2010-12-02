@@ -1,0 +1,7 @@
+[user]
+	name = Aleksey Rybalkin
+	email = alekseyrybalkin@gmail.com
+[color]
+	ui = true
+[merge]
+	tool = vimdiff

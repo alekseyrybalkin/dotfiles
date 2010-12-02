@@ -1,0 +1,9 @@
+set spoolfile=imaps://imap.gmail.com/INBOX
+set imap_user=alekseyrybalkin@gmail.com
+set folder=imaps://imap.gmail.com/
+mailboxes =INBOX
+set header_cache = ~/.mutt/hcache
+set imap_passive = no
+set imap_keepalive = 300
+set mail_check = 180
+set timeout = 60
