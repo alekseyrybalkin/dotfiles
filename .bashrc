@@ -53,6 +53,7 @@ if [ -z $EDITOR ]; then
     export EDITOR=/usr/bin/vim
     export VIEWER=/usr/bin/vim
     export IDEA_JDK=/opt/java
+    export MAIL=/var/spool/mail/aleksey
 fi
 
 export LESS_TERMCAP_mb=$'\E[01;31m'

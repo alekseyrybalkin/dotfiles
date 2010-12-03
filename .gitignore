@@ -13,4 +13,6 @@
 !/.hgrc
 !/.screenrc
 !/.xinitrc
+!/.signature
+!/.procmailrc
 !/README.md
