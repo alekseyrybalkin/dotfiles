@@ -3,6 +3,7 @@
 !/.config/
 !/.mutt/
 !/.newsbeuter/
+!/.xmonad/
 !/.vimrc
 !/.gitignore
 !/.Xdefaults
