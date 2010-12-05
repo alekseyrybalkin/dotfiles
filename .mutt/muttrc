@@ -11,7 +11,7 @@ set signature="~/.signature"
 set sendmail="/usr/bin/msmtp"
 
 # If not set in ~/.bashrc:
-set spoolfile = /var/spool/mail/aleksey
+set spoolfile = /var/spool/mail/alekseymail
 #set spoolfile=imaps://imap.gmail.com/INBOX
 
 #======================================================#
