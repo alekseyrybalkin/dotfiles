@@ -16,7 +16,7 @@ set spoolfile=imaps://imap.gmail.com/INBOX
 
 #======================================================#
 # Folders
-#set folder="$HOME/mail"      # Local mailboxes stored here
+set folder="$HOME/mail"      # Local mailboxes stored here
 #set record="+sent"           # Where to store sent messages
 #set postponed="+postponed"   # Where to store draft messages
 #set mbox_type=mbox           # Mailbox type
