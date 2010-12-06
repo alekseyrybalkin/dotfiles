@@ -1,0 +1,5 @@
+#!/bin/bash
+stty -echo
+read -p "service: " serv; echo
+stty echo
+echo -n $serv | sha224sum

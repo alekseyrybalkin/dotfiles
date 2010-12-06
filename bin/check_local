@@ -1,0 +1,9 @@
+#!/bin/bash
+for arg in "$@"
+do
+	if [ ! -e "/home/aleksey/books/$arg" ]
+	then
+		echo $arg" doesn't exist on LOCAL."
+	fi
+done
+

@@ -1,0 +1,9 @@
+#!/bin/bash
+for arg in "$@"
+do
+	if [ ! -e "/mnt/fat/books/$arg" ]
+	then
+		echo $arg" doesn't exist on FLASH."
+	fi
+done
+

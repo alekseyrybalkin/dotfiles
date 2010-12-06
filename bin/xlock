@@ -1,0 +1,3 @@
+xmodmap -e 'keycode 37=' -e 'keycode 105='
+/usr/bin/xlock -mode matrix
+xmodmap -e 'keycode 37=Control_L' -e 'keycode 105=Control_R'

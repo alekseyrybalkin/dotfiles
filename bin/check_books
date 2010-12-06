@@ -1,0 +1,13 @@
+#!/bin/bash
+dir=`pwd`
+cd ~/books
+find . -name "*.pdf" -printf "\"%p\" " | xargs check_flash
+find . -name "*.chm" -printf "\"%p\" " | xargs check_flash
+find . -name "*.djvu" -printf "\"%p\" " | xargs check_flash
+
+cd /mnt/fat/books
+find . -name "*.pdf" -printf "\"%p\" " | xargs check_local
+find . -name "*.chm" -printf "\"%p\" " | xargs check_local
+find . -name "*.djvu" -printf "\"%p\" " | xargs check_local
+cd $dir
+
