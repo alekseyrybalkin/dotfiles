@@ -33,7 +33,7 @@ set hlsearch
 set incsearch
 set relativenumber
 "set wrapmargin=80
-au BufRead /tmp/mutt-* set tw=72
+"au BufRead /tmp/mutt-* set tw=72
 au filetype scala set shiftwidth=2
 au filetype scala set softtabstop=2
 

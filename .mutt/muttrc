@@ -60,7 +60,7 @@ set markers          # mark wrapped lines of text in the pager with a +
 set smart_wrap       # Don't wrap mid-word
 set pager_context=5  # Retain 5 lines of previous page when scrolling.
 set status_on_top    # Status bar on top.
-push <show-version>  # Shows mutt version at startup
+#push <show-version>  # Shows mutt version at startup
 
 #macro index,pager I '<shell-escape> fetchmail -v<enter>'
 
