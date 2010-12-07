@@ -5,7 +5,10 @@ set use_from=yes
 set envelope_from="yes"
 
 # Signature
-set signature="~/.signature"
+set signature="~/.mutt/.signature"
+
+# Where to save sent mail
+fcc-hook .* "~/.mutt/sent"
 
 # Use msmtp rather than sendmail
 #set sendmail="/usr/bin/msmtp"
