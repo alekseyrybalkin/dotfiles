@@ -10,6 +10,10 @@ else
     alias packer='packer --auronly'
 fi
 
+if [ $TERM = "rxvt-256color" ]; then
+    alias screen='screen -T rxvt-256color'
+fi
+
 eval `dircolors -b`
 
 txtblk='\e[0;30m' # Black - Regular
