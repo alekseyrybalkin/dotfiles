@@ -242,8 +242,8 @@ elseif &t_Co == 16
   hi PmenuSel       ctermbg=14 ctermfg=4  cterm=none
 
   " -> Tabs
-  hi TabLine        ctermbg=7  ctermfg=8  cterm=none
-  hi TabLineFill    ctermbg=0             cterm=none
+  hi TabLine        ctermbg=8  ctermfg=8  cterm=none
+  hi TabLineFill    ctermbg=8             cterm=none
   hi TabLineSel     ctermbg=8  ctermfg=7  cterm=bold  
   "
   " -> Visual Mode
@@ -330,8 +330,8 @@ elseif &t_Co == 8
   hi PmenuSel       ctermbg=6  ctermfg=4  cterm=none
 
   " -> Tabs
-  hi TabLine        ctermbg=7  ctermfg=8  cterm=none
-  hi TabLineFill    ctermbg=0             cterm=none
+  hi TabLine        ctermbg=8  ctermfg=8  cterm=none
+  hi TabLineFill    ctermbg=8             cterm=none
   hi TabLineSel     ctermbg=8  ctermfg=7  cterm=bold  
   "
   " -> Visual Mode
