@@ -1,4 +1,4 @@
-term rxvt-256color
+#term rxvt-256color
 hardstatus alwayslastline
 hardstatus string '%{i}%{ck}[ %{W}%H%{c} ][%= %-Lw%{R}[->%{W}%n*%f%t%{R}<-]%{c}%+Lw%= ][ %{W}%Y-%m-%d %c%{c} ]'
 screen -t bash 0
