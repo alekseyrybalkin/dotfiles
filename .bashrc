@@ -4,11 +4,7 @@
 alias ls='ls --color=auto --group-directories-first'
 alias mplayer='mplayer -vo xv:port=80'
 #alias mplayer2='mplayer -vo xv:port=80 -vf pp=lb'
-if [ `hostname` = "archwork" ]; then
-    alias packer='packer --auronly --ignore ireport-nb'
-else
-    alias packer='packer --auronly'
-fi
+alias packer='packer --auronly'
 
 if [ $TERM = "rxvt-256color" ]; then
     alias screen='screen -T rxvt-256color'
