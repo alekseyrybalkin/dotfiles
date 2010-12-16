@@ -5,7 +5,6 @@ alias ls='ls --color=auto --group-directories-first'
 alias mplayer='mplayer -vo xv:port=80'
 #alias mplayer2='mplayer -vo xv:port=80 -vf pp=lb'
 alias packer='packer --auronly'
-alias pacman='sudo powerpill'
 
 if [ $TERM = "rxvt-256color" ]; then
     alias screen='screen -T rxvt-256color'
