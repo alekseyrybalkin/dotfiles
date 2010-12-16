@@ -10,7 +10,7 @@ xset r rate 200 30 &
 if [ `hostname` = "archwork" ]; then
     dropboxd &
     xxkb &
-    exec ck-launch-session dbus-launch ssh-agent startlxde
+    exec dbus-launch ssh-agent startlxde
 elif [ `hostname` = "archdesktop" ]; then
     dropboxd &
     xsetroot -cursor_name left_ptr
@@ -18,5 +18,5 @@ elif [ `hostname` = "archdesktop" ]; then
 elif [ `hostname` = "archeeepc" ]; then
     xbacklight -set 33 &
     xsetroot -cursor_name left_ptr
-    exec ck-launch-session dbus-launch ssh-agent xmonad
+    exec dbus-launch ssh-agent xmonad
 fi
