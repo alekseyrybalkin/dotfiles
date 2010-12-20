@@ -1,0 +1,3 @@
+#!/bin/bash
+sudo cryptsetup luksOpen /dev/sdb1 flash
+mount /mnt/ext2

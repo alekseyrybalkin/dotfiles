@@ -2,6 +2,6 @@
 import random
 c = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ~`!@#$%^&*()-_+=\|{}[]:;\"',./?><"
 s = ""
-for i in range(0,20):
+for i in range(0,12):
     s += c[random.randint(0, len(c)-1)]
 print(s)

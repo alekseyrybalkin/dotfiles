@@ -1,0 +1,3 @@
+#!/bin/bash
+umount /mnt/ext2
+sudo cryptsetup luksClose flash
