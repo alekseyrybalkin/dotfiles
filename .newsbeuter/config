@@ -1,3 +1,3 @@
 browser links %u
 max-items 32
-cache-file ~/dropbox/share/newsbeuter-cache.db
+cache-file ~/.newsbeuter/cache.db
