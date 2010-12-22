@@ -1,7 +1,7 @@
 #!/bin/bash
 for arg in "$@"
 do
-	if [ ! -e "/mnt/fat/books/$arg" ]
+	if [ ! -e "/mnt/ext2/books/$arg" ]
 	then
 		echo $arg" doesn't exist on FLASH."
 	fi
