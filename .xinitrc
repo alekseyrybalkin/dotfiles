@@ -10,7 +10,8 @@ xset r rate 200 30 &
 if [ `hostname` = "archwork" ]; then
     dropboxd &
     xxkb &
-    exec dbus-launch ssh-agent startlxde
+    #exec dbus-launch ssh-agent startlxde
+    exec dbus-launch ssh-agent openbox-session
 elif [ `hostname` = "archdesktop" ]; then
     dropboxd &
     xsetroot -cursor_name left_ptr
