@@ -15,7 +15,7 @@ URxvt.perl-ext-common:  default,matcher
 URxvt.urlLauncher:      firefox-nightly
 URxvt.matcher.button:   1
 URxvt.scrollBar: False
-URxvt.geometry: 140x40
+URxvt.geometry: 200x80
 URxvt.termName: rxvt-256color
 
 #*foreground:     rgb:22/22/22
