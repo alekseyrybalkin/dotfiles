@@ -1,4 +1,5 @@
 /*
 !/.gitignore
-!/lxde-rc.xml
 !/rc.xml
+!/autostart.sh
+!/menu.xml
