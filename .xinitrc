@@ -20,5 +20,6 @@ elif [ `hostname` = "archdesktop" ]; then
 elif [ `hostname` = "archeeepc" ]; then
     xbacklight -set 33 &
     xsetroot -cursor_name left_ptr
-    exec dbus-launch ssh-agent xmonad
+    #exec dbus-launch ssh-agent xmonad
+    exec dbus-launch ssh-agent openbox-session
 fi
