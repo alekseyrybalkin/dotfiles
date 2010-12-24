@@ -9,3 +9,4 @@ screen -t bash 2
 screen -t bash 1
 startup_message off
 vbell off
+maptimeout 5
