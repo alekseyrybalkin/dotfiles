@@ -275,6 +275,9 @@
     <keybind key="W-F11">
       <action name="ToggleMaximizeFull"/>
     </keybind>
+    <keybind key="A-F11">
+      <action name="ToggleMaximizeFull"/>
+    </keybind>
     <!-- Keybindings for window switching -->
     <keybind key="A-J">
       <action name="NextWindow"/>
@@ -295,7 +298,7 @@
       </action>
     </keybind>
     <!-- Keybindings for running applications -->
-    <keybind key="W-e">
+    <!--<keybind key="W-e">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -303,7 +306,7 @@
         </startupnotify>
         <command>pcmanfm</command>
       </action>
-    </keybind>
+    </keybind>-->
     <keybind key="W-l">
       <action name="Execute">
         <command>xlock</command>
@@ -317,7 +320,7 @@
     <!--keybindings for LXPanel -->
     <keybind key="W-r">
       <action name="Execute">
-        <command>lxpanelctl run</command>
+        <command>dmenu_run</command>
       </action>
     </keybind>
     <keybind key="A-P">
@@ -325,18 +328,15 @@
         <command>dmenu_run</command>
       </action>
     </keybind>
-    <keybind key="C-Escape">
+    <!--<keybind key="C-Escape">
       <action name="Execute">
         <command>lxpanelctl menu</command>
       </action>
-    </keybind>
-    <keybind key="A-F11">
-      <action name="ToggleMaximizeFull"/>
-    </keybind>
+    </keybind>-->
     <!-- Launch Task Manager with Ctrl+Alt+Del -->
     <keybind key="A-C-Delete">
       <action name="Execute">
-        <command>lxtask</command>
+        <command>sudo poweroff</command>
       </action>
     </keybind>
   </keyboard>
@@ -676,7 +676,7 @@
     <!-- You can specify more than one menu file in here and they are all loaded,
        just don't make menu ids clash or, well, it'll be kind of pointless -->
     <!-- default menu file (or custom one in $HOME/.config/openbox/) -->
-    <file>/usr/share/lxde/openbox/menu.xml</file>
+    <file>/home/aleksey/.config/openbox/menu.xml</file>
     <hideDelay>200</hideDelay>
     <!-- if a press-release lasts longer than this setting (in milliseconds), the
        menu is hidden again -->
