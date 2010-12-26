@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-import random
 import os
 c = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ~`!@#$%^&*()-_+=\|{}[]:;\"',./?><"
 s = ""

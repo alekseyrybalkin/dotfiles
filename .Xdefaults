@@ -44,6 +44,3 @@ URxvt.termName: rxvt-256color
 !white
 #*color7:         rgb:00/00/00
 #*color15:        rgb:00/00/00
-#XLock.startCmd: xmodmap -e 'keycode 37=' -e 'keycode 105='
-#XLock.endCmd:   xmodmap -e 'keycode 37=Control_L' -e 'keycode 105=Control_R'
-#Emacs.geometry: 100x40+0+0
