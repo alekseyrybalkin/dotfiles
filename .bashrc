@@ -3,7 +3,6 @@
 
 alias ls='ls --color=auto --group-directories-first'
 alias mplayer='mplayer -vo xv:port=80'
-#alias mplayer2='mplayer -vo xv:port=80 -vf pp=lb'
 alias packer='packer --auronly'
 
 if [ $TERM = "rxvt-256color" ]; then
@@ -20,7 +19,7 @@ txtrst='\e[0m'    # Text Reset
 PS1="\[$bldcyn\]\u \[$bldred\][->\[$bldwht\]\w\[$bldred\]<-]\[$txtrst\] "
 
 if [ -z $EDITOR ]; then
-    export PATH=/home/aleksey/bin:/home/aleksey/dropbox/bin:$PATH
+    export PATH=/home/aleksey/bin:$PATH
     export EDITOR=/usr/bin/vim
     export VIEWER=/usr/bin/vim
     export IDEA_JDK=/opt/java
