@@ -9,10 +9,10 @@
 xset r rate 200 30 &
 if [ `hostname` = "archwork" ]; then
     dropboxd &
-    xxkb &
 elif [ `hostname` = "archdesktop" ]; then
     dropboxd &
 elif [ `hostname` = "archeeepc" ]; then
     xbacklight -set 33 &
 fi
+xxkb &
 exec dbus-launch ssh-agent openbox-session
