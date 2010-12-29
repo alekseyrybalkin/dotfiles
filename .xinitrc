@@ -4,15 +4,9 @@
 #
 # Executed by startx (run your window manager from here)
 
-#xrandr --output LVDS1 --off --output VGA1 --mode 1024x768
-
-xset r rate 200 30 &
-if [ `hostname` = "archwork" ]; then
-    dropboxd &
-elif [ `hostname` = "archdesktop" ]; then
-    dropboxd &
-elif [ `hostname` = "archeeepc" ]; then
+if [ `hostname` = "archeeepc" ]; then
     xbacklight -set 33 &
 fi
+xset r rate 200 30 &
 xxkb &
 exec dbus-launch ssh-agent openbox-session
