@@ -2,7 +2,7 @@
 
 <openbox_menu xmlns="http://openbox.org/3.4/menu">
 
-<menu id="apps-accessories-menu" label="Accessories">
+<!--<menu id="apps-accessories-menu" label="Accessories">
   <item label="Calculator">
     <action name="Execute">
       <command>gnome-calculator</command>
@@ -27,10 +27,10 @@
       </startupnotify>
     </action>
   </item>
-</menu>
+</menu>-->
 
 <menu id="apps-editors-menu" label="Editors">
-  <item label="GVim">
+<!--  <item label="GVim">
     <action name="Execute">
       <command>gvim</command>
       <startupnotify>
@@ -71,6 +71,11 @@
         <enabled>yes</enabled>
       </startupnotify>
     </action>
+  </item>-->
+  <item label="Leafpad">
+      <action name="Execute">
+          <command>leafpad</command>
+      </action>
   </item>
 </menu>
 
@@ -80,7 +85,7 @@
       <command>urxvt</command>
     </action>
   </item>
-  <item label="Gnome Terminal">
+  <!--<item label="Gnome Terminal">
     <action name="Execute">
       <command>gnome-terminal</command>
       <startupnotify>
@@ -103,23 +108,23 @@
         <enabled>yes</enabled>
       </startupnotify>
     </action>
-  </item>
+  </item>-->
   <item label="Xterm">
     <action name="Execute"><command>xterm</command></action>
   </item>
 </menu>
 
-<menu id="apps-net-menu" label="Internet">
-  <item label="Firefox">
+<menu id="apps-net-menu" label="internet">
+  <item label="firefox-nightly">
     <action name="Execute">
-      <command>firefox</command>
+      <command>firefox-nightly</command>
       <startupnotify>
         <enabled>yes</enabled>
         <wmclass>Firefox</wmclass>
       </startupnotify>
     </action>
   </item>
-  <item label="Opera">
+  <item label="opera">
     <action name="Execute">
       <command>opera</command>
       <startupnotify>
@@ -128,7 +133,12 @@
       </startupnotify>
     </action>
   </item>
-  <item label="Konqueror">
+  <item label="chromium">
+    <action name="Execute">
+      <command>chromium</command>
+    </action>
+  </item>
+  <!--<item label="Konqueror">
     <action name="Execute">
       <command>konqueror</command>
       <startupnotify>
@@ -143,8 +153,8 @@
         <enabled>yes</enabled>
       </startupnotify>
     </action>
-  </item>
-  <item label="Pidgin Instant Messenger">
+  </item>-->
+  <item label="pidgin">
     <action name="Execute">
       <command>pidgin</command>
       <startupnotify>
@@ -152,7 +162,7 @@
       </startupnotify>
     </action>
   </item>
-  <item label="Kopete Instant Messenger">
+  <!--<item label="Kopete Instant Messenger">
     <action name="Execute">
       <command>kopete</command>
       <startupnotify>
@@ -167,10 +177,10 @@
         <enabled>yes</enabled>
       </startupnotify>
     </action>
-  </item>
+  </item>-->
 </menu>
 
-<menu id="apps-office-menu" label="Office">
+<!--<menu id="apps-office-menu" label="Office">
   <item label="OpenOffice Base">
     <action name="Execute">
       <command>ooffice -base</command>
@@ -206,9 +216,9 @@
       <command>ooffice -writer</command>
     </action>
   </item>
-</menu>
+</menu>-->
 
-<menu id="apps-multimedia-menu" label="Multimedia">
+<!--<menu id="apps-multimedia-menu" label="Multimedia">
   <item label="Amarok">
     <action name="Execute">
       <command>amarok</command>
@@ -250,51 +260,7 @@
       </startupnotify>
     </action>
   </item>
-</menu>
-
-<menu id="apps-fileman-menu" label="File Managers">
-  <item label="Nautilus">
-    <action name="Execute">
-      <command>nautilus --no-desktop --browser</command>
-      <startupnotify>
-        <enabled>yes</enabled>
-      </startupnotify>
-    </action>
-  </item>
-  <item label="Thunar">
-    <action name="Execute">
-      <command>Thunar</command>
-      <startupnotify>
-        <enabled>yes</enabled>
-      </startupnotify>
-    </action>
-  </item>
-  <item label="KDE File Manager">
-    <action name="Execute">
-      <command>kfmclient openURL ~</command>
-      <startupnotify>
-        <enabled>yes</enabled>
-      </startupnotify>
-    </action>
-  </item>
-  <item label="Rox">
-    <action name="Execute">
-      <command>rox</command>
-      <startupnotify>
-        <enabled>yes</enabled>
-        <wmclass>ROX-Filer</wmclass>
-      </startupnotify>
-    </action>
-  </item>
-  <item label="PCMan File Manager">
-    <action name="Execute">
-      <command>pcmanfm</command>
-      <startupnotify>
-        <enabled>yes</enabled>
-      </startupnotify>
-    </action>
-  </item>
-</menu>
+</menu>-->
 
 <menu id="apps-graphics-menu" label="Graphics">
   <item label="Gimp">
@@ -305,7 +271,7 @@
       </startupnotify>
     </action>
   </item>
-  <item label="Gwenview">
+  <!--<item label="Gwenview">
     <action name="Execute">
       <command>gwenview</command>
       <startupnotify>
@@ -328,7 +294,7 @@
         <enabled>yes</enabled>
       </startupnotify>
     </action>
-  </item>
+  </item>-->
 </menu>
 
 <menu id="system-menu" label="System">
@@ -338,7 +304,7 @@
       <startupnotify><enabled>yes</enabled></startupnotify>
     </action>
   </item>
-  <item label="Gnome Control Center">
+  <!--<item label="Gnome Control Center">
     <action name="Execute">
       <command>gnome-control-center</command>
       <startupnotify><enabled>yes</enabled></startupnotify>
@@ -355,7 +321,7 @@
       <command>xfce-setting-show</command>
       <startupnotify><enabled>yes</enabled></startupnotify>
     </action>
-  </item>
+  </item>-->
   <item label="Manage Cups Printers">
     <action name="Execute">
       <command>xdg-open http://localhost:631/</command>
@@ -373,20 +339,20 @@
 
 <menu id="root-menu" label="Openbox 3">
   <separator label="Applications" />
-  <menu id="apps-accessories-menu"/>
+  <!--<menu id="apps-accessories-menu"/>-->
   <menu id="apps-editors-menu"/>
   <menu id="apps-graphics-menu"/>
   <menu id="apps-net-menu"/>
-  <menu id="apps-office-menu"/>
-  <menu id="apps-multimedia-menu"/>
+  <!--<menu id="apps-office-menu"/>-->
+  <!--<menu id="apps-multimedia-menu"/>-->
   <menu id="apps-term-menu"/>
-  <menu id="apps-fileman-menu"/>
+  <!--<menu id="apps-fileman-menu"/>-->
   <separator label="System" />
   <menu id="system-menu"/>
   <separator />
   <item label="Log Out">
     <action name="Exit">
-      <prompt>yes</prompt>
+      <prompt>no</prompt>
     </action>
   </item>
 </menu>
