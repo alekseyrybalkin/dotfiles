@@ -98,3 +98,5 @@ nmap ,N :NERDTreeClose<CR>
 
 set directory=/tmp//
 set backupdir=/tmp//
+
+set synmaxcol=160
