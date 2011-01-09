@@ -297,6 +297,11 @@
         <desktop>yes</desktop>
       </action>
     </keybind>
+    <keybind key="S-A-q">
+      <action name="Exit">
+        <prompt>no</prompt>
+      </action>
+    </keybind>
     <!-- Keybindings for running applications -->
     <!--<keybind key="W-e">
       <action name="Execute">
