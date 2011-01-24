@@ -2,3 +2,6 @@
 ; editor used to enter commit logs, etc.  Most text editors will work.
 editor = vim
 username = Aleksey Rybalkin <alekseyrybalkin@gmail.com>
+
+[extensions]
+color=
