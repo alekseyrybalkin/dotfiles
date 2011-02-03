@@ -4,6 +4,7 @@
 alias ls='ls --color=auto --group-directories-first'
 alias mplayer='mplayer -vo xv:port=80'
 alias packer='packer --auronly'
+alias essay='vim "+set tw=72"'
 
 if [ $TERM = "rxvt-256color" ]; then
     alias screen='screen -T rxvt-256color'
