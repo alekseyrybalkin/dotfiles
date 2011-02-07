@@ -47,4 +47,6 @@ test -z $BG || $BG -solid "#303030"
 #  (sleep 2 && xcompmgr) &
 #  (sleep 2 && tint2) &
 #fi
-tint2 &
+if [ `hostname` = "archwork" ]; then
+    tint2 &
+fi
