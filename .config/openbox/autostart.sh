@@ -47,9 +47,9 @@ test -z $BG || $BG -solid "#303030"
 #  (sleep 2 && xcompmgr) &
 #  (sleep 2 && tint2) &
 #fi
-if [ `hostname` = "archwork" ]; then
-    tint2 &
-fi
+#if [ `hostname` = "archwork" ]; then
+#    tint2 &
+#fi
 if [ `hostname` = "archdesktop" ]; then
     find images -name *.jpg | shuf -n1 | xargs feh --bg-fill
 fi

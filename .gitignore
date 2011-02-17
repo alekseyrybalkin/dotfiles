@@ -2,6 +2,7 @@
 !/.vim/
 !/.config/
 !/.mutt/
+!/.themes/
 !/bin/
 !/.vimrc
 !/.gitignore
