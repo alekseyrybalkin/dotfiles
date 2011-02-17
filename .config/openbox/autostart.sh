@@ -51,5 +51,5 @@ if [ `hostname` = "archwork" ]; then
     tint2 &
 fi
 if [ `hostname` = "archdesktop" ]; then
-    find images -name *.jpg | shuf -n1 | xargs feh --bg-scale
+    find images -name *.jpg | shuf -n1 | xargs feh --bg-fill
 fi
