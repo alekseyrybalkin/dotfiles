@@ -3,6 +3,7 @@
 !/.config/
 !/.mutt/
 !/.themes/
+!/.mc/
 !/bin/
 !/.vimrc
 !/.gitignore
