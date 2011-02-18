@@ -37,7 +37,7 @@
   </placement>
   <theme>
     <name>syscrash2</name>
-    <titleLayout/>
+    <titleLayout>C</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -52,7 +52,7 @@
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
       <name>Sans</name>
-      <size>1</size>
+      <size>6</size>
       <!-- font size in points -->
       <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
@@ -61,7 +61,7 @@
     </font>
     <font place="InactiveWindow">
       <name>Sans</name>
-      <size>1</size>
+      <size>6</size>
       <!-- font size in points -->
       <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->

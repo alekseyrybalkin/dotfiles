@@ -3,8 +3,8 @@
 !!---------------------------------------------------------------------------
 !! Dimensions
 
-border.width:				0
-border.color:				#000000
+border.width:				1
+border.color:				#118822
 
 padding.width:				0
 window.handle.width:			0
