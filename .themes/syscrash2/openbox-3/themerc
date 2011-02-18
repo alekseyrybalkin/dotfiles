@@ -16,10 +16,8 @@ menu.overlap:				0
 !!---------------------------------------------------------------------------
 !! Fonts
 
-window.active.label.text.font:		shadow=y
 window.label.text.justify:		left
 
-menu.title.text.font:			shadow=y
 menu.title.text.justify:		left
 
 menu.items.font:
@@ -49,10 +47,9 @@ window.active.padding.width:		0
 window.active.title.bg:			flat solid
 window.active.title.bg.color:		#009900
 
-window.active.label.bg:			flat gradient vertical border
-window.active.label.bg.color:		#4c4c4c
-window.active.label.bg.colorTo:		#707070
-window.active.label.text.color:		white
+window.active.label.bg:			flat solid
+window.active.label.bg.color:		#99cc99
+window.active.label.text.color:		black
 
 window.active.handle.bg:		flat gradient crossdiagonal
 window.active.handle.bg.color:		#d3deda
