@@ -767,5 +767,8 @@
 
   # end of the example
 -->
+<application name="urxvt">
+    <maximized>true</maximized>
+</application>
   </applications>
 </openbox_config>

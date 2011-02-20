@@ -1,7 +1,9 @@
 URxvt.buffered:         true
 URxvt.background:       rgb:00/00/00
 URxvt.foreground:       white
+URxvt.internalBorder:   1
 URxvt.cursorColor:      green
+URxvt.borderColor:      rgb:11/88/22
 URxvt.underlineColor:   yellow
 #URxvt.font:             xft:DejaVu Sans Mono:pixelsize=13:antialias=true
 #URxvt.font:             xft:Inconsolata:pixelsize=18:antialias=true
