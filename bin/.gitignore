@@ -12,6 +12,7 @@
 !/compress-mp3
 !/run_http_server
 !/genpass
+!/genlongpass
 !/mount-flash
 !/umount-flash
 !/arsync
