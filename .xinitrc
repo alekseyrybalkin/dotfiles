@@ -6,7 +6,7 @@
 
 xset r rate 200 30 &
 xxkb &
-if [ `hostname` = "archdesktop" ]; then
+if [ `hostname` = "archdesktop" ] || [ `hostname` = "archwork" ]; then
     dropboxd &
 fi
 exec dbus-launch ssh-agent openbox-session

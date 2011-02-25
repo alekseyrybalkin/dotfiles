@@ -36,10 +36,8 @@ export LESS_TERMCAP_us=$'\E[01;32m'
 
 complete -cf sudo
 
-if [ `hostname` = "archdesktop" || `hostname` = "archeeepc" ]; then
-    # mount encrypted dropbox if not already
-    mount | grep "dbox type fuse.encfs" 1>/dev/null
-    if [ $? -gt 0 ]; then
-        encfs --extpass=dboxpass ~/.encdbox/Dropbox ~/dbox
-    fi
+# mount encrypted dropbox if not already
+mount | grep "dbox type fuse.encfs" 1>/dev/null
+if [ $? -gt 0 ]; then
+    encfs --extpass=dboxpass ~/.encdbox/Dropbox ~/dbox
 fi
