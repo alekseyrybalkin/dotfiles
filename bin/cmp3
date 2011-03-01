@@ -1,0 +1,14 @@
+#!/bin/bash
+#rm -rvf compressed
+DIR=~/drafts/cmp3/`pwd | sed "s/\//_/g" | sed "s/_home_music_//g"`
+mkdir -pv $DIR
+INFOFILE=$DIR/`pwd | sed "s/\//_/g" | sed "s/_home_music_//g"`
+echo `date` > $INFOFILE
+echo `uname -a` >> $INFOFILE
+echo `lame 2>&1 | grep version` >> $INFOFILE
+for i in *.mp3
+do
+	echo $i
+	echo $DIR/$i
+	lame "$i" "$DIR/$i"
+done
