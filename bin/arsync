@@ -1,6 +1,7 @@
 #!/bin/bash
-for i in {archive,books}
-do
-    rsync -av --delete /mnt/ext2/$i ~
-    chmod -R a-w ~/$i
-done
+#for i in {archive,books}
+#do
+i=books
+rsync -av --delete /mnt/ext2/$i ~
+chmod -R a-w ~/$i
+#done
