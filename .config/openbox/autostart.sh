@@ -51,6 +51,6 @@ test -z $BG || $BG -solid "#303030"
 #    tint2 &
 #fi
 tint2 &
-if [ `hostname` = "archdesktop" ]; then
-    find images -name *.jpg | shuf -n1 | xargs feh --bg-fill
-fi
+#if [ `hostname` = "archdesktop" ]; then
+#    find images -name *.jpg | shuf -n1 | xargs feh --bg-fill
+#fi
