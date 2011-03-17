@@ -1,0 +1,61 @@
+#!/bin/bash
+#sudo abs
+FOLDER=~/drafts/system
+for i in `pacman -Q | cut -d " " -f 1`; do
+    flag=0
+    for j in chromium libreoffice intellij-idea-community-edition intellij-idea-libs kernel26 linux-api-headers nvidia nvidia-utils perl-xyne-arch qt skype; do
+        if [ $i = $j ]; then
+            flag=1
+            break
+        fi
+    done
+    if [ $flag = 1 ]; then
+        continue
+    fi
+    for rep in core extra community; do
+        if [ -d /var/abs/$rep/$i ]; then
+            v=`pacman -Q $i | cut -d " " -f 2`
+            if [ $? -gt 0 ]; then
+                echo "EPIC FAIL"
+                exit
+            fi
+            if [ -d $FOLDER/$rep/$i-$v ]; then
+                #echo $FOLDER/$rep/$i-$v already exists
+                for file in `ls /var/abs/$rep/$i`; do
+                    diff -q /var/abs/$rep/$i/$file $FOLDER/$rep/$i-$v/$file
+                done
+            else
+                echo copying $i-$v
+                mkdir $FOLDER/$rep/$i-$v
+                cp -r /var/abs/$rep/$i/* $FOLDER/$rep/$i-$v
+                source $FOLDER/$rep/$i-$v/PKGBUILD
+                if [ $v = $pkgver-$pkgrel ]; then
+                    echo "ok."
+                else
+                    echo "ERROR: version mismatch"
+                    exit
+                fi
+                cd $FOLDER/$rep/$i-$v
+                makepkg -o
+                if [ $? -gt 0 ]; then
+                    echo "EPIC FAIL"
+                    rm -rvf $FOLDER/$rep/$i-$v
+                    exit
+                fi
+            fi
+        fi
+    done
+done
+for rep in core extra community; do
+    for dir in `ls $FOLDER/$rep`; do
+        pacman -Q | sed s/\ /-/g | grep "$dir" 1>/dev/null
+        ret=$?
+        if [ $ret = 1 ]; then
+            echo "$FOLDER/$rep/$dir is out of date or unknown"
+        fi
+        if [ $ret -gt 1 ]; then
+            echo "EPIC FAIL"
+            exit
+        fi
+    done
+done
