@@ -46,6 +46,7 @@ for i in `pacman -Q | cut -d " " -f 1`; do
                     rm -rvf $FOLDER/$rep/$i-$v
                     exit
                 fi
+                rm -rf src
             fi
         fi
     done
