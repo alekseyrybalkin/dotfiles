@@ -14,7 +14,7 @@ URxvt.boldFont:         xft:Terminus:pixelsize=14:antialias=false
 URxvt.perl-ext-common:  default,tabbed
 URxvt.title:            urxvt ftw!
 URxvt.perl-ext-common:  default,matcher
-URxvt.urlLauncher:      firefox-nightly
+URxvt.urlLauncher:      firefox
 URxvt.matcher.button:   1
 URxvt.scrollBar: False
 URxvt.geometry: 200x80
