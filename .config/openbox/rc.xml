@@ -255,6 +255,11 @@
     <keybind key="W-m">
       <action name="ToggleShowDesktop"/>
     </keybind>
+    <keybind key="W-p">
+      <action name="Execute">
+        <command>mpc-toggle</command>
+      </action>
+    </keybind>
     <keybind key="C-A-d">
       <action name="ToggleShowDesktop"/>
     </keybind>
