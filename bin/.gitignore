@@ -2,6 +2,7 @@
 !/.gitignore
 !/xlock
 !/chromium
+!/chromium-tor
 !/pass
 !/xpass
 !/check_books
