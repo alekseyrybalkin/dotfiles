@@ -251,7 +251,7 @@ elseif &t_Co == 16
   hi VisualNOS      ctermbg=0  ctermfg=7  cterm=none
 
   " -> Code
-  hi Comment        ctermbg=8  ctermfg=7  cterm=none
+  hi Comment        ctermbg=8  ctermfg=2  cterm=none
   hi Constant       ctermbg=8  ctermfg=10 cterm=none
   hi String         ctermbg=8  ctermfg=6  cterm=none
   hi Error          ctermbg=8  ctermfg=4  cterm=none
@@ -339,7 +339,7 @@ elseif &t_Co == 8
   hi VisualNOS      ctermbg=0  ctermfg=7  cterm=none
 
   " -> Code
-  hi Comment        ctermbg=8  ctermfg=7  cterm=none
+  hi Comment        ctermbg=8  ctermfg=1  cterm=none
   hi Constant       ctermbg=8  ctermfg=2 cterm=none
   hi String         ctermbg=8  ctermfg=6  cterm=none
   hi Error          ctermbg=8  ctermfg=4  cterm=none
