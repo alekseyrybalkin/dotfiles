@@ -4,6 +4,7 @@
 !/.mutt/
 !/.themes/
 !/.mc/
+!/.xmonad
 !/bin/
 !/.vimrc
 !/.gitignore

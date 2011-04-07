@@ -6,7 +6,6 @@
 
 xset r rate 200 30 &
 xxkb &
-if [ `hostname` = "archdesktop" ] || [ `hostname` = "archwork" ]; then
-    dropboxd &
-fi
-exec dbus-launch ssh-agent openbox-session
+dropboxd &
+xsetroot -cursor_name left_ptr
+exec dbus-launch ssh-agent xmonad
