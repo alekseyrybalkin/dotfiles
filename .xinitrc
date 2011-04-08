@@ -8,4 +8,4 @@ xset r rate 200 30 &
 xxkb &
 dropboxd &
 xsetroot -cursor_name left_ptr
-exec dbus-launch ssh-agent xmonad
+exec ssh-agent xmonad
