@@ -1,0 +1,7 @@
+#!/bin/bash
+if [ `hostname` = "archdesktop" ]; then
+    sudo cryptsetup luksOpen /dev/sdd1 james
+else
+    sudo cryptsetup luksOpen /dev/sdb1 james
+fi
+mount /mnt/james

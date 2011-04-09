@@ -1,7 +1,0 @@
-#!/bin/bash
-if [ `hostname` = "archdesktop" ]; then
-    sudo cryptsetup luksOpen /dev/sdd1 flash
-else
-    sudo cryptsetup luksOpen /dev/sdb1 flash
-fi
-mount /mnt/ext2
