@@ -39,5 +39,5 @@ complete -cf sudo
 # mount encrypted dropbox if not already
 mount | grep "dbox type fuse.encfs" 1>/dev/null
 if [ $? -gt 0 ]; then
-    encfs --extpass=dboxpass ~/.encdbox/Dropbox ~/dbox
+    encfs --extpass=dboxpass ~/.encdbox/Dropbox ~/dbox &
 fi
