@@ -59,6 +59,9 @@ set linebreak
 
 "set list
 "set listchars=tab:>-,trail:.,extends:#,nbsp:.
+set listchars=tab:»·,trail:·
+set list
+
 
 set pastetoggle=<F2>
 
