@@ -7,5 +7,6 @@
 xset r rate 200 30 &
 xxkb &
 dropboxd &
+touchpad-autotoggle &
 xsetroot -cursor_name left_ptr
 exec ssh-agent xmonad
