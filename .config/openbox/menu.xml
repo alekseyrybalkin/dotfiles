@@ -115,9 +115,9 @@
 </menu>
 
 <menu id="apps-net-menu" label="internet">
-  <item label="firefox">
+  <item label="firefox-nightly">
     <action name="Execute">
-      <command>firefox</command>
+      <command>firefox-nightly</command>
       <startupnotify>
         <enabled>yes</enabled>
         <wmclass>Firefox</wmclass>
