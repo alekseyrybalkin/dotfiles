@@ -20,7 +20,7 @@ txtrst='\e[0m'    # Text Reset
 PS1="\[$bldcyn\]\u \[$bldred\][->\[$bldwht\]\w\[$bldred\]<-]\[$txtrst\] "
 
 if [ -z $EDITOR ]; then
-    export PATH=/home/aleksey/bin:$PATH
+    export PATH=/home/`whoami`/bin:$PATH
     export EDITOR=/usr/bin/vim
     export VIEWER=/usr/bin/vim
     export IDEA_JDK=/opt/java
