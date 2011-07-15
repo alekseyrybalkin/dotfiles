@@ -2,7 +2,7 @@
 
 cat /proc/bus/input/devices | grep -q Synaptics
 if [ $? -eq 0 ]; then
-    lsusb | grep -q "Microsoft Corp. Basic Optical Mouse"
+    lsusb | grep -q Mouse
     if [ $? -gt 0 ]; then
         synclient TouchpadOff=0
     else
