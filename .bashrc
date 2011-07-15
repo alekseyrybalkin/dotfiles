@@ -12,12 +12,16 @@ fi
 
 eval `dircolors -b`
 
-bldred='\e[1;31m' # Red
-bldcyn='\e[1;36m' # Cyan
-bldwht='\e[1;37m' # White
-txtrst='\e[0m'    # Text Reset
+bldred='\[\e[1;31m\]'  # Red
+bldblue='\[\e[1;34m\]' # Blue
+bldcyn='\[\e[1;36m\]'  # Cyan
+txtrst='\[\e[0m\]'     # Text Reset
 
-PS1="\[$bldcyn\]\u \[$bldred\][->\[$bldwht\]\w\[$bldred\]<-]\[$txtrst\] "
+if [ "$UID" -eq "0" ]; then
+    PS1="[$bldred\u$txtrst $bldblue\W$txtrst]\$ "
+else
+    PS1="[$bldcyn\u$txtrst $bldblue\W$txtrst]\$ "
+fi
 
 if [ -z $EDITOR ]; then
     export PATH=/home/`whoami`/bin:$PATH
