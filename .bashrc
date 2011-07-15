@@ -18,9 +18,9 @@ bldcyn='\[\e[1;36m\]'  # Cyan
 txtrst='\[\e[0m\]'     # Text Reset
 
 if [ "$UID" -eq "0" ]; then
-    PS1="[$bldred\u$txtrst $bldblue\W$txtrst]\$ "
+    PS1="[$bldred\u$txtrst $bldblue\w$txtrst]\$ "
 else
-    PS1="[$bldcyn\u$txtrst $bldblue\W$txtrst]\$ "
+    PS1="[$bldcyn\u$txtrst $bldblue\w$txtrst]\$ "
 fi
 
 if [ -z $EDITOR ]; then
