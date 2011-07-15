@@ -41,8 +41,10 @@ export LESS_TERMCAP_us=$'\E[01;32m'
 
 complete -cf sudo
 
-# mount encrypted dropbox if not already
-mount | grep "dbox type fuse.encfs" 1>/dev/null
-if [ $? -gt 0 ]; then
-    encfs --extpass=dboxpass ~/.encdbox/Dropbox ~/dbox &
+if [ -d ~/dbox ]; then
+    # mount encrypted dropbox if not already
+    mount | grep "dbox type fuse.encfs" 1>/dev/null
+    if [ $? -gt 0 ]; then
+        encfs --extpass=dboxpass ~/.encdbox/Dropbox ~/dbox &
+    fi
 fi
