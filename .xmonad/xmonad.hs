@@ -17,5 +17,6 @@ main = xmonad $ defaultConfig
 
 myKeys =
     [ ((mod4Mask, xK_l), spawn "xlock"),
+      ((mod1Mask, xK_p), spawn "dmenu_run"),
       ((controlMask .|. mod1Mask, xK_Delete), spawn "sudo poweroff")
     ]
