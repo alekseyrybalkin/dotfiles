@@ -103,3 +103,5 @@ set directory=/tmp//
 set backupdir=/tmp//
 
 set synmaxcol=320
+
+hi Comment ctermfg=243
