@@ -31,7 +31,6 @@ set showmatch
 set ignorecase
 set hlsearch
 set incsearch
-set relativenumber
 "set wrapmargin=80
 "au BufRead /tmp/mutt-* set tw=72
 au filetype scala set shiftwidth=2
@@ -104,4 +103,12 @@ set backupdir=/tmp//
 
 set synmaxcol=320
 
+set cursorline
+set cursorcolumn
+
+set relativenumber
+set numberwidth=2
+
 hi Comment ctermfg=243
+hi CursorLine ctermbg=235
+hi CursorColumn ctermbg=235
