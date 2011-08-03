@@ -51,7 +51,7 @@ filetype indent on
 
 "autocmd filetype python set expandtab
 
-colorscheme herald
+colorscheme ellen
 syntax on
 
 set linebreak
@@ -60,7 +60,6 @@ set linebreak
 "set listchars=tab:>-,trail:.,extends:#,nbsp:.
 set listchars=tab:»·,trail:·
 set list
-
 
 set pastetoggle=<F2>
 
@@ -108,7 +107,3 @@ set cursorcolumn
 
 set relativenumber
 set numberwidth=2
-
-hi Comment ctermfg=243
-hi CursorLine ctermbg=235
-hi CursorColumn ctermbg=235
