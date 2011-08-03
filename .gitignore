@@ -7,6 +7,7 @@
 !/.xmonad
 !/bin/
 !/.vimrc
+!/.vim.tabs
 !/.gitignore
 !/.Xdefaults
 !/.bash_profile
