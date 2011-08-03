@@ -86,7 +86,7 @@ if &t_Co == 256
     hi Operator       ctermbg=0   ctermfg=226   cterm=none
     hi Delimiter      ctermbg=0   ctermfg=7   cterm=none
     hi Type           ctermbg=0   ctermfg=111   cterm=none
-    hi Exception      ctermbg=0   ctermfg=7   cterm=none
+    hi Exception      ctermbg=0   ctermfg=198   cterm=none
 
     " -> HTML-specific
     hi htmlBold                 ctermbg=0  ctermfg=252   cterm=bold
