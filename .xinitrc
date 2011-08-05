@@ -14,4 +14,4 @@ if [ `hostname` = "rybalkin-arch" ]; then
     xmodmap -e "keycode 173 = Home NoSymbol Home"
     xmodmap -e "keycode 171 = End NoSymbol End"
 fi
-exec ssh-agent xmonad
+exec xmonad
