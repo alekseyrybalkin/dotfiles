@@ -1,6 +1,6 @@
 " Vim color file
 " Name:       ellen.vim
-" Author:     Aleksey Rybalkin <alekseyrybalkin@gmail.com>
+" Author:     Aleksey Rybalkin <aleksey@rybalkin.org>
 " Version:    0.1.0
 " Notes:      Supports 8 and 256 color modes
 
