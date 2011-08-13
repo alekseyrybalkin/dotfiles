@@ -5,6 +5,7 @@
 !/chromium-tor
 !/pass
 !/xpass
+!/qpass
 !/check_books
 !/check_local
 !/check_flash
