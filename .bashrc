@@ -2,7 +2,11 @@
 [ -z "$PS1" ] && return
 
 alias ls='ls --color=auto --group-directories-first'
-alias mplayer='mplayer -vo xv:port=80'
+if [ `hostname` = "rybalkin-arch" ]; then
+    alias mplayer='mplayer -vo gl'
+else
+    alias mplayer='mplayer -vo xv:port=80'
+fi
 alias packer='packer --auronly'
 alias essay='vim "+set tw=72"'
 
@@ -27,7 +31,6 @@ if [ -z $EDITOR ]; then
     export PATH=/home/`whoami`/bin:$PATH
     export EDITOR=/usr/bin/vim
     export VIEWER=/usr/bin/vim
-    export IDEA_JDK=/opt/java
     export LFS=/mnt/lfs
 fi
 
