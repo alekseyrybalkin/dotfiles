@@ -103,7 +103,7 @@ set backupdir=/tmp//
 set synmaxcol=320
 
 set cursorline
-set cursorcolumn
+set nocursorcolumn
 
 set relativenumber
 set numberwidth=2
