@@ -37,15 +37,15 @@ bldwhite='\e[1;37m'     # White
 txtrst='\[\e[0m\]'      # Text Reset
 
 color_user() {
-    [ "$UID" -eq 0 ] && echo "$bldred\u$txtrst" || echo "$bldgreen\u$txtrst"
+    [ "$UID" -eq 0 ] && echo "\[$bldred\]\u\[$txtrst\]" || echo "\[$bldgreen\]\u\[$txtrst\]"
 }
 color_host() {
-    [ -n "$SSH_CONNECTION" ] && echo "@$bldyellow\h$txtrst" || echo ""
+    [ -n "$SSH_CONNECTION" ] && echo "@\[$bldyellow\]\h\[$txtrst\]" || echo ""
 }
 prompt() {
     [ "$UID" -eq 0 ] && echo "#" || echo "$"
 }
-export PS1="[$(color_user)$(color_host) $bldblue\w$txtrst]$(prompt) "
+export PS1="[$(color_user)$(color_host) \[$bldblue\]\w\[$txtrst\]]$(prompt) "
 
 if [ -z $EDITOR ]; then
     export PATH=/home/`whoami`/bin:$PATH
