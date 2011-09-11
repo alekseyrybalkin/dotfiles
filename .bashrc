@@ -17,7 +17,7 @@ fi
 eval `dircolors -b`
 
 if [ "$UID" -eq "0" ]; then
-    PS1="ROOT \h (\w)# "
+    PS1="ROOT# "
 else
     PS1="\h (\w)$ "
 fi
