@@ -16,36 +16,11 @@ fi
 
 eval `dircolors -b`
 
-black='\e[0;30m'        # Black - Regular
-red='\e[0;31m'          # Red
-green='\e[0;32m'        # Green
-yellow='\e[0;33m'       # Yellow
-blue='\e[0;34m'         # Blue
-purple='\e[0;35m'       # Purple
-cyan='\e[0;36m'         # Cyan
-white='\e[0;37m'        # White
-
-bldblack='\e[1;30m'     # Black - Bold
-bldred='\e[1;31m'       # Red
-bldgreen='\e[1;32m'     # Green
-bldyellow='\e[1;33m'    # Yellow
-bldblue='\e[1;34m'      # Blue
-bldpurple='\e[1;35m'    # Purple
-bldcyan='\e[1;36m'      # Cyan
-bldwhite='\e[1;37m'     # White
-
-txtrst='\[\e[0m\]'      # Text Reset
-
-color_user() {
-    [ "$UID" -eq 0 ] && echo "\[$bldred\]\u\[$txtrst\]" || echo "\[$bldgreen\]\u\[$txtrst\]"
-}
-color_host() {
-    [ -n "$SSH_CONNECTION" ] && echo "@\[$bldyellow\]\h\[$txtrst\]" || echo ""
-}
-prompt() {
-    [ "$UID" -eq 0 ] && echo "#" || echo "$"
-}
-export PS1="[$(color_user)$(color_host) \[$bldblue\]\w\[$txtrst\]]$(prompt) "
+if [ "$UID" -eq "0" ]; then
+    PS1="ROOT \h (\w)# "
+else
+    PS1="\h (\w)$ "
+fi
 
 if [ -z $EDITOR ]; then
     export PATH=/home/`whoami`/bin:$PATH
