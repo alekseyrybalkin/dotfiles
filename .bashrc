@@ -17,9 +17,9 @@ fi
 eval `dircolors -b`
 
 if [ "$UID" -eq "0" ]; then
-    PS1="ROOT# "
+    PS1="\[\e[1;31m\]ROOT\[\e[0m\]# "
 else
-    PS1="\h (\w)$ "
+    PS1="\[\e[1;32m\]\h\[\e[0m\] (\w)$ "
 fi
 
 if [ -z $EDITOR ]; then
