@@ -12,6 +12,7 @@
 !/.Xdefaults
 !/.bash_profile
 !/.bashrc
+!/.inputrc
 !/.fonts.conf
 !/.gitconfig
 !/.hgrc
