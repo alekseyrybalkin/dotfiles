@@ -105,5 +105,9 @@ set synmaxcol=320
 set cursorline
 set nocursorcolumn
 
-set relativenumber
+if version >= 703
+    set relativenumber
+else
+    set number
+endif
 set numberwidth=2
