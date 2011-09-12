@@ -1,8 +1,17 @@
 # Check for an interactive session
 [ -z "$PS1" ] && return
 
-alias ls='ls --color=auto --group-directories-first'
-if [ `hostname` = "rybalkin-arch" ]; then
+# colored ls for FreeBSD
+if [ `uname` = "FreeBSD" ]; then
+    alias ls='ls -G'
+fi
+# colored ls for Linux
+if [ `uname` = "linux" ]; then
+    alias ls='ls --color=auto --group-directories-first'
+    eval `dircolors -b`
+fi
+
+if [ `hostname` = "x220" ]; then
     alias mplayer='mplayer -vo gl'
 else
     alias mplayer='mplayer -vo xv:port=80'
@@ -13,8 +22,6 @@ alias essay='vim "+set tw=72"'
 if [ $TERM = "rxvt-256color" ]; then
     alias screen='screen -T rxvt-256color'
 fi
-
-eval `dircolors -b`
 
 if [ "$UID" -eq "0" ]; then
     PS1="\[\e[1;31m\]ROOT\[\e[0m\]# "
