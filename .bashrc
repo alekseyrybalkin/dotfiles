@@ -6,7 +6,7 @@ if [ `uname` = "FreeBSD" ]; then
     alias ls='ls -G'
 fi
 # colored ls for Linux
-if [ `uname` = "linux" ]; then
+if [ `uname` = "Linux" ]; then
     alias ls='ls --color=auto --group-directories-first'
     eval `dircolors -b`
 fi
@@ -26,7 +26,7 @@ fi
 if [ "$UID" -eq "0" ]; then
     PS1="\[\e[1;31m\]ROOT\[\e[0m\]# "
 else
-    PS1="\[\e[1;32m\]\h\[\e[0m\] (\w)$ "
+    PS1="\[\e[1;32m\]\h\[\e[0m\] \w $ "
 fi
 
 if [ -z $EDITOR ]; then
