@@ -36,6 +36,9 @@ set incsearch
 au filetype scala set shiftwidth=2
 au filetype scala set softtabstop=2
 
+au filetype perl set shiftwidth=2
+au filetype perl set softtabstop=2
+
 set history=1000
 set undolevels=1000
 set wildignore=*.swp,*.bak,*.pyc,*.class
