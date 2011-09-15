@@ -16,7 +16,11 @@ main = xmonad $ defaultConfig
     } `additionalKeys` myKeys
 
 myKeys =
-    [ ((mod4Mask, xK_l), spawn "xlock"),
+    [
+      ((mod4Mask, xK_l), spawn "xlock"),
+      ((mod4Mask, xK_p), spawn "mpc-toggle"),
+      ((mod4Mask, xK_equal), spawn "amixer -c 0 set Master 2dB+"),
+      ((mod4Mask, xK_minus), spawn "amixer -c 0 set Master 2dB-"),
       ((mod1Mask, xK_p), spawn "dmenu_run"),
       ((controlMask .|. mod1Mask, xK_Delete), spawn "sudo poweroff")
     ]
