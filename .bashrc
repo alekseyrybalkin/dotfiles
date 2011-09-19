@@ -7,7 +7,13 @@ if [ `uname` = "FreeBSD" ]; then
 fi
 # colored ls for Linux
 if [ `uname` = "Linux" ]; then
-    alias ls='ls --color=auto --group-directories-first'
+
+    COREUTILS_VERSION=`ls --version | grep -m 1 "" | sed "s/ls (GNU coreutils) //g"`
+    if [ ${COREUTILS_VERSION:0:1} -ge 6 ]; then
+        alias ls='ls --color=auto --group-directories-first'
+    else
+        alias ls='ls --color=auto'
+    fi
     eval `dircolors -b`
 fi
 
