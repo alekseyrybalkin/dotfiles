@@ -23,6 +23,7 @@ else
     alias mplayer='mplayer -vo xv:port=80'
 fi
 alias packer='packer --auronly'
+alias ack='ack -a'
 alias essay='vim "+set tw=72"'
 
 if [ $TERM = "rxvt-256color" ]; then
