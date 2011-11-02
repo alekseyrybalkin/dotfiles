@@ -34,7 +34,7 @@ if &t_Co == 256
     " -> Line info
     hi LineNr         ctermbg=0    ctermfg=241   cterm=none
     hi StatusLine     ctermbg=2    ctermfg=0     cterm=none
-    hi StatusLineNC   ctermbg=237  ctermfg=241   cterm=none
+    hi StatusLineNC   ctermbg=244  ctermfg=0   cterm=none
 
     " -> Messages
     hi ErrorMsg       ctermbg=124  ctermfg=252   cterm=none
