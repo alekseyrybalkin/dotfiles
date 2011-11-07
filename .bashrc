@@ -7,7 +7,6 @@ if [ `uname` = "FreeBSD" ]; then
 fi
 # colored ls for Linux
 if [ `uname` = "Linux" ]; then
-
     COREUTILS_VERSION=`ls --version | grep -m 1 "" | sed "s/ls (GNU coreutils) //g"`
     if [ ${COREUTILS_VERSION:0:1} -ge 6 ]; then
         alias ls='ls --color=auto --group-directories-first'
@@ -25,6 +24,8 @@ fi
 alias packer='packer --auronly'
 alias ack='ack -a'
 alias essay='vim "+set tw=72"'
+alias mark='echo -e "\E[31;41m\033[1m#################################################################################\033[0m"'
+alias f='mark && ack -a'
 
 if [ $TERM = "rxvt-256color" ]; then
     alias screen='screen -T rxvt-256color'
