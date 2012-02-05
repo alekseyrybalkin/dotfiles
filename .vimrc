@@ -42,7 +42,7 @@ au filetype perl set softtabstop=2
 au filetype sh set shiftwidth=2
 au filetype sh set softtabstop=2
 
-au BufNewFile,BufRead *.tt2 set filetype=tt2html
+au BufNewFile,BufRead *.tt2 set filetype=html
 
 set history=1000
 set undolevels=1000
