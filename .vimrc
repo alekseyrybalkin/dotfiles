@@ -119,3 +119,4 @@ else
     set number
 endif
 set numberwidth=2
+set tildeop
