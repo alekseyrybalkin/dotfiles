@@ -16,6 +16,13 @@ if [ `uname` = "Linux" ]; then
     eval `dircolors -b`
 fi
 
+# c, c++, make flags
+if [ `hostname` = "x220" ]; then
+    export CFLAGS="-march=corei7-avx -O2 -pipe"
+    export CXXFLAGS="${CFLAGS}"
+    export MAKEFLAGS="-j5"
+fi
+
 if [ `hostname` = "x220" ]; then
     alias mplayer='mplayer -vo gl'
 else
