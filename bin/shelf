@@ -1,0 +1,26 @@
+#!/bin/sh
+if [ -z $1 ]; then
+  echo " usage:"
+  echo "   shelf pull"
+  echo "   shelf push"
+  exit 0
+fi
+#TODO: check for invalid params
+
+if [ $1 = "pull" ]; then
+  #TODO: check for local changes first
+  rsync -av --delete aleksey@rybalkin.org:~/.shelf ~
+fi
+if [ $1 = "push" ]; then
+  REMOTE_VERSION=`ssh aleksey@rybalkin.org "cat ~/.shelf/.version"`
+  LOCAL_VERSION=`cat ~/.shelf/.version`
+  if [ $LOCAL_VERSION = $REMOTE_VERSION ]; then
+    let NEW_VERSION=$LOCAL_VERSION+1
+    echo "pushing new version $NEW_VERSION"
+    echo $NEW_VERSION > ~/.shelf/.version
+    rsync -av --delete ~/.shelf aleksey@rybalkin.org:~
+  else
+    echo "your local version is out of sync with remote, may be shelf pull first?"
+    echo "remote: $REMOTE_VERSION, local: $LOCAL_VERSION"
+  fi
+fi
