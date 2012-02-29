@@ -1,5 +1,5 @@
 #!/bin/sh
-if [ -z $1 ]; then
+if [ -z "$1" ]; then
   echo " usage:"
   echo "   shelf pull"
   echo "   shelf push"
@@ -7,14 +7,20 @@ if [ -z $1 ]; then
 fi
 #TODO: check for invalid params
 
-if [ $1 = "pull" ]; then
-  #TODO: check for local changes first
-  rsync -av --delete aleksey@rybalkin.org:~/.shelf ~
+if [ "$1" = "pull" ]; then
+  CHANGES=`rsync --dry-run -i -a --delete ~/.shelf aleksey@rybalkin.org:~`
+  if [ -z "$CHANGES" ]; then
+    rsync -av --delete aleksey@rybalkin.org:~/.shelf ~
+  else
+    echo " you have local changes, pull aborted"
+    echo " list of changes:"
+    rsync --dry-run -i -a --delete ~/.shelf aleksey@rybalkin.org:~
+  fi
 fi
-if [ $1 = "push" ]; then
+if [ "$1" = "push" ]; then
   REMOTE_VERSION=`ssh aleksey@rybalkin.org "cat ~/.shelf/.version"`
   LOCAL_VERSION=`cat ~/.shelf/.version`
-  if [ $LOCAL_VERSION = $REMOTE_VERSION ]; then
+  if [ "$LOCAL_VERSION" = "$REMOTE_VERSION" ]; then
     let NEW_VERSION=$LOCAL_VERSION+1
     echo "pushing new version $NEW_VERSION"
     echo $NEW_VERSION > ~/.shelf/.version
