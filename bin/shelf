@@ -12,9 +12,14 @@ if [ "$1" = "pull" ]; then
   if [ -z "$CHANGES" ]; then
     rsync -av --delete aleksey@rybalkin.org:~/.shelf ~
   else
-    echo " you have local changes, pull aborted"
-    echo " list of changes:"
-    rsync --dry-run -i -a --delete ~/.shelf aleksey@rybalkin.org:~
+    if [ "$2" = "--force" ]; then
+      echo " you have local changes, but specified --force flag, so pulling anyway"
+      rsync -av --delete aleksey@rybalkin.org:~/.shelf ~
+    else
+      echo " you have local changes, pull aborted"
+      echo " list of changes:"
+      rsync --dry-run -i -a --delete ~/.shelf aleksey@rybalkin.org:~
+    fi
   fi
 fi
 if [ "$1" = "push" ]; then
