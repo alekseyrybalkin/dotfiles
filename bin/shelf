@@ -5,7 +5,6 @@ if [ -z "$1" ]; then
   echo "   shelf push"
   exit 0
 fi
-#TODO: check for invalid params
 
 if [ "$1" = "pull" ]; then
   CHANGES=`rsync --dry-run -i -a --delete ~/.shelf aleksey@rybalkin.org:~`
@@ -21,6 +20,7 @@ if [ "$1" = "pull" ]; then
       rsync --dry-run -i -a --delete ~/.shelf aleksey@rybalkin.org:~
     fi
   fi
+  exit 0
 fi
 if [ "$1" = "push" ]; then
   REMOTE_VERSION=`ssh aleksey@rybalkin.org "cat ~/.shelf/.version"`
@@ -34,4 +34,7 @@ if [ "$1" = "push" ]; then
     echo "your local version is out of sync with remote, may be shelf pull first?"
     echo "remote: $REMOTE_VERSION, local: $LOCAL_VERSION"
   fi
+  exit 0
 fi
+
+echo "invalid parameter: $1 (should be pull or push)"
