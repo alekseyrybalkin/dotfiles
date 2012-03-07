@@ -61,4 +61,6 @@ export LESS_TERMCAP_us=$'\E[01;32m'
 
 complete -cf sudo
 
-source ~/perl5/perlbrew/etc/bashrc
+if [ -e ~/perl5/perlbrew/etc/bashrc ]; then
+  source ~/perl5/perlbrew/etc/bashrc
+fi
