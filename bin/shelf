@@ -7,7 +7,7 @@ if [ -z "$1" ]; then
 fi
 
 if [ "$1" = "pull" ]; then
-  CHANGES=`rsync --dry-run -i -a --delete ~/.shelf aleksey@rybalkin.org:~`
+  CHANGES=`rsync --dry-run -i -a --delete aleksey@rybalkin.org:~/.shelf ~`
   if [ -z "$CHANGES" ]; then
     rsync -av --delete aleksey@rybalkin.org:~/.shelf ~
   else
@@ -17,7 +17,7 @@ if [ "$1" = "pull" ]; then
     else
       echo " you have local changes, pull aborted"
       echo " list of changes:"
-      rsync --dry-run -i -a --delete ~/.shelf aleksey@rybalkin.org:~
+      rsync --dry-run -i -a --delete aleksey@rybalkin.org:~/.shelf ~
     fi
   fi
   exit 0
