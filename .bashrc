@@ -30,7 +30,6 @@ else
 fi
 alias packer='packer --auronly'
 alias ack='ack -a'
-alias essay='vim "+set tw=72"'
 alias mark='echo -e "\E[31;41m\033[1m#################################################################################\033[0m"'
 alias f='mark && ack -a'
 
