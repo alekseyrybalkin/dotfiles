@@ -44,7 +44,7 @@ else
 fi
 
 if [ -z $EDITOR ]; then
-  export PATH=/home/`whoami`/bin:$PATH
+  export PATH=/home/$USER/bin:$PATH
   export EDITOR=/usr/bin/vim
   export VIEWER=/usr/bin/vim
   export LFS=/mnt/lfs
