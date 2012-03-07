@@ -18,7 +18,6 @@
 !/qpass
 !/run_http_server
 !/shelf
-!/touchpad-autotoggle
 !/tpoff
 !/tpon
 !/umount-james
