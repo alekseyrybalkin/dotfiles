@@ -2,7 +2,8 @@
 !/.gitignore
 !/xlock
 !/chromium
-!/chromium-tor
+!/chromium-notor
+!/chromium-linode
 !/pass
 !/xpass
 !/qpass
@@ -27,3 +28,4 @@
 !/tpon
 !/tpoff
 !/shelf
+!/linode-proxy
