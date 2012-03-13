@@ -54,11 +54,10 @@ if &t_Co == 256
     hi DiffText       ctermbg=24   ctermfg=208   cterm=underline
 
     " -> Menu
-    hi Pmenu          ctermbg=0    ctermfg=52    cterm=none
-    hi PmenuSel       ctermbg=208  ctermfg=52    cterm=none
+    hi Pmenu          ctermbg=0    ctermfg=68    cterm=none
+    hi PmenuSel       ctermbg=240  ctermfg=68    cterm=none
     hi PmenuSbar      ctermbg=52                 cterm=none
     hi PmenuThumb     ctermbg=52                 cterm=none
-    hi PmenuSel       ctermbg=208  ctermfg=52    cterm=none
 
     " -> Tabs
     hi TabLine        ctermbg=233  ctermfg=252   cterm=none
