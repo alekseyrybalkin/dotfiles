@@ -90,5 +90,6 @@ set numberwidth=2
 " easy split window creation
 map <C-p> :rightb vnew<cr>
 map <C-m> :rightb new<cr>
+" easy fuzzyfinder invocation fr files
 map <C-e> :FufFile<cr>
 ca e FufFile
