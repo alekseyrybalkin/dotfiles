@@ -91,7 +91,7 @@ set numberwidth=2
 map <C-p> :rightb vnew<cr>
 map <C-m> :rightb new<cr>
 if version >= 702
-    " easy fuzzyfinder invocation fr files
+    " easy fuzzyfinder invocation for files
     map <C-e> :FufFile<cr>
     ca e FufFile
 endif
