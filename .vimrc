@@ -87,3 +87,6 @@ else
     set number
 endif
 set numberwidth=2
+" easy split window creation
+map <C-p> :rightb vnew<cr>
+map <C-m> :rightb new<cr>
