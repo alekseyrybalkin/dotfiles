@@ -1,7 +1,9 @@
 [user]
-	name = Aleksey Rybalkin
-	email = aleksey@rybalkin.org
+    name = Aleksey Rybalkin
+    email = aleksey@rybalkin.org
 [color]
-	ui = true
+    ui = true
 [merge]
-	tool = vimdiff
+    tool = vimdiff
+[push]
+    default = upstream
