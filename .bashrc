@@ -63,3 +63,6 @@ complete -cf sudo
 if [ -e ~/perl5/perlbrew/etc/bashrc ]; then
   source ~/perl5/perlbrew/etc/bashrc
 fi
+
+# disable xon/xoff flow control (^s/^q) in rxvt
+stty -ixon
