@@ -64,5 +64,10 @@ if [ -e ~/perl5/perlbrew/etc/bashrc ]; then
   source ~/perl5/perlbrew/etc/bashrc
 fi
 
+# load local untracked options
+if [ -e ~/.bashrc.local ]; then
+  source ~/.bashrc.local
+fi
+
 # disable xon/xoff flow control (^s/^q) in rxvt
 stty -ixon
