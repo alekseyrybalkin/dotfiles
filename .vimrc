@@ -1,8 +1,14 @@
 " use vim features
 set nocompatible
+" disable fuzzyfinder for compatibility
+let pathogen_disabled = []
+if version < 702
+    call add(pathogen_disabled, 'fuzzyfinder')
+    call add(pathogen_disabled, 'l9')
+endif
 " auto-load plugin bundles
 call pathogen#helptags()
-call pathogen#runtime_append_all_bundles()
+call pathogen#infect()
 " use utf-8 by default, but understand cp1251 if encountered
 set encoding=utf-8
 set fileencodings=utf-8,cp1251
