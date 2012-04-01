@@ -61,9 +61,12 @@ set wildignore=*.pyc,*.class
 set nobackup
 " make no swap files, please
 set noswapfile
-" show me trailing spaces and all tabs to kill
-set listchars=tab:»·,trail:·
-set list
+" show me trailing spaces and all tabs to kill,
+" but only in resent vim versions (for speed? <- unverified)
+if version >= 703
+    set listchars=tab:»·,trail:·
+    set list
+endif
 " use F2 to toggle paste-mode
 set pastetoggle=<F2>
 " easy window navigation
