@@ -4,4 +4,8 @@ editor = vim
 username = Aleksey Rybalkin <aleksey@rybalkin.org>
 
 [extensions]
-color=
+color =
+pager =
+
+[pager]
+pager = LESS='FSRX' less
