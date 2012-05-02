@@ -1,4 +1,0 @@
-#!/bin/bash
-i=books
-rsync -av /mnt/james/$i ~
-rsync -av ~/$i /mnt/james
