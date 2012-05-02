@@ -10,7 +10,6 @@
 !/linode-proxy
 !/mount-flash
 !/mpc-toggle
-!/pass
 !/qpass
 !/run_http_server
 !/shelf
@@ -20,5 +19,4 @@
 !/update-system
 !/wiki-news
 !/xlock
-!/xpass
 !/xterm
