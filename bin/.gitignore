@@ -11,12 +11,10 @@
 !/mount-flash
 !/mpc-toggle
 !/qpass
-!/run_http_server
 !/shelf
 !/tpoff
 !/tpon
 !/umount-james
-!/update-system
 !/wiki-news
 !/xlock
 !/xterm
