@@ -2,6 +2,7 @@
 !/.gitignore
 !/boost_firefox
 !/chmodrw2
+!/chrome
 !/chromium
 !/chromium-linode
 !/chromium-notor
