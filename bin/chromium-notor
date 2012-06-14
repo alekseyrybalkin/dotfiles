@@ -1,3 +1,3 @@
 #!/bin/sh
 export CHROME_WRAPPER=/usr/lib/chromium/chromium
-exec /usr/lib/chromium/chromium --incognito "$@"
+exec /usr/lib/chromium/chromium --user-data-dir="$HOME/.chrome/incognito" --incognito "$@"
