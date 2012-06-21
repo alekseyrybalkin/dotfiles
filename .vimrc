@@ -106,3 +106,5 @@ if version >= 702
     map <C-e> :FufFile<cr>
     ca e FufFile
 endif
+" do not save viminfo, please
+set viminfo=
