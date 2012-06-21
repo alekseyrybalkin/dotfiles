@@ -15,7 +15,7 @@ URxvt.boldFont:         xft:DejaVu Sans Mono:bold:pixelsize=11:antialias=true
 URxvt.perl-ext-common:  default,tabbed
 URxvt.title:            urxvt ftw!
 URxvt.perl-ext-common:  default,matcher
-URxvt.urlLauncher:      firefox
+URxvt.urlLauncher:      chrome
 URxvt.matcher.button:   1
 URxvt.scrollBar: False
 URxvt.geometry: 200x80
