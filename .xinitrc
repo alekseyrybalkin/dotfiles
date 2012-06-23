@@ -6,7 +6,7 @@ xset r rate 200 30
 # turn off my touchpad if real mouse is present
 cat /proc/bus/input/devices | grep -q Synaptics
 if [ $? -eq 0 ]; then
-    [ -d /dev/input/by-id ] && ls /dev/input/by-id | grep -q Mouse
+    [ -d /dev/input/by-id ] && ls /dev/input/by-id | grep -q [Mm]ouse
     if [ $? -gt 0 ]; then
         synclient TouchpadOff=0
     else
