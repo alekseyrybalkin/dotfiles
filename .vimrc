@@ -51,6 +51,8 @@ au filetype sh set shiftwidth=2
 au filetype sh set softtabstop=2
 au filetype javascript set shiftwidth=2
 au filetype javascript set softtabstop=2
+au filetype html set shiftwidth=2
+au filetype html set softtabstop=2
 " treat tt2 templates like html
 au BufNewFile,BufRead *.tt2 set filetype=html
 " remember some history
