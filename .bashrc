@@ -38,7 +38,7 @@ if [ $TERM = "rxvt-256color" ]; then
 fi
 
 if [ "$UID" -eq "0" ]; then
-  PS1="\[\e[1;31m\]ROOT\[\e[0m\]# "
+  PS1="\[\e[1;31m\]ROOT\[\e[0m\] \w # "
 else
   PS1="\[\e[1;32m\]\h\[\e[0m\] \w $ "
 fi
