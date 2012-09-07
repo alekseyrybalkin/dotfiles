@@ -22,6 +22,11 @@ if [ `hostname` = "x220" ]; then
   export CXXFLAGS="${CFLAGS}"
   export MAKEFLAGS="-j5"
 fi
+if [ `hostname` = "alien" ]; then
+  export CFLAGS="-march=core2 -O2 -pipe"
+  export CXXFLAGS="${CFLAGS}"
+  export MAKEFLAGS="-j3"
+fi
 
 if [ `hostname` = "x220" ]; then
   alias mplayer='mplayer -vo gl'
