@@ -36,6 +36,8 @@ alias f='mark && ack -a'
 if [ $TERM = "rxvt-256color" ]; then
   alias screen='screen -T rxvt-256color'
 fi
+# for tmux: export 256color
+[ -n "$TMUX" ] && export TERM=screen-256color
 
 if [ "$UID" -eq "0" ]; then
   PS1="\[\e[1;31m\]ROOT\[\e[0m\] \w # "
