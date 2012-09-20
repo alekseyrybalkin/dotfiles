@@ -50,13 +50,10 @@ else
   PS1="\[\e[1;32m\]\h\[\e[0m\] \w $ "
 fi
 
-if [ -z $EDITOR ]; then
-  export PATH=/home/$USER/bin:$PATH
-  export EDITOR=/usr/bin/vim
-  export VIEWER=/usr/bin/vim
-  export LFS=/mnt/lfs
-  export LESS="-i -g -M -R -x4 -X -f -F -z-1"
-fi
+export EDITOR=/usr/bin/vim
+export VIEWER=/usr/bin/vim
+export LFS=/mnt/lfs
+export LESS="-i -g -M -R -x4 -X -f -F -z-1"
 
 export LESS_TERMCAP_mb=$'\E[01;31m'
 export LESS_TERMCAP_md=$'\E[01;31m'
@@ -71,6 +68,9 @@ complete -cf sudo
 if [ -e ~/perl5/perlbrew/etc/bashrc ]; then
   source ~/perl5/perlbrew/etc/bashrc
 fi
+echo $PATH | grep -q "$USER/bin" || {
+  export PATH=/home/$USER/bin:"$PATH"
+}
 
 # load local untracked options
 if [ -e ~/.bashrc.local ]; then
