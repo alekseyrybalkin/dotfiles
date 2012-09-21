@@ -6,6 +6,7 @@
 !/chromium
 !/chromium-linode
 !/chromium-notor
+!/colortest
 !/genlongpass
 !/genpass
 !/linode-proxy
@@ -13,11 +14,10 @@
 !/mpc-toggle
 !/qpass
 !/shelf
+!/termcolors
 !/tpoff
 !/tpon
 !/umount-james
 !/wiki-news
 !/xlock
 !/xterm
-!/colortest
-!/termcolors
