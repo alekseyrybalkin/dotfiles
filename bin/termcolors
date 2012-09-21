@@ -1,0 +1,3 @@
+#!/bin/sh
+
+colortest -w | grep -v "\*"
