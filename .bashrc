@@ -43,7 +43,7 @@ if [ $TERM = "rxvt-256color" ]; then
 fi
 # for tmux: export 256color
 [ -n "$TMUX" ] && [ -n "$COLORTERM" ] && [ "$COLORTERM" = "rxvt-xpm" ] && export TERM=screen-256color && alias mc='TERM=xterm-256color mc'
-[ -n "$TMUX" ] && [ -z "$COLORTERM" ] && alias mc='TERM=rxvt mc'
+[ -n "$TMUX" ] && [ -z "$COLORTERM" ] && alias mc='TERM=screen.rxvt mc'
 
 if [ "$UID" -eq "0" ]; then
   PS1="\[\e[1;31m\]ROOT\[\e[0m\] \w # "
