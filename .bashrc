@@ -81,4 +81,6 @@ fi
 # disable xon/xoff flow control (^s/^q) in rxvt
 stty -ixon
 
-VIRTUAL_ENV_DISABLE_PROMPT=1 . ~/.py/bin/activate
+if [ -e ~/.py/bin/activate ]; then
+  VIRTUAL_ENV_DISABLE_PROMPT=1 . ~/.py/bin/activate
+fi
