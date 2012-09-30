@@ -55,6 +55,7 @@ export EDITOR=/usr/bin/vim
 export VIEWER=/usr/bin/vim
 export LFS=/mnt/lfs
 export LESS="-i -g -M -R -x4 -X -f -F -z-1"
+export TERMINFO=/usr/share/terminfo
 
 complete -cf sudo
 
@@ -72,7 +73,3 @@ fi
 
 # disable xon/xoff flow control (^s/^q) in rxvt
 stty -ixon
-
-if [ -e ~/.py/bin/activate ]; then
-  VIRTUAL_ENV_DISABLE_PROMPT=1 . ~/.py/bin/activate
-fi
