@@ -1,0 +1,5 @@
+startup_message off
+
+exec /usr/bin/rpws init 9 -k
+
+set border 0
