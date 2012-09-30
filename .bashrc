@@ -42,7 +42,12 @@ if [ $TERM = "rxvt-256color" ]; then
   alias screen='screen -T rxvt-256color'
 fi
 # for tmux: export 256color
-[ -n "$TMUX" ] && [ -n "$COLORTERM" ] && [ "$COLORTERM" = "rxvt-xpm" ] && export TERM=screen-256color && alias mc='TERM=xterm-256color mc'
+if [ `hostname` == "x220" ]; then
+  [ -n "$TMUX" ] && [ -n "$COLORTERM" ] && [[ $COLORTERM == *rxvt* ]] && export TERM=screen-256color && alias mc='TERM=xterm-256color mc'
+fi
+if [ `hostname` == "alien" ]; then
+  [ -n "$TMUX" ] && [ -n "$COLORTERM" ] && [[ $COLORTERM == *rxvt* ]] && export TERM=screen-256color
+fi
 [ -n "$TMUX" ] && [ -z "$COLORTERM" ] && alias mc='TERM=screen.rxvt mc'
 
 if [ "$UID" -eq "0" ]; then
