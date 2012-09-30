@@ -1,13 +1,5 @@
 #!/bin/sh
 
-# source scripts in /etc/X11/xinit/xinitrc.d/
-if [ -d /etc/X11/xinit/xinitrc.d ]; then
-  for f in /etc/X11/xinit/xinitrc.d/*; do
-    [ -x "$f" ] && . "$f"
-  done
-  unset f
-fi
-
 # make my keyboard fast
 xset r rate 200 30
 
@@ -22,8 +14,10 @@ if [ $? -eq 0 ]; then
   fi
 fi
 
-# set mouse pointer style for xmonad
+# set mouse pointer style for xmonad & ratpoison
 xsetroot -cursor_name left_ptr
+# set background for ratpoison
+xsetroot -solid black
 
 # make win+left=home, win+right=end for ThinkPad X220
 if [ `hostname` = "x220" ]; then
@@ -31,5 +25,10 @@ if [ `hostname` = "x220" ]; then
   xmodmap -e "keycode 171 = End NoSymbol End"
 fi
 
-# now run xmonad
-exec xmonad
+# now run xmonad or ratpoison
+if [ `hostname` = "x220" ]; then
+  exec xmonad
+fi
+if [ `hostname` = "alien" ]; then
+  exec /usr/bin/ratpoison
+fi
