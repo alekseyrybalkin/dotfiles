@@ -4,9 +4,10 @@ current=`mpc | grep playing | sed 's/^.*#//g' \
   | cut -d " " --fields=1 | sed 's/\/.*$//g'`
 progress=`mpc | grep playing | sed 's/^.*#//g' \
   | tr -s " " | cut -d " " --fields=2`
+cnt=0
 mpc playlist | grep -n "" | while read i; do
-  echo $i | grep -q "^$current:"
-  if [ $? -eq 0 ]; then
+  cnt=$(($cnt + 1))
+  if [ "$current" = "$cnt" ]; then
     echo -e "\E[34;40m\033[1m$i\033[0m ($progress)"
   else
     echo $i
