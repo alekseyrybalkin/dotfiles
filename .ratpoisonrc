@@ -1,4 +1,4 @@
 startup_message off
-exec /usr/bin/rpws init 9 -k
+exec /usr/bin/rpws init 2 -k
 set border 0
 bind l exec xlock
