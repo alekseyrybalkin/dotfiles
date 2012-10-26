@@ -37,6 +37,7 @@ alias packer='packer --auronly'
 alias ack='ack -a'
 alias mark='echo -e "\E[31;41m\033[1m#################################################################################\033[0m"'
 alias f='mark && ack -a'
+alias wine='LIBGL_DRIVERS_PATH=/usr/lib32/xorg/modules/dri WINEARCH=win32 wine'
 
 if [ $TERM = "rxvt-256color" ]; then
   alias screen='screen -T rxvt-256color'
