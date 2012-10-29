@@ -25,10 +25,5 @@ if [ `hostname` = "x220" ]; then
   xmodmap -e "keycode 171 = End NoSymbol End"
 fi
 
-# now run xmonad or ratpoison
-if [ `hostname` = "x220" ]; then
-  exec xmonad
-fi
-if [ `hostname` = "alien" ]; then
-  exec /usr/bin/ratpoison
-fi
+# now run ratpoison
+exec /usr/bin/ratpoison
