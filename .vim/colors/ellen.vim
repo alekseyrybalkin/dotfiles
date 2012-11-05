@@ -13,9 +13,11 @@ set background=dark
 
 if &t_Co == 256
     " -> Text; Miscellaneous
+    " non-highlighted code, like function invocation
     hi Normal         ctermbg=0  ctermfg=252   cterm=none
+    " e.g. tabs
     hi SpecialKey     ctermbg=0  ctermfg=240   cterm=none
-    hi VertSplit      ctermbg=0  ctermfg=227   cterm=none
+    hi VertSplit      ctermbg=0  ctermfg=160   cterm=none
     hi SignColumn     ctermbg=0  ctermfg=141   cterm=none
     hi NonText        ctermbg=0  ctermfg=240   cterm=none
     hi Directory      ctermbg=0  ctermfg=227   cterm=none
@@ -76,7 +78,7 @@ if &t_Co == 256
     hi Identifier     ctermbg=0   ctermfg=106   cterm=none
     hi Function       ctermbg=0   ctermfg=119   cterm=none
     hi Ignore         ctermbg=0   ctermfg=7   cterm=none
-    hi MatchParen     ctermbg=214 ctermfg=7   cterm=none
+    hi MatchParen     ctermbg=94 ctermfg=7   cterm=none
     hi PreProc        ctermbg=0   ctermfg=196   cterm=none
     hi Special        ctermbg=0   ctermfg=93   cterm=none
     hi Todo           ctermbg=0   ctermfg=160   cterm=none
