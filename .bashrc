@@ -31,7 +31,7 @@ fi
 if [ `hostname` = "x220" ]; then
   alias mplayer='mplayer -vo gl'
 else
-  alias mplayer='mplayer -vo xv:port=80'
+  alias mplayer='mplayer -ao alsa -vo xv:port=80'
 fi
 alias packer='packer --auronly'
 alias ack='ack -a'
