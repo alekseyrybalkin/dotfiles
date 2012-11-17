@@ -27,6 +27,11 @@ if [ `hostname` = "alien" ]; then
   export CXXFLAGS="${CFLAGS}"
   export MAKEFLAGS="-j3"
 fi
+if [ `hostname` = "ritchie" ]; then
+  export CFLAGS="-march=corei7-avx -O2 -pipe"
+  export CXXFLAGS="${CFLAGS}"
+  export MAKEFLAGS="-j5"
+fi
 
 if [ `hostname` = "x220" ]; then
   alias mplayer='mplayer -vo gl'
@@ -44,6 +49,9 @@ if [ $TERM = "rxvt-256color" ]; then
 fi
 # for tmux: export 256color
 if [ `hostname` == "x220" ]; then
+  [ -n "$TMUX" ] && [ -n "$COLORTERM" ] && [[ $COLORTERM == *rxvt* ]] && export TERM=screen-256color && alias mc='TERM=xterm-256color mc'
+fi
+if [ `hostname` == "ritchie" ]; then
   [ -n "$TMUX" ] && [ -n "$COLORTERM" ] && [[ $COLORTERM == *rxvt* ]] && export TERM=screen-256color && alias mc='TERM=xterm-256color mc'
 fi
 if [ `hostname` == "alien" ]; then
