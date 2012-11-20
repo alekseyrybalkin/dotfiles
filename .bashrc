@@ -17,21 +17,14 @@ if [ `uname` = "Linux" ]; then
 fi
 
 # c, c++, make flags
-if [ `hostname` = "x220" ]; then
-  export CFLAGS="-march=corei7-avx -O2 -pipe"
-  export CXXFLAGS="${CFLAGS}"
-  export MAKEFLAGS="-j5"
-fi
-if [ `hostname` = "alien" ]; then
-  export CFLAGS="-march=core2 -O2 -pipe"
-  export CXXFLAGS="${CFLAGS}"
-  export MAKEFLAGS="-j3"
-fi
-if [ `hostname` = "ritchie" ]; then
-  export CFLAGS="-march=corei7-avx -O2 -pipe"
-  export CXXFLAGS="${CFLAGS}"
-  export MAKEFLAGS="-j5"
-fi
+MARCH=native
+[ -n "`cat /proc/cpuinfo | grep 'model name' | head -n 1 | grep U7300`" ] && MARCH=core2
+[ -n "`cat /proc/cpuinfo | grep 'avx'`" ] && MARCH=corei7-avx
+export CFLAGS="-march=$MARCH -O2 -pipe"
+export CXXFLAGS="${CFLAGS}"
+THREADS=`cat /proc/cpuinfo | grep "model name" | wc -l`
+let THREADS=$THREADS+1
+export MAKEFLAGS="-j${THREADS}"
 
 if [ `hostname` = "x220" ]; then
   alias mplayer='mplayer -vo gl'
