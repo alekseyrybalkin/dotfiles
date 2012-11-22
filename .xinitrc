@@ -24,6 +24,9 @@ if [ `hostname` = "x220" ]; then
   xmodmap -e "keycode 173 = Home NoSymbol Home"
   xmodmap -e "keycode 171 = End NoSymbol End"
 fi
+if [ `hostname` = "alien" ]; then
+  setpci -s 00:02.0 f4.b=a0
+fi
 
 # now run ratpoison
 exec /usr/bin/ratpoison
