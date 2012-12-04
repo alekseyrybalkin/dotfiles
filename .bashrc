@@ -23,13 +23,7 @@ THREADS=`cat /proc/cpuinfo | grep "model name" | wc -l`
 let THREADS=$THREADS+1
 export MAKEFLAGS="-j${THREADS}"
 
-if [ `hostname` = "x220" ]; then
-  alias mplayer='mplayer -vo gl'
-else
-  alias mplayer='mplayer -ao alsa -vo xv:port=80'
-fi
-alias packer='packer --auronly'
-alias ack='ack -a'
+alias mplayer='mplayer -ao alsa -vo gl'
 alias mark='echo -e "\E[31;41m\033[1m#################################################################################\033[0m"'
 alias f='mark && ack -a'
 alias wine='LIBGL_DRIVERS_PATH=/usr/lib32/xorg/modules/dri WINEARCH=win32 wine'
