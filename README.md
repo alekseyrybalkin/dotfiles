@@ -1,6 +1,6 @@
-# linux-home
+# unix-home
 
-Collection of dotfiles and settings for my linux & bsd machines.
+Collection of dotfiles and settings for my machines running GNU/Linux, \*BSD and other unix-like operating systems.
 
 ## License
 
