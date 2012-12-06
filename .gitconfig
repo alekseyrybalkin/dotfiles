@@ -8,3 +8,5 @@
     defaultToUpstream = true
 [push]
     default = upstream
+[alias]
+    sorted-tags = for-each-ref --sort='*authordate' --format='%(tag)' refs/tags
