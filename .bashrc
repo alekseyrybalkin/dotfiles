@@ -43,7 +43,6 @@ fi
 
 export EDITOR=/usr/bin/vim
 export VIEWER=/usr/bin/vim
-export LFS=/mnt/lfs
 export LESS="-i -g -M -R -x4 -X -f -F -z-1"
 export LESSHISTFILE="-"
 export TERMINFO=/usr/share/terminfo
