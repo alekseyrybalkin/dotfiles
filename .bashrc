@@ -16,6 +16,8 @@ if [ `uname` = "Linux" ]; then
   eval `dircolors -b`
 fi
 
+export GPGKEY=5CA1EB8A
+
 # c, c++, make flags
 export CFLAGS="-march=native -mno-avx -O2 -pipe"
 export CXXFLAGS="${CFLAGS}"
