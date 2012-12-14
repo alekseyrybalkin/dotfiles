@@ -1,7 +1,8 @@
 #!/usr/bin/env python
-import os
+import random
 c = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-_"
 s = ""
+rnd = random.SystemRandom()
 for i in range(0,50):
-    s += c[os.urandom(1)[0] % len(c)]
+    s += rnd.choice(c)
 print(s)
