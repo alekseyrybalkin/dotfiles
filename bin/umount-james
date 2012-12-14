@@ -1,3 +1,0 @@
-#!/bin/bash
-umount /mnt/james
-sudo cryptsetup luksClose james

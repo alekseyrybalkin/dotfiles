@@ -1,7 +1,0 @@
-#!/bin/bash
-mpc | grep "\[playing\]"
-if [ $? -eq 0 ]; then
-    mpc pause
-else
-    mpc play
-fi

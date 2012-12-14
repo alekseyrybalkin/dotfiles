@@ -1,2 +1,0 @@
-#!/bin/sh
-curl -s "https://en.wikipedia.org/wiki/Main_Page" |  grep -A 20 "In the news" | grep "\-moz-float-edge" | sed "s/<[^>]*>//g"

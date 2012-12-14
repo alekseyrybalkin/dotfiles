@@ -1,5 +1,0 @@
-#!/bin/bash
-find ~/.mozilla/firefox/ -name *.sqlite -exec sqlite3 {} VACUUM \;
-
-#cd ~/.mozilla/firefox/*.default/ 
-#for i in *.sqlite; do echo "VACUUM;" | sqlite3 $i ; done

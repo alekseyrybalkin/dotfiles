@@ -1,7 +1,0 @@
-#!/bin/sh
-
-VALUE=ff
-if [ -n "$1" ]; then
-  VALUE=$1
-fi
-sudo setpci -s 00:02.0 f4.b=$VALUE

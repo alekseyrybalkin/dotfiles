@@ -1,7 +1,5 @@
 /*
 !/.gitignore
-!/boost_firefox
-!/chmodrw2
 !/chrome
 !/chromium
 !/chromium-linode
@@ -9,16 +7,11 @@
 !/colortest
 !/genlongpass
 !/genpass
-!/intel-brightness
 !/linode-proxy
-!/mount-james
-!/mpc-toggle
 !/mpcp
 !/qpass
 !/termcolors
 !/tpoff
 !/tpon
-!/umount-james
-!/wiki-news
 !/xlock
 !/xterm
