@@ -69,9 +69,11 @@ stty -ixon
 
 # local (for the time being) things for ritchie
 if [ `hostname` == "ritchie" ]; then
-  export PATH="/home/$USER/bin:/sbin:/bin:/usr/sbin:/usr/bin"
-  alias mpd-start="mpd /etc/mpd.conf"
-  alias mpd-stop="mpd --kill /etc/mpd.conf"
-  alias sshd-start="sudo /usr/sbin/sshd"
-  alias sshd-stop="cat /run/sshd.pid | xargs sudo kill"
+  if [ "$USER" == "rybalkin" ]; then
+    export PATH="/home/$USER/bin:/sbin:/bin:/usr/sbin:/usr/bin"
+    alias mpd-start="mpd /etc/mpd.conf"
+    alias mpd-stop="mpd --kill /etc/mpd.conf"
+    alias sshd-start="sudo /usr/sbin/sshd"
+    alias sshd-stop="cat /run/sshd.pid | xargs sudo kill"
+  fi
 fi
