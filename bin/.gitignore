@@ -1,9 +1,5 @@
 /*
 !/.gitignore
-!/chrome
-!/chromium
-!/chromium-linode
-!/chromium-notor
 !/colortest
 !/genlongpass
 !/genpass
