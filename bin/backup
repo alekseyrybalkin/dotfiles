@@ -1,0 +1,18 @@
+#!/bin/sh
+
+NOW=`date +%s`
+tmpdir=/tmp/backup-`uuidgen`
+name="`hostname`-backup-${NOW}"
+ext=".tar.gz"
+mkdir -p ${tmpdir}
+cd ${tmpdir}
+mkdir ${name}
+cp -av ~/.ssh ./${name}
+cp -av ~/.gnupg ./${name}
+cp -av ~/.wine/drive_c/games/baldursgate/Save ./${name}
+tar -cpavf ${name}${ext} ./${name}
+gpg -c --passphrase-fd 3 3<~/.config/encryptpass ${name}${ext}
+scp ${name}${ext}.gpg aleksey@rybalkin.org:~/backup
+cd ~
+rm -rf ${tmpdir}
+echo $NOW > ~/.config/last_backup_timestamp

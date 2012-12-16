@@ -1,5 +1,7 @@
 /*
 !/.gitignore
+!/backup
+!/backup-checker
 !/colortest
 !/genlongpass
 !/genpass
