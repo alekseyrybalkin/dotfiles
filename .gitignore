@@ -1,10 +1,11 @@
 /*
+!/.gitignore
 !/.vim/
 !/.config/
+!/.subversion/
 !/bin/
 !/.vimrc
 !/.vim.tabs
-!/.gitignore
 !/.Xdefaults
 !/.bash_profile
 !/.bashrc
