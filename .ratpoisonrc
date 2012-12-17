@@ -4,4 +4,4 @@ exec /usr/bin/rpws init 9 -k
 set border 0
 bind l exec xlock
 msgwait 1
-set bargravity c
+set bargravity sw
