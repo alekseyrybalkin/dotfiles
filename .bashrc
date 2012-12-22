@@ -52,9 +52,6 @@ export TERMINFO=/usr/share/terminfo
 
 complete -cf sudo
 
-if [ -e ~/perl5/perlbrew/etc/bashrc ]; then
-  source ~/perl5/perlbrew/etc/bashrc
-fi
 echo $PATH | grep -q "$USER/bin" || {
   export PATH=/home/$USER/bin:"$PATH"
 }
