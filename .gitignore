@@ -10,14 +10,9 @@
 !/.bash_profile
 !/.bashrc
 !/.inputrc
-!/.fonts.conf
 !/.gitconfig
 !/.hgrc
-!/.screenrc
 !/.xinitrc
-!/.signature
-!/.xxkbrc
 !/.tmux.conf
 !/.ratpoisonrc
 !/.asoundrc
-!/README.md
