@@ -12,4 +12,4 @@ mpc playlist | grep -n "" | while read i; do
   else
     echo $i
   fi
-done
+done | less
