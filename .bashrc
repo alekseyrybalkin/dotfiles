@@ -1,8 +1,6 @@
 # Check for an interactive session
 [ -z "$PS1" ] && return
 
-umask 077
-
 # colored ls for FreeBSD
 if [ `uname` = "FreeBSD" ]; then
   alias ls='ls -G'
@@ -74,5 +72,6 @@ if [ `hostname` == "ritchie" ]; then
     alias mpd-stop="mpd --kill /etc/mpd.conf"
     alias sshd-start="sudo /usr/sbin/sshd"
     alias sshd-stop="cat /run/sshd.pid | xargs sudo kill"
+    umask 077
   fi
 fi
