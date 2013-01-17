@@ -1,6 +1,8 @@
 # Check for an interactive session
 [ -z "$PS1" ] && return
 
+umask 077
+
 # colored ls for FreeBSD
 if [ `uname` = "FreeBSD" ]; then
   alias ls='ls -G'
