@@ -9,6 +9,9 @@ cat /proc/bus/input/devices | grep -q Synaptics && {
     synclient TouchpadOff=1
   }
 }
+# allow other users use our X server
+# this is primaraly for gamer to launch wine
+chmod 644 ~/.Xauthority
 
 # set mouse pointer style for xmonad & ratpoison
 xsetroot -cursor_name left_ptr
