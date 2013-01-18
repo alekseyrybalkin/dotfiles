@@ -9,7 +9,6 @@ cd ${tmpdir}
 mkdir ${name}
 cp -av ~/.ssh ./${name}
 cp -av ~/.gnupg ./${name}
-cp -av ~/.wine/drive_c/games/baldursgate/Save ./${name}
 cp -av ~/.procmailrc ./${name}
 cp -av ~/.fetchmailrc ./${name}
 cp -av ~/.mutt ./${name}
