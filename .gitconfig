@@ -1,6 +1,7 @@
 [user]
     name = Aleksey Rybalkin
     email = aleksey@rybalkin.org
+    signingkey = 5CA1EB8A
 [color]
     ui = true
 [merge]
