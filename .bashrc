@@ -25,7 +25,7 @@ THREADS=`cat /proc/cpuinfo | grep "model name" | wc -l`
 let THREADS=$THREADS+1
 export MAKEFLAGS="-j${THREADS}"
 
-alias mplayer='mplayer -ao sdl -vo gl'
+alias mplayer='mplayer -ao alsa -vo gl'
 alias mark='echo -e "\E[31;41m\033[1m#################################################################################\033[0m"'
 alias f='mark && ack -a'
 alias wine='LIBGL_DRIVERS_PATH=/usr/lib32/xorg/modules/dri WINEARCH=win32 wine'
