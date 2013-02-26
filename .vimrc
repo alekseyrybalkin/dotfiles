@@ -53,6 +53,8 @@ au filetype javascript set shiftwidth=2
 au filetype javascript set softtabstop=2
 au filetype html set shiftwidth=2
 au filetype html set softtabstop=2
+au filetype mako set shiftwidth=2
+au filetype mako set softtabstop=2
 au filetype python set shiftwidth=4
 au filetype python set softtabstop=4
 " treat tt2 templates like html
