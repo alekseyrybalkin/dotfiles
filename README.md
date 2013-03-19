@@ -4,4 +4,4 @@ Collection of dotfiles and settings for my machines running GNU/Linux, \*BSD and
 
 ## License
 
-[WTFPL, Version 2](http://sam.zoy.org/wtfpl)
+[WTFPL, Version 2](http://www.wtfpl.net/txt/copying/)
