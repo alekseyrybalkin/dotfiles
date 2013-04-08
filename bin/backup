@@ -13,6 +13,7 @@ cp -av /home/gamer/.wine.baldursgate/drive_c/games/baldursgate/Save ./${name}
 cp -av ~/.procmailrc ./${name}
 cp -av ~/.fetchmailrc ./${name}
 cp -av ~/.mutt ./${name}
+cp -av ~/.bitcoin/wallet.dat ./${name}
 tar -cpavf ${name}${ext} ./${name}
 gpg -c --passphrase-fd 3 3<~/.config/encryptpass ${name}${ext}
 scp ${name}${ext}.gpg aleksey@rybalkin.org:~/backup
