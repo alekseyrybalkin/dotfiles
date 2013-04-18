@@ -3,6 +3,7 @@
 !/.vim/
 !/.config/
 !/.subversion/
+!/.fluxbox/
 !/bin/
 !/.vimrc
 !/.vim.tabs
@@ -14,6 +15,5 @@
 !/.hgrc
 !/.xinitrc
 !/.tmux.conf
-!/.ratpoisonrc
 !/.asoundrc
 !/.gdbinit

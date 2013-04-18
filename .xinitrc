@@ -13,9 +13,5 @@ cat /proc/bus/input/devices | grep -q Synaptics && {
 # this is primaraly for gamer to launch wine
 chmod 644 ~/.Xauthority
 
-# set mouse pointer style for xmonad & ratpoison
-xsetroot -cursor_name left_ptr
-# set background for ratpoison
-xsetroot -solid black
-# now run ratpoison
-exec /usr/bin/ratpoison
+# now run fluxbox
+startfluxbox

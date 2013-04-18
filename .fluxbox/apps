@@ -1,0 +1,19 @@
+[app] (name=fbrun)
+  [Position]	(WINCENTER)	{0 0}
+  [Layer]	{2}
+[end]
+[app] (name=urxvt)
+  [Maximized] {yes}
+[end]
+[app] (name=gajim)
+  [Maximized] {yes}
+[end]
+[app] (name=firefox)
+  [Maximized] {yes}
+[end]
+[app] (name=evince)
+  [Maximized] {yes}
+[end]
+[app] (name=gimp)
+  [Maximized] {yes}
+[end]
