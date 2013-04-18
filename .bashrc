@@ -67,7 +67,13 @@ stty -ixon
 # local (for the time being) things for ritchie
 if [ `hostname` == "ritchie" ]; then
   if [ "$USER" == "rybalkin" ]; then
-    export PATH="/home/$USER/bin:/sbin:/bin:/usr/sbin:/usr/bin"
+    export PATH="/home/$USER/bin:/sbin:/bin:/usr/sbin:/usr/bin:/opt/ant/bin:/opt/jdk/bin:/opt/jdk/jre/bin"
+    export ANT_HOME=/opt/ant
+    export J2SDKDIR=/opt/jdk
+    export J2REDIR=/opt/jdk/jre
+    export JAVA_HOME=/opt/jdk
+    alias java="java -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true"
+    alias javaws="_JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true' javaws"
     alias mpd-start="mpd /etc/mpd.conf"
     alias mpd-stop="mpd --kill /etc/mpd.conf"
     alias sshd-start="sudo /usr/sbin/sshd"
