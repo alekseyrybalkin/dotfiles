@@ -27,7 +27,12 @@ export MAKEFLAGS="-j${THREADS}"
 
 alias mplayer='mplayer -ao alsa -vo gl'
 alias mark='echo -e "\E[31;41m\033[1m#################################################################################\033[0m"'
-alias f='mark && ack -a'
+ack_version=`ack --version | head -n 1 | sed 's/ack\ //g'`
+if [ "${ack_version:0:1}" -ge 2 ]; then
+  alias f='mark && ack'
+else
+  alias f='mark && ack -a'
+fi
 alias wine='LIBGL_DRIVERS_PATH=/usr/lib32/xorg/modules/dri WINEARCH=win32 wine'
 alias startx='startx -- -nolisten tcp'
 
