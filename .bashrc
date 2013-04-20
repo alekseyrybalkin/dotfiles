@@ -77,6 +77,8 @@ if [ `hostname` == "ritchie" ]; then
     export J2SDKDIR=/opt/jdk
     export J2REDIR=/opt/jdk/jre
     export JAVA_HOME=/opt/jdk
+    export GROOVY_HOME=/usr/share/groovy
+    export GRAILS_HOME=/usr/share/grails
     alias java="java -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true"
     alias javaws="_JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true' javaws"
     alias mpd-start="mpd /etc/mpd.conf"
