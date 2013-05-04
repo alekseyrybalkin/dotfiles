@@ -88,3 +88,9 @@ if [ `hostname` == "ritchie" ]; then
     umask 077
   fi
 fi
+if [ "$USER" != "rybalkin" ]; then
+  PS1="\[\e[1;34m\]\h\[\e[0m\] \w $ "
+  export DISPLAY=:0.0
+  export XAUTHORITY=/home/rybalkin/.Xauthority
+fi
+export SDL_AUDIODRIVER="alsa"
