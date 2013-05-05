@@ -89,8 +89,10 @@ if [ `hostname` == "ritchie" ]; then
   fi
 fi
 if [ "$USER" != "rybalkin" ]; then
-  PS1="\[\e[1;34m\]\h\[\e[0m\] \w $ "
-  export DISPLAY=:0.0
-  export XAUTHORITY=/home/rybalkin/.Xauthority
+  if [ "$USER" != "root" ]; then
+    PS1="\[\e[1;34m\]\h\[\e[0m\] \w $ "
+    export DISPLAY=:0.0
+    export XAUTHORITY=/home/rybalkin/.Xauthority
+  fi
 fi
 export SDL_AUDIODRIVER="alsa"
