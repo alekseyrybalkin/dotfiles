@@ -3,6 +3,7 @@
 !/backup
 !/backup-checker
 !/colortest
+!/compress-mp3
 !/genlongpass
 !/genpass
 !/linode-proxy
@@ -11,5 +12,6 @@
 !/termcolors
 !/tpoff
 !/tpon
+!/ubuntu
 !/xlock
 !/xterm
