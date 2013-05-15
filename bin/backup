@@ -15,6 +15,7 @@ cp -av ~/.procmailrc ./${name}
 cp -av ~/.fetchmailrc ./${name}
 cp -av ~/.mutt ./${name}
 cp -av ~/.bitcoin/wallet.dat ./${name}
+cp -av ~/dev/hh-openvpn ./${name}/hh-openvpn
 tar -cpavf ${name}${ext} ./${name}
 gpg -c --passphrase-fd 3 3<~/.config/encryptpass ${name}${ext}
 scp ${name}${ext}.gpg aleksey@rybalkin.org:~/backup
