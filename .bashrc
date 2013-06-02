@@ -19,7 +19,7 @@ fi
 export GPGKEY=5CA1EB8A
 
 # c, c++, make flags
-export CFLAGS="-march=native -mno-avx -O2 -pipe"
+export CFLAGS="-march=native -O2 -pipe"
 export CXXFLAGS="${CFLAGS}"
 THREADS=`cat /proc/cpuinfo | grep "model name" | wc -l`
 let THREADS=$THREADS+1
