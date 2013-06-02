@@ -11,4 +11,4 @@
     default = upstream
 [alias]
     sorted-tags = for-each-ref --sort='*authordate' --format='%(tag)' refs/tags
-    commit = commit -s -S
+    c = commit -S -s
