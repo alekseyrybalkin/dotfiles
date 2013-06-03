@@ -116,3 +116,4 @@ endif
 set viminfo=
 " fuzzyfinder: do not create .vim-fuf-data directory
 let g:fuf_dataDir = ""
+set regexpengine=1
