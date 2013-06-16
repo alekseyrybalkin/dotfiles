@@ -98,10 +98,9 @@ set synmaxcol=320
 set cursorline
 set nocursorcolumn
 " show line numbers (with width 2), relative if possible
+set number
 if version >= 703
     set relativenumber
-else
-    set number
 endif
 set numberwidth=2
 " easy split window creation
