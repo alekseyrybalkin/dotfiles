@@ -63,11 +63,6 @@ echo $PATH | grep -q "$USER/bin" || {
   export PATH=/home/$USER/bin:"$PATH"
 }
 
-# load local untracked options
-if [ -e ~/.bashrc.local ]; then
-  source ~/.bashrc.local
-fi
-
 # disable xon/xoff flow control (^s/^q) in rxvt
 stty -ixon
 
@@ -98,3 +93,8 @@ if [ "$USER" != "rybalkin" ]; then
   fi
 fi
 export SDL_AUDIODRIVER="alsa"
+
+# load local untracked options
+if [ -e ~/.bashrc.local ]; then
+  source ~/.bashrc.local
+fi
