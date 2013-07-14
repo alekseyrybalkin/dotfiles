@@ -1,0 +1,5 @@
+rm -rf ~/.cache/{,_}trouble
+rm -rf ~/.local/share/webkitgtk
+proxychains /home/rybalkin/projects/trouble/_trouble
+rm -rf ~/.cache/{,_}trouble
+rm -rf ~/.local/share/webkitgtk
