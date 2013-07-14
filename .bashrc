@@ -88,6 +88,11 @@ if [ `hostname` == "ritchie" ]; then
     alias sshd-start="sudo /usr/sbin/sshd"
     alias sshd-stop="cat /run/sshd.pid | xargs sudo kill"
     umask 077
+    # proxychains aliases
+    alias wget="proxychains wget"
+    alias curl="proxychains curl"
+    alias links="proxychains links"
+    alias trouble="proxychains trouble"
   fi
 fi
 if [ "$USER" != "rybalkin" ]; then

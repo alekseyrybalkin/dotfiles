@@ -4,6 +4,7 @@
 !/.config/
 !/.subversion/
 !/.fluxbox/
+!/.proxychains/
 !/bin/
 !/.vimrc
 !/.vim.tabs
