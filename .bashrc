@@ -69,7 +69,7 @@ stty -ixon
 # local (for the time being) things for ritchie
 if [ `hostname` == "ritchie" ] || [ `hostname` == "snowden" ]; then
   if [ "$USER" == "rybalkin" ]; then
-    export PATH="/home/$USER/bin:/sbin:/bin:/usr/sbin:/usr/bin:/opt/ant/bin:/opt/jdk/bin:/opt/jdk/jre/bin"
+    export PATH="/home/$USER/bin:/sbin:/bin:/usr/sbin:/usr/bin:/opt/maven/bin:/opt/ant/bin:/opt/jdk/bin:/opt/jdk/jre/bin"
     export ANT_HOME=/opt/ant
     export J2SDKDIR=/opt/jdk
     export J2REDIR=/opt/jdk/jre
