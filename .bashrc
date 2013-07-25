@@ -76,6 +76,8 @@ if [ `hostname` == "ritchie" ] || [ `hostname` == "snowden" ]; then
     export JAVA_HOME=/opt/jdk
     export GROOVY_HOME=/usr/share/groovy
     export GRAILS_HOME=/usr/share/grails
+    export M2_HOME=/opt/maven
+    export MAVEN_OPTS=-Xmx512m
     alias java="java -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true"
     alias javaws="_JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true' javaws"
     alias mpd-start="mpd /etc/mpd.conf"
@@ -98,6 +100,9 @@ if [ "$USER" != "rybalkin" ]; then
   fi
 fi
 export SDL_AUDIODRIVER="alsa"
+
+export DEBFULLNAME='Aleksey Rybalkin'
+export DEBEMAIL='aleksey@rybalkin.org'
 
 # load local untracked options
 if [ -e ~/.bashrc.local ]; then
