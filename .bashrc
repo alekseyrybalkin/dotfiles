@@ -1,6 +1,8 @@
 # Check for an interactive session
 [ -z "$PS1" ] && return
 
+export HISTFILESIZE=10000
+
 # colored ls for FreeBSD
 if [ `uname` = "FreeBSD" ]; then
   alias ls='ls -G'
