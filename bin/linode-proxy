@@ -1,2 +1,2 @@
 #!/bin/sh
-ssh -D 9051 aleksey@rybalkin.org
+ssh -D 9051 ${HEAVEN}
