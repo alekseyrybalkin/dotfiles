@@ -115,6 +115,3 @@ endif
 set viminfo=
 " fuzzyfinder: do not create .vim-fuf-data directory
 let g:fuf_dataDir = ""
-if exists("&regexpengine")
-    set regexpengine=1
-endif
