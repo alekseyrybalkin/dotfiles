@@ -107,7 +107,7 @@ export SDL_AUDIODRIVER="alsa"
 export DEBFULLNAME='Aleksey Rybalkin'
 export DEBEMAIL='aleksey@rybalkin.org'
 
-export HEAVEN_DOMAIN='cosmicfail.info'
+export HEAVEN_DOMAIN='rybalkin.org'
 export HEAVEN_USER='aleksey'
 export HEAVEN=${HEAVEN_USER}@${HEAVEN_DOMAIN}
 
