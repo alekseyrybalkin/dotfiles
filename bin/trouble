@@ -1,6 +1,6 @@
 rm -rf ~/.cache/{,_}trouble
 rm -rf ~/.local/share/webkitgtk
-/home/rybalkin/sources/trouble/_trouble
+/home/rybalkin/projects/trouble/_trouble
 #proxychains /home/rybalkin/projects/trouble/_trouble
 rm -rf ~/.cache/{,_}trouble
 rm -rf ~/.local/share/webkitgtk
