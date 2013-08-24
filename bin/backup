@@ -9,7 +9,6 @@ cd ${tmpdir}
 mkdir ${name}
 cp -av ~/.ssh ./${name}
 cp -av ~/.gnupg ./${name}
-cp -av /home/gamer/games/wasteland ./${name}/wasteland-save
 cp -av ~/.procmailrc ./${name}
 cp -av ~/.fetchmailrc ./${name}
 cp -av ~/.mutt ./${name}
