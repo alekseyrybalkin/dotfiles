@@ -23,8 +23,10 @@ if [ "${1}" == "upload" ]; then
 fi
 
 if [ "${1}" == "download" ]; then
-  mkdir -p /tmp/drobpox
-  cp -av ${2} /tmp/drobpox
+  if [ -e ${2} ]; then
+    mkdir -p /tmp/drobpox
+    cp -av ${2} /tmp/drobpox
+  fi
   id=`cat ~/.config/drobpoxsalt``realpath ${2}`
   id=`echo -n ${id} | sha1sum | cut -d ' ' --fields=1`
   scp ${HEAVEN}:~/drobpox/${id}.tar.gz.gpg .
