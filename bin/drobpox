@@ -1,0 +1,37 @@
+#!/bin/bash
+
+set -e
+
+if [ -z "${2}" ]; then
+  echo "usage: "
+  echo "    `basename ${0}` upload|download file"
+  exit 0
+fi
+
+if [ "${1}" == "upload" ]; then
+  if [ ! -e ${2} ]; then
+    echo "file does not exist"
+    exit 1
+  fi
+  id=`cat ~/.config/drobpoxsalt``realpath ${2}`
+  id=`echo -n ${id} | sha1sum | cut -d ' ' --fields=1`
+  tar cfa ${id}.tar.gz ${2}
+  gpg -c --passphrase-fd 3 3<~/.config/encryptpass ${id}.tar.gz
+  scp ${id}.tar.gz.gpg ${HEAVEN}:~/drobpox
+  rm -f ${id}.tar.gz{,.gpg}
+  exit 0
+fi
+
+if [ "${1}" == "download" ]; then
+  mkdir -p /tmp/drobpox
+  cp -av ${2} /tmp/drobpox
+  id=`cat ~/.config/drobpoxsalt``realpath ${2}`
+  id=`echo -n ${id} | sha1sum | cut -d ' ' --fields=1`
+  scp ${HEAVEN}:~/drobpox/${id}.tar.gz.gpg .
+  gpg --passphrase-fd 3 3<~/.config/encryptpass ${id}.tar.gz.gpg
+  tar xvf ${id}.tar.gz
+  rm ${id}.tar.gz{,.gpg}
+  exit 0
+fi
+
+echo "unsupported operation"
