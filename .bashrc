@@ -17,6 +17,7 @@ if [ `uname` = "Linux" ]; then
   fi
   eval `dircolors -b`
 fi
+alias grep='grep --color=auto'
 
 export GPGKEY=5CA1EB8A
 
