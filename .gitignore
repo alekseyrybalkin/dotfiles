@@ -5,6 +5,7 @@
 !/.subversion/
 !/.fluxbox/
 !/.proxychains/
+!/.mozilla/
 !/bin/
 !/.vimrc
 !/.vim.tabs
