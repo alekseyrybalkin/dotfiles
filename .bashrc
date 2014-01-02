@@ -30,7 +30,7 @@ export MAKEFLAGS="-j${THREADS}"
 
 alias mplayer='mplayer -ao alsa -vo gl'
 which ack 2>&1 >/dev/null && {
-  alias mark='echo -e "\E[31;41m\033[1m#################################################################################\033[0m"'
+  alias mark='echo -e "\E[31;41m\033[1m###########################################################################\033[0m"'
   ack_version=`ack --version | head -n 1 | sed 's/ack\ //g'`
   if [ "${ack_version:0:1}" -ge 2 ]; then
     alias f='mark && ack'
@@ -74,7 +74,7 @@ stty -ixon
 if [ `hostname` == "ritchie" ] || [ `hostname` == "snowden" ] ||\
    [ `hostname` == "archiso" ] || [ `hostname` == "levison" ]; then
   if [ "$USER" == "rybalkin" ]; then
-    export PATH="/home/$USER/bin:/sbin:/bin:/usr/sbin:/usr/bin:/opt/maven/bin:/opt/ant/bin:/opt/jdk/bin:/opt/jdk/jre/bin"
+    export PATH="/home/$USER/bin:/usr/bin:/opt/maven/bin:/opt/ant/bin:/opt/jdk/bin:/opt/jdk/jre/bin"
     export ANT_HOME=/opt/ant
     export J2SDKDIR=/opt/jdk
     export J2REDIR=/opt/jdk/jre
@@ -87,7 +87,7 @@ if [ `hostname` == "ritchie" ] || [ `hostname` == "snowden" ] ||\
     alias javaws="_JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true' javaws"
     alias mpd-start="mpd /etc/mpd.conf"
     alias mpd-stop="mpd --kill /etc/mpd.conf"
-    alias sshd-start="sudo /usr/sbin/sshd"
+    alias sshd-start="sudo /usr/bin/sshd"
     alias sshd-stop="cat /run/sshd.pid | xargs sudo kill"
     umask 077
     # proxychains aliases
