@@ -1,0 +1,21 @@
+#!/bin/bash
+
+if [ -n "${1}" ]; then
+  if [ "${1}" == "stop" ]; then
+    if [ -f /tmp/rybalkin.fetchmail.pid ]; then
+      sudo sudo -u rybalkin kill `head -n 1 /tmp/rybalkin.fetchmail.pid`
+    fi
+    sudo sudo -u tor killall -SIGINT tor
+    for i in `ps aux | grep /usr/sbin/ntpd | grep -v grep | tr -s ' ' | cut -d ' ' --fields=2`; do
+      sudo kill $i
+    done
+    sudo /root/bin/uwifi
+    exit 0
+  fi
+fi
+
+sudo /root/bin/wifi
+sudo /usr/sbin/ntpd -g -u ntp:ntp
+sudo sudo -u tor /usr/bin/tor -f /etc/tor/torrc --runasdaemon 1 >/dev/null 2>&1
+sudo sudo -u rybalkin touch /tmp/rybalkin.fetchmail.log
+sudo sudo -u rybalkin fetchmail --pidfile=/tmp/rybalkin.fetchmail.pid -v
