@@ -1,5 +1,5 @@
 # Check for an interactive session
-[ -z "$PS1" ] && return
+[ -z "${PS1}" ] && return
 
 export HISTFILESIZE=10000
 
@@ -19,16 +19,16 @@ if [ `uname` = "Linux" ]; then
 fi
 alias grep='grep --color=auto'
 
-export GPGKEY=5CA1EB8A
-
 # c, c++, make flags
 export CFLAGS="-march=native -O2 -pipe"
 export CXXFLAGS="${CFLAGS}"
-THREADS=`cat /proc/cpuinfo | grep "model name" | wc -l`
-let THREADS=$THREADS+1
-export MAKEFLAGS="-j${THREADS}"
+if [ -e /proc/cpuinfo ]; then
+  THREADS=`cat /proc/cpuinfo | grep "model name" | wc -l`
+  let THREADS=$THREADS+1
+  export MAKEFLAGS="-j${THREADS}"
+fi
 
-alias mplayer='mplayer -ao alsa -vo gl'
+alias mplayer='mplayer -ao sdl -vo gl'
 which ack 2>&1 >/dev/null && {
   alias mark='echo -e "\E[31;41m\033[1m###########################################################################\033[0m"'
   ack_version=`ack --version | head -n 1 | sed 's/ack\ //g'`
@@ -38,7 +38,6 @@ which ack 2>&1 >/dev/null && {
     alias f='mark && ack -a'
   fi
 }
-alias wine='LIBGL_DRIVERS_PATH=/usr/lib32/xorg/modules/dri WINEARCH=win32 wine'
 alias startx='startx -- -nolisten tcp'
 
 if [ $TERM = "rxvt-256color" ]; then
@@ -70,31 +69,27 @@ echo $PATH | grep -q "$USER/bin" || {
 # disable xon/xoff flow control (^s/^q) in rxvt
 stty -ixon
 
-# local (for the time being) things for ritchie
 if [ `hostname` == "ritchie" ] || [ `hostname` == "snowden" ] ||\
-   [ `hostname` == "archiso" ] || [ `hostname` == "levison" ]; then
+   [ `hostname` == "archiso" ]; then
   if [ "$USER" == "rybalkin" ]; then
-    export PATH="/home/$USER/bin:/usr/bin:/opt/maven/bin:/opt/ant/bin:/opt/jdk/bin:/opt/jdk/jre/bin"
-    export ANT_HOME=/opt/ant
-    export J2SDKDIR=/opt/jdk
-    export J2REDIR=/opt/jdk/jre
-    export JAVA_HOME=/opt/jdk
-    export GROOVY_HOME=/usr/share/groovy
-    export GRAILS_HOME=/usr/share/grails
-    export M2_HOME=/opt/maven
-    export MAVEN_OPTS=-Xmx512m
-    alias java="java -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true"
-    alias javaws="_JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true' javaws"
+    if [ `hostname` == "snowden" ]; then
+      export PATH="/home/$USER/bin:/usr/bin:/opt/maven/bin:/opt/ant/bin:/opt/jdk/bin:/opt/jdk/jre/bin"
+      export ANT_HOME=/opt/ant
+      export J2SDKDIR=/opt/jdk
+      export J2REDIR=/opt/jdk/jre
+      export JAVA_HOME=/opt/jdk
+      export M2_HOME=/opt/maven
+      export MAVEN_OPTS=-Xmx512m
+      alias java="java -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true"
+      alias javaws="_JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true' javaws"
+    else
+      export PATH="/home/$USER/bin:/usr/bin"
+    fi
     alias mpd-start="mpd /etc/mpd.conf"
     alias mpd-stop="mpd --kill /etc/mpd.conf"
     alias sshd-start="sudo /usr/bin/sshd"
     alias sshd-stop="cat /run/sshd.pid | xargs sudo kill"
     umask 077
-    # proxychains aliases
-    #alias wget="proxychains wget"
-    #alias curl="proxychains curl"
-    #alias links="proxychains links"
-    #alias trouble="proxychains trouble"
   fi
 fi
 if [ "$USER" != "rybalkin" ]; then
@@ -104,8 +99,10 @@ if [ "$USER" != "rybalkin" ]; then
     export XAUTHORITY=/home/rybalkin/.Xauthority
   fi
 fi
+alias wine='LIBGL_DRIVERS_PATH=/usr/lib32/xorg/modules/dri WINEARCH=win32 wine'
 export SDL_AUDIODRIVER="alsa"
 
+export GPGKEY=5CA1EB8A
 export DEBFULLNAME='Aleksey Rybalkin'
 export DEBEMAIL='aleksey@rybalkin.org'
 
