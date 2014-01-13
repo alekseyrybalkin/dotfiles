@@ -4,6 +4,9 @@
     signingkey = 5CA1EB8A
 [color]
     ui = true
+[color.status]
+    header = white bold
+    branch = green
 [merge]
     tool = vimdiff
     defaultToUpstream = true
