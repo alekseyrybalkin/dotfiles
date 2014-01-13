@@ -1,0 +1,15 @@
+#!/bin/bash
+
+
+for i in ~/projects/kiin{,-repo,-configs} ~/projects/{todo,private} ~/; do
+  cd $i
+  if [ "${1}" == "pull" ]; then
+    git pull
+    sleep 5
+  else
+    echo "-------------------------------"
+    echo "*** " $i
+    git status
+    echo
+  fi
+done
