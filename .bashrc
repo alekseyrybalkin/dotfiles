@@ -29,7 +29,7 @@ if [ -e /proc/cpuinfo ]; then
 fi
 
 alias mplayer='mplayer -ao sdl -vo gl'
-which ack 2>&1 >/dev/null && {
+which ack >/dev/null 2>&1 && {
   alias mark='echo -e "\E[31;41m\033[1m###########################################################################\033[0m"'
   ack_version=`ack --version | head -n 1 | sed 's/ack\ //g'`
   if [ "${ack_version:0:1}" -ge 2 ]; then
