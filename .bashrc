@@ -18,6 +18,7 @@ if [ `uname` = "Linux" ]; then
   eval `dircolors -b`
 fi
 alias grep='grep --color=auto'
+alias cal='cal -m'
 
 # c, c++, make flags
 export CFLAGS="-march=native -O2 -pipe"
