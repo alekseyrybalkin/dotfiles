@@ -1,6 +1,14 @@
 pcm.!default {
     type plug
+    slave.pcm "softvol"
+}
+
+pcm.softvol {
+    type softvol
     slave.pcm "dmixer"
+    control.name "softvol"
+    control.card PCH
+    max_dB 50.0
 }
 
 pcm.dmixer  {
@@ -9,16 +17,16 @@ pcm.dmixer  {
     ipc_key_add_uid 0
     ipc_perm 0666
     slave {
-      pcm "hw:PCH"
-      period_time 0
-      period_size 1024
-      buffer_size 4096
-      rate 44100
-   }
-   bindings {
-      0 0
-      1 1
-   }
+        pcm "hw:PCH"
+        period_time 0
+        period_size 1024
+        buffer_size 4096
+        rate 44100
+    }
+    bindings {
+        0 0
+        1 1
+    }
 }
 
 ctl.!default {
