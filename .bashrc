@@ -120,6 +120,9 @@ export HEAVEN_DOMAIN='rybalkin.org'
 export HEAVEN_USER='aleksey'
 export HEAVEN=${HEAVEN_USER}@${HEAVEN_DOMAIN}
 
+export PYTHONDOCS=/usr/share/doc/python3/html
+export PYTHONSTARTUP=${HOME}/.pythonstartup.py
+
 # load local untracked options
 if [ -e ~/.bashrc.local ]; then
   source ~/.bashrc.local
