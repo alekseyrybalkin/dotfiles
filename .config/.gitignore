@@ -5,3 +5,4 @@
 !/.gitignore
 !/user-dirs.dirs
 !/pythonstartup.py
+!/tmux.conf
