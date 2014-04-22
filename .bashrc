@@ -71,6 +71,7 @@ export PAGER=/usr/bin/less
 export LESS="-i -g -M -R -x4 -X -f -F -z-1"
 export LESSHISTFILE="-"
 export TERMINFO=/usr/share/terminfo
+export GNUPGHOME=${HOME}/.config/gnupg
 
 complete -cf sudo
 
@@ -123,7 +124,7 @@ export HEAVEN_USER='aleksey'
 export HEAVEN=${HEAVEN_USER}@${HEAVEN_DOMAIN}
 
 export PYTHONDOCS=/usr/share/doc/python3/html
-export PYTHONSTARTUP=${HOME}/.pythonstartup.py
+export PYTHONSTARTUP=${HOME}/.config/pythonstartup.py
 
 # load local untracked options
 if [ -e ~/.bashrc.local ]; then

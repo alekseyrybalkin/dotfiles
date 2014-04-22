@@ -4,3 +4,4 @@
 !/gtk-3.0/
 !/.gitignore
 !/user-dirs.dirs
+!/pythonstartup.py

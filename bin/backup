@@ -8,12 +8,11 @@ mkdir -p ${tmpdir}
 cd ${tmpdir}
 mkdir ${name}
 cp -av ~/.ssh ./${name}
-cp -av ~/.gnupg ./${name}
+cp -av ~/.config/gnupg ./${name}
 cp -av ~/.procmailrc ./${name}
 cp -av ~/.fetchmailrc ./${name}
-cp -av ~/.mutt ./${name}
-cp -av ~/.bitcoin/wallet.dat ./${name}
-cp -av ~/dev/hh-openvpn ./${name}/hh-openvpn
+cp -av ~/.config/mutt ./${name}
+cp -av ~/dev/hh ./${name}/hh
 tar -cpavf ${name}${ext} ./${name}
 gpg -c --passphrase-fd 3 3<~/.config/encryptpass ${name}${ext}
 scp ${name}${ext}.gpg ${HEAVEN}:~/backup
