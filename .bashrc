@@ -20,6 +20,7 @@ fi
 alias grep='grep --color=auto'
 alias cal='cal -m'
 alias mutt='mutt -F ~/.config/mutt/muttrc'
+alias links='CONFIG_DIR=.config links'
 
 # c, c++, make flags
 export CFLAGS="-march=native -O2 -pipe"
