@@ -19,6 +19,7 @@ if [ `uname` = "Linux" ]; then
 fi
 alias grep='grep --color=auto'
 alias cal='cal -m'
+alias mutt='mutt -F ~/.config/mutt/muttrc'
 
 # c, c++, make flags
 export CFLAGS="-march=native -O2 -pipe"
