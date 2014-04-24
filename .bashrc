@@ -73,6 +73,7 @@ export LESS="-i -g -M -R -x4 -X -f -F -z-1"
 export LESSHISTFILE="-"
 export TERMINFO=/usr/share/terminfo
 export GNUPGHOME=${HOME}/.config/gnupg
+export GCC_COLORS=1
 
 complete -cf sudo
 
