@@ -32,7 +32,7 @@ if [ -e /proc/cpuinfo ]; then
   export MAKEFLAGS="-j${THREADS}"
 fi
 
-alias mplayer='mplayer -ao sdl -vo gl'
+alias mplayer='mplayer -ao sdl'
 which ack >/dev/null 2>&1 && {
   alias mark='echo -e "\E[31;41m\033[1m###########################################################################\033[0m"'
   ack_version=`ack --version | head -n 1 | sed 's/ack\ //g'`
