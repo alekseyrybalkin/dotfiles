@@ -125,6 +125,8 @@ export HEAVEN_DOMAIN='rybalkin.org'
 export HEAVEN_USER='aleksey'
 export HEAVEN=${HEAVEN_USER}@${HEAVEN_DOMAIN}
 
+alias notes="vim scp://${HEAVEN}/archive/notes"
+
 export PYTHONDOCS=/usr/share/doc/python3/html
 export PYTHONSTARTUP=${HOME}/.config/pythonstartup.py
 
