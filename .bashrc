@@ -84,22 +84,9 @@ echo $PATH | grep -q "$USER/bin" || {
 # disable xon/xoff flow control (^s/^q) in rxvt
 stty -ixon
 
-if [ `hostname` == "ritchie" ] || [ `hostname` == "snowden" ] ||\
-   [ `hostname` == "archiso" ]; then
+if [ `hostname` == "ritchie" ] || [ `hostname` == "archiso" ]; then
   if [ "$USER" == "rybalkin" ]; then
-    if [ `hostname` == "snowden" ]; then
-      export PATH="/home/$USER/bin:/usr/bin:/opt/maven/bin:/opt/ant/bin:/opt/jdk/bin:/opt/jdk/jre/bin"
-      export ANT_HOME=/opt/ant
-      export J2SDKDIR=/opt/jdk
-      export J2REDIR=/opt/jdk/jre
-      export JAVA_HOME=/opt/jdk
-      export M2_HOME=/opt/maven
-      export MAVEN_OPTS=-Xmx512m
-      alias java="java -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true"
-      alias javaws="_JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true' javaws"
-    else
-      export PATH="/home/$USER/bin:/usr/bin"
-    fi
+    export PATH="/home/$USER/bin:/usr/bin"
     alias mpd-start="mpd /etc/mpd.conf"
     alias mpd-stop="mpd --kill /etc/mpd.conf"
     alias sshd-start="sudo /usr/bin/sshd"
