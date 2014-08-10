@@ -2,7 +2,7 @@
 
 for book in lfs blfs; do
   SOURCE_DIR=~/sources/${book}-git
-  TARGET_DIR=~/dev/${book}-compiled
+  TARGET_DIR=~/archive/${book}-compiled
   if [ -e ${TARGET_DIR} ]; then
     mv ${TARGET_DIR} /tmp/`basename ${TARGET_DIR}`-`date +%s`
   fi
