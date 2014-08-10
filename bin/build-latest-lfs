@@ -1,0 +1,13 @@
+#!/bin/bash
+
+for book in lfs blfs; do
+  SOURCE_DIR=~/sources/${book}-git
+  TARGET_DIR=~/dev/${book}-compiled
+  if [ -e ${TARGET_DIR} ]; then
+    mv ${TARGET_DIR} /tmp/`basename ${TARGET_DIR}`-`date +%s`
+  fi
+  cd ${SOURCE_DIR}
+  git svn fetch
+  git merge git-svn
+  make BASEDIR=${TARGET_DIR} RENDERTMP=/tmp/${book}
+done
