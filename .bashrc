@@ -26,11 +26,7 @@ alias tmux='tmux -f ~/.config/tmux.conf'
 # c, c++, make flags
 export CFLAGS="-march=native -O2 -pipe"
 export CXXFLAGS="${CFLAGS}"
-if [ -e /proc/cpuinfo ]; then
-  THREADS=`cat /proc/cpuinfo | grep "model name" | wc -l`
-  let THREADS=$THREADS+1
-  export MAKEFLAGS="-j${THREADS}"
-fi
+export MAKEFLAGS="-j$((`nproc 2>/dev/null` + 1))"
 
 alias mplayer='mplayer -ao sdl'
 which ack >/dev/null 2>&1 && {
