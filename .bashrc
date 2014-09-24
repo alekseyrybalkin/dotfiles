@@ -51,6 +51,7 @@ alias startx='startx -- -nolisten tcp'
 
 if [ $TERM = "rxvt-256color" ]; then
   alias screen='screen -T rxvt-256color'
+  export COLORTERM='rxvt'
 fi
 # for tmux: export 256color
 [ -n "$TMUX" ] && [ -n "$COLORTERM" ] && [[ $COLORTERM == *rxvt* ]] && export TERM=screen-256color && alias mc='TERM=xterm-256color mc'
