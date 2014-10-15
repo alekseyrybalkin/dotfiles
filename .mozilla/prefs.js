@@ -134,6 +134,7 @@ user_pref("privacy.cpd.siteSettings", true);
 user_pref("privacy.donottrackheader.enabled", true);
 user_pref("privacy.sanitize.migrateFx3Prefs", true);
 user_pref("security.disable_button.openCertManager", false);
+user_pref("security.tls.version.min", 1);
 user_pref("services.sync.clients.lastSync", "0");
 user_pref("services.sync.clients.lastSyncLocal", "0");
 user_pref("services.sync.globalScore", 0);
