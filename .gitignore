@@ -14,3 +14,8 @@
 /.procmailrc
 /.Xauthority
 /.bashrc.local
+
+/.IdeaIC13/
+/.ivy2/
+/.java/
+/.m2/
