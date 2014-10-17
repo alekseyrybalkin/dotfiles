@@ -15,7 +15,9 @@
 /.Xauthority
 /.bashrc.local
 
+/.IntelliJIdea13/
 /.IdeaIC13/
+/.composer/
 /.ivy2/
 /.java/
 /.m2/
