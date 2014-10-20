@@ -1,0 +1,25 @@
+#!/bin/bash
+
+if [ -z "${1}" ]; then
+  count=1
+else
+  count=${1}
+fi
+
+mpc clear
+for i in $(seq 1 ${count}); do
+  cd ~/music
+  chosen=`for album in *; do echo "${album}"; done | sort -R | head -n 1`
+  cd ${chosen}
+  coin=$((${RANDOM}%2))
+  if [ ${coin} -eq 0 ]; then
+    for song in *; do
+      echo "${chosen}/\"${song}\""
+    done | xargs mpc add
+  else
+    for song in *; do
+      echo "${chosen}/\"${song}\""
+    done | sort -r | xargs mpc add
+  fi
+done
+mpc play 1
