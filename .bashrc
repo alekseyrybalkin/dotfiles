@@ -94,7 +94,7 @@ if [ `hostname` == "ritchie" ] || [ `hostname` == "archiso" ]; then
     export J2REDIR=/opt/jdk/jre
     export JAVA_HOME=/opt/jdk
     export M2_HOME=/opt/maven
-    export MAVEN_OPTS=-Xmx512m
+    export MAVEN_OPTS="-Xmx1024m -XX:MaxPermSize=256m"
     alias java="java -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true"
     alias javaws="_JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true' javaws"
   fi
