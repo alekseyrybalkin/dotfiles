@@ -1,0 +1,6 @@
+#!/bin/sh
+
+find -type f -name "*.flac" -print0 | while read -d $'\0' a; do
+  OUTF="${a[@]/%flac/mp3}"
+  flac -c -d "$a" | lame - "$OUTF"
+done
