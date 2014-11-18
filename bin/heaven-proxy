@@ -1,2 +1,2 @@
 #!/bin/sh
-ssh -D 9051 ${HEAVEN}
+ssh -N -D 9051 ${HEAVEN}

@@ -116,6 +116,7 @@ user_pref("network.cookie.prefsMigrated", true);
 user_pref("network.http.sendRefererHeader", 0);
 user_pref("network.proxy.socks", "localhost");
 user_pref("network.proxy.socks_port", 9050);
+user_pref("network.proxy.socks_remote_dns", true);
 user_pref("network.proxy.type", 1);
 user_pref("pdfjs.disabled", true);
 user_pref("pdfjs.migrationVersion", 1);
