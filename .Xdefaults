@@ -6,10 +6,10 @@ URxvt.cursorColor:      green
 #URxvt.borderColor:      rgb:FF/A5/22
 URxvt.borderColor:      rgb:00/00/00
 URxvt.underlineColor:   yellow
-URxvt.font:             xft:DejaVu Sans Mono:pixelsize=13:antialias=true
+URxvt.font:             xft:Ubuntu Mono:pixelsize=15:antialias=true
 #URxvt.font:             xft:Inconsolata:pixelsize=18:antialias=true
 #URxvt.font:             xft:Terminus:pixelsize=14:antialias=false
-URxvt.boldFont:         xft:DejaVu Sans Mono:bold:pixelsize=13:antialias=true
+URxvt.boldFont:         xft:Ubuntu Mono:bold:pixelsize=15:antialias=true
 #URxvt.boldFont:         xft:Inconsolata:bold:pixelsize=18:antialias=true
 #URxvt.boldFont:         xft:Terminus:pixelsize=14:antialias=false
 URxvt.perl-ext-common:  default,tabbed
