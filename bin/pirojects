@@ -1,7 +1,12 @@
 #!/bin/bash
 
+REPOS=`echo ~/projects/kiin{,-repo,-configs} ~/projects/{private,rybalkin.org,todo} ~/`
+if [ "${1}" == "banner" ]; then
+  REPOS=`echo ~/freelance/banner-{common,adman,engine,stats,sync}`
+fi
 
-for i in ~/projects/kiin{,-repo,-configs} ~/projects/{private,rybalkin.org,todo} ~/; do
+
+for i in ${REPOS}; do
   cd $i
   if [ "${1}" == "pull" ]; then
     git pull
