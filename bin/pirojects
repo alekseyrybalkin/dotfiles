@@ -1,8 +1,8 @@
 #!/bin/bash
 
 REPOS=`echo ~/projects/kiin{,-repo,-configs} ~/projects/{private,rybalkin.org,todo} ~/`
-if [ "${1}" == "banner" ]; then
-  REPOS=`echo ~/freelance/banner-{common,adman,engine,stats,sync}`
+if [ "${1}" == "freelance" ]; then
+  REPOS=`echo ~/freelance/banner-{common,adman,engine,stats,sync} /srv/www`
 fi
 
 
