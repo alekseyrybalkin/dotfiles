@@ -73,8 +73,8 @@ export GCC_COLORS=1
 
 complete -cf sudo
 
-echo $PATH | grep -q "$USER/bin" || {
-  export PATH=/home/$USER/bin:"$PATH"
+echo $PATH | grep -q "$USER/.local/bin" || {
+  export PATH=/home/$USER/.local/bin:"$PATH"
 }
 
 # disable xon/xoff flow control (^s/^q) in rxvt
@@ -82,7 +82,7 @@ stty -ixon
 
 if [ `hostname` == "ritchie" ] || [ `hostname` == "archiso" ]; then
   if [ "$USER" == "rybalkin" ]; then
-    export PATH="/home/$USER/bin:/usr/bin:/opt/maven/bin:/opt/ant/bin:/opt/jdk/bin:/opt/jdk/jre/bin"
+    export PATH="/home/$USER/.local/bin:/usr/bin:/opt/maven/bin:/opt/ant/bin:/opt/jdk/bin:/opt/jdk/jre/bin"
     alias mpd-start="mpd /etc/mpd.conf"
     alias mpd-stop="mpd --kill /etc/mpd.conf"
     alias sshd-start="sudo /usr/bin/sshd"
