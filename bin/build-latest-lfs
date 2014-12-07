@@ -2,7 +2,7 @@
 
 for book in lfs blfs; do
   SOURCE_DIR=/var/lib/kiin/sources/${book}-git
-  TARGET_DIR=~/archive/${book}-compiled
+  TARGET_DIR=~/.local/archive/${book}-compiled
   if [ -e ${TARGET_DIR} ]; then
     mv ${TARGET_DIR} /tmp/`basename ${TARGET_DIR}`-`date +%s`
   fi

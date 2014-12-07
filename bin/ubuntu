@@ -1,3 +1,0 @@
-#!/bin/sh
-cd ~/archive
-qemu -net nic -net user -vnc 0.0.0.0:1 -redir tcp:1025::22 -enable-kvm vdisk.img -m 1024 &
