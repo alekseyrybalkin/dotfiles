@@ -46,7 +46,7 @@ which ack-grep >/dev/null 2>&1 && {
     alias f='mark && ack-grep -a'
   fi
 }
-alias startx='startx -- -nolisten tcp'
+alias startx='startx -- -nolisten tcp -iglx'
 
 if [ $TERM = "rxvt-256color" ]; then
   alias screen='screen -T rxvt-256color'
