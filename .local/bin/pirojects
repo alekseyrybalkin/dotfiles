@@ -2,7 +2,7 @@
 
 REPOS=`echo ~/projects/kiin{,-repo,-configs} ~/projects/{private,rybalkin.org,todo} ~/`
 if [ "${1}" == "freelance" ]; then
-  REPOS=`echo ~/freelance/banner-{common,adman,engine,stats,sync} /srv/www`
+  REPOS=`echo ~/freelance/banner-{common,adman,engine,stats,sync} ~/freelance/user.astrid.fund`
 fi
 
 
