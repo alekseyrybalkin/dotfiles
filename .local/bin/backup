@@ -7,11 +7,14 @@ ext=".tar.gz"
 mkdir -p ${tmpdir}
 cd ${tmpdir}
 mkdir ${name}
+
 cp -av ~/.ssh ./${name}
 cp -av ~/.config/gnupg ./${name}
 cp -av ~/.procmailrc ./${name}
 cp -av ~/.fetchmailrc ./${name}
+cp -av ~/.bashrc.local ./${name}
 cp -av ~/.config/mutt ./${name}
+
 tar -cpavf ${name}${ext} ./${name}
 gpg -c --passphrase-fd 3 3<~/.config/encryptpass ${name}${ext}
 scp ${name}${ext}.gpg ${HEAVEN}:~/backup
