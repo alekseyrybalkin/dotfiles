@@ -12,7 +12,6 @@ cp -av ~/.ssh ./${name}
 cp -av ~/.config/gnupg ./${name}
 cp -av ~/.procmailrc ./${name}
 cp -av ~/.fetchmailrc ./${name}
-cp -av ~/.bashrc.local ./${name}
 cp -av ~/.config/mutt ./${name}
 
 tar -cpavf ${name}${ext} ./${name}
