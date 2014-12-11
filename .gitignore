@@ -1,14 +1,14 @@
 /books/
 /download/
+/freelance/
 /music/
 /projects/
-/freelance/
 /video/
 /.cache/
 /.sl/
 /.ssh/
+/.Xauthority
 /.bash_history
+/.bashrc.local
 /.fetchmailrc
 /.procmailrc
-/.Xauthority
-/.bashrc.local
