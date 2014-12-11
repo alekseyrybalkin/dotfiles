@@ -97,7 +97,6 @@ if [ "$USER" != "rybalkin" ]; then
     export XAUTHORITY=/home/rybalkin/.Xauthority
   fi
 fi
-alias wine='LIBGL_DRIVERS_PATH=/usr/lib32/xorg/modules/dri WINEARCH=win32 wine'
 export SDL_AUDIODRIVER="alsa"
 
 export GPGKEY=5CA1EB8A
