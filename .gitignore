@@ -12,6 +12,3 @@
 /.procmailrc
 /.Xauthority
 /.bashrc.local
-
-/.mysql_history
-/.psql_history

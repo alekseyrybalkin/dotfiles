@@ -111,6 +111,8 @@ export HEAVEN=${HEAVEN_USER}@${HEAVEN_DOMAIN}
 export PYTHONDOCS=/usr/share/doc/python3/html
 export PYTHONSTARTUP=${HOME}/.config/pythonstartup.py
 
+export MYSQL_HISTFILE=/dev/null
+
 # load local untracked options
 if [ -e ~/.bashrc.local ]; then
   source ~/.bashrc.local

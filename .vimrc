@@ -43,8 +43,6 @@ set ignorecase
 set hlsearch
 set incsearch
 " use 2 spaces by default for scala, perl and shell code
-au filetype scala set shiftwidth=2
-au filetype scala set softtabstop=2
 au filetype perl set shiftwidth=2
 au filetype perl set softtabstop=2
 au filetype sh set shiftwidth=2
