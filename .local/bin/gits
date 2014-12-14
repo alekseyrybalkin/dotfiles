@@ -10,7 +10,7 @@ check_git_repo() {
   project=`basename ${1}`
   if [ ! -d ${1} ]; then
     printf "%-${width}s %s\n" ${project} "not a directory"
-    exit 0
+    continue
   fi
   cd ${1}
   if [ ! -d ".git" ]; then
