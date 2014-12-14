@@ -1,6 +1,7 @@
 #!/bin/bash
 
 project_dirs="/home/rybalkin/projects/ /home/rybalkin/freelance/ /home/javer/freelance/"
+special_projects="/home/rybalkin"
 width=30
 bldred='\e[1;31m'
 txtrst='\e[0m'
@@ -36,6 +37,6 @@ for dir in ${project_dirs}; do
     check_git_repo ${i}
   done
 done
-for i in /home/rybalkin; do
+for i in ${special_projects}; do
   check_git_repo ${i}
 done
