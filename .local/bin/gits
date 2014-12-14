@@ -1,0 +1,41 @@
+#!/bin/bash
+
+project_dirs="/home/rybalkin/projects/ /home/rybalkin/freelance/ /home/javer/freelance/"
+width=30
+bldred='\e[1;31m'
+txtrst='\e[0m'
+
+check_git_repo() {
+  project=`basename ${1}`
+  if [ ! -d ${1} ]; then
+    printf "%-${width}s %s\n" ${project} "not a directory"
+    exit 0
+  fi
+  cd ${1}
+  if [ ! -d ".git" ]; then
+    printf "%-${width}s %s\n" ${project} "not a git repo"
+    continue
+  fi
+  gitstatus=`git status`
+  echo ${gitstatus} | grep -q "On branch master " || {
+    printf "%-${width}s ${bldred}%s${txtrst}\n" ${project} "not on master branch"
+    continue
+  }
+  echo ${gitstatus} | grep -q "Your branch is up-to-date" || {
+    printf "%-${width}s ${bldred}%s${txtrst}\n" ${project} "not up-to-date"
+    continue
+  }
+  echo ${gitstatus} | grep -q "nothing to commit, working directory clean" || {
+    printf "%-${width}s ${bldred}%s${txtrst}\n" ${project} "dirty"
+    continue
+  }
+}
+
+for dir in ${project_dirs}; do
+  for i in ${dir}*; do
+    check_git_repo ${i}
+  done
+done
+for i in /home/rybalkin; do
+  check_git_repo ${i}
+done
