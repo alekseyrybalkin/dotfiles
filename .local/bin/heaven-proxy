@@ -1,2 +1,7 @@
 #!/bin/sh
-ssh -N -D 9051 ${HEAVEN}
+
+trap "exit 1" SIGINT SIGTERM
+
+while true; do
+  ssh -N -D 9051 ${HEAVEN}
+done
