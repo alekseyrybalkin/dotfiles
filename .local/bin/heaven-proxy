@@ -3,5 +3,5 @@
 trap "exit 1" SIGINT SIGTERM
 
 while true; do
-  ssh -N -D 9051 ${HEAVEN}
+  ssh -N -D 9051 ${HEAVEN} >/dev/null 2>&1
 done
