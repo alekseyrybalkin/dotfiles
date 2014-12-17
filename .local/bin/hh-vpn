@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cd ~/.config/hh-vpn
+sudo openvpn --config client.ovpn
