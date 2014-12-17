@@ -2,6 +2,7 @@
 
 if [ -n "${1}" ]; then
   if [ "${1}" == "stop" ]; then
+    sudo sudo -u rybalkin killall -q heaven-proxy
     sudo sudo -u rybalkin killall -q ssh
     if [ -f /tmp/rybalkin.fetchmail.pid ]; then
       sudo sudo -u rybalkin kill `head -n 1 /tmp/rybalkin.fetchmail.pid`
@@ -17,5 +18,4 @@ sudo sudo -u tor /usr/bin/tor -f /etc/tor/torrc --runasdaemon 1 >/dev/null 2>&1
 if [ "`hostname`" == "ritchie" ]; then
   sudo sudo -u rybalkin touch /tmp/rybalkin.fetchmail.log
   sudo sudo -u rybalkin fetchmail --pidfile=/tmp/rybalkin.fetchmail.pid -v
-  (sudo sudo -u rybalkin ssh -N -D 9051 aleksey@rybalkin.org >/dev/null 2>&1 &)
 fi
