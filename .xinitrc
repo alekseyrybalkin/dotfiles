@@ -3,12 +3,9 @@
 # make my keyboard fast
 xset r rate 200 30
 
-# turn off my touchpad if real mouse is present
-cat /proc/bus/input/devices | grep -q Synaptics && {
-  [ -d /dev/input/by-id ] && ls /dev/input/by-id | grep -q [Mm]ouse && {
-    synclient TouchpadOff=1
-  }
-}
+# turn off my touchpad
+synclient TouchpadOff=1
+
 # allow other users use our X server
 # this is primaraly for gamer to launch wine
 chmod 644 ~/.Xauthority
