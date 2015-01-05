@@ -17,5 +17,6 @@ sudo /root/bin/wifi
 sudo sudo -u tor /usr/bin/tor -f /etc/tor/torrc --runasdaemon 1 >/dev/null 2>&1
 if [ "`hostname`" == "ritchie" ]; then
   sudo sudo -u rybalkin touch /tmp/rybalkin.fetchmail.log
+  sudo sudo -u rybalkin touch /tmp/rybalkin.procmail.log
   sudo sudo -u rybalkin fetchmail --pidfile=/tmp/rybalkin.fetchmail.pid -v
 fi
