@@ -1,7 +1,3 @@
 #!/bin/sh
 
-trap "exit 1" SIGINT SIGTERM
-
-while true; do
-  ssh -N -D 9051 ${HEAVEN} >/dev/null 2>&1
-done
+ssh -N -D 9051 ${HEAVEN} >/dev/null 2>&1
