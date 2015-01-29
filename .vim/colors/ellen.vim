@@ -71,7 +71,7 @@ if &t_Co == 256
     hi VisualNOS      ctermbg=0    ctermfg=241   cterm=none
 
     " -> Code
-    hi Comment        ctermbg=0   ctermfg=242   cterm=none
+    hi Comment        ctermbg=0   ctermfg=246   cterm=none
     hi Constant       ctermbg=0   ctermfg=33   cterm=none
     hi String         ctermbg=0   ctermfg=166   cterm=none
     hi Error          ctermbg=0   ctermfg=7   cterm=none
