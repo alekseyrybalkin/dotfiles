@@ -7,7 +7,7 @@ if [ -n "${1}" ]; then
     if [ -f /tmp/rybalkin.fetchmail.pid ]; then
       sudo sudo -u rybalkin kill `head -n 1 /tmp/rybalkin.fetchmail.pid`
     fi
-    sudo sudo -u tor killall -SIGINT tor >/dev/null 2>&1
+    sudo killall -SIGINT tor >/dev/null 2>&1
     sudo /root/bin/uwifi
     exit 0
   fi
