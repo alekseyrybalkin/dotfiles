@@ -3,5 +3,5 @@
 from datetime import date, datetime
 
 now = datetime.now()
-death = datetime(2050, 1, 1)
+death = datetime(2077, 10, 23)
 print (death-now).days
