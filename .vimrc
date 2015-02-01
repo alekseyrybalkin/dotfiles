@@ -91,13 +91,10 @@ set mouse=a
 " do not highlight syntax for long lines
 set synmaxcol=320
 " highlight current line, but not column
-set cursorline
+set nocursorline
 set nocursorcolumn
-" show line numbers (with width 2), relative if possible
+" show line numbers (with width 2)
 set number
-if version >= 703
-    set relativenumber
-endif
 set numberwidth=2
 " easy split window creation
 map <C-p> :rightb vnew<cr>
@@ -111,3 +108,4 @@ endif
 set viminfo=
 " fuzzyfinder: do not create .vim-fuf-data directory
 let g:fuf_dataDir = ""
+autocmd BufEnter * :syntax sync fromstart
