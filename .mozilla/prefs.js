@@ -105,6 +105,7 @@ user_pref("image.animation_mode", "none");
 user_pref("intl.charsetmenu.browser.cache", "windows-1251, windows-1252, UTF-8");
 user_pref("javascript.enabled", false);
 user_pref("media.audio_data.enabled", false);
+user_pref("media.gmp-gmpopenh264.provider.enabled", false);
 user_pref("media.opus.enabled", false);
 user_pref("media.video_stats.enabled", false);
 user_pref("media.wave.enabled", false);
