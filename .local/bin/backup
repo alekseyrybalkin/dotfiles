@@ -14,6 +14,7 @@ cp -av ~/.procmailrc ./${name}
 cp -av ~/.fetchmailrc ./${name}
 cp -av ~/.config/mutt ./${name}
 cp -av ~/.config/hh-vpn ./${name}
+cp -av ~arwen/.wine.baldurs-gate-2/drive_c/goggames/baldurs-gate-2/save ./${name}/bg2-save
 
 tar -cpavf ${name}${ext} ./${name}
 gpg -c --passphrase-fd 3 3<~/.config/encryptpass ${name}${ext}
