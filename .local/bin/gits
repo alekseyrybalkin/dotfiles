@@ -4,6 +4,7 @@ project_dirs="/home/rybalkin/projects/ /home/rybalkin/freelance/ /home/javer/fre
 special_projects="/home/rybalkin"
 width=30
 bldred='\e[1;31m'
+bldyellow='\e[1;33m'
 txtrst='\e[0m'
 
 check_git_repo() {
@@ -23,7 +24,7 @@ check_git_repo() {
     continue
   }
   echo ${gitstatus} | grep -q "Your branch is up-to-date" || {
-    printf "%-${width}s ${bldred}%s${txtrst}\n" ${project} "not up-to-date"
+    printf "%-${width}s ${bldyellow}%s${txtrst}\n" ${project} "not up-to-date"
     continue
   }
   echo ${gitstatus} | grep -q "nothing to commit, working directory clean" || {
