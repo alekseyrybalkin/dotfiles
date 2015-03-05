@@ -4,9 +4,6 @@ if [ -n "${1}" ]; then
   if [ "${1}" == "stop" ]; then
     sudo sudo -u rybalkin killall -q heaven-proxy
     sudo sudo -u rybalkin killall -q ssh
-    if [ -f /tmp/rybalkin.fetchmail.pid ]; then
-      sudo sudo -u rybalkin kill `head -n 1 /tmp/rybalkin.fetchmail.pid`
-    fi
     sudo killall -SIGINT tor >/dev/null 2>&1
     sudo /root/bin/uwifi
     exit 0
@@ -15,8 +12,3 @@ fi
 
 sudo /root/bin/wifi
 sudo sudo -u tor /usr/bin/tor -f /etc/tor/torrc --runasdaemon 1 >/dev/null 2>&1
-if [ "`hostname`" == "ritchie" ]; then
-  sudo sudo -u rybalkin touch /tmp/rybalkin.fetchmail.log
-  sudo sudo -u rybalkin touch /tmp/rybalkin.procmail.log
-  sudo sudo -u rybalkin fetchmail --pidfile=/tmp/rybalkin.fetchmail.pid -v
-fi
