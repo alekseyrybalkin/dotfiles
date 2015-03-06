@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [ -n "${1}" ]; then
+  if [ "${1}" == "stop" ]; then
+    sudo killall -SIGINT tor >/dev/null 2>&1
+    exit 0
+  fi
+fi
+
+sudo sudo -u tor /usr/bin/tor -f /etc/tor/torrc --runasdaemon 1 >/dev/null 2>&1
