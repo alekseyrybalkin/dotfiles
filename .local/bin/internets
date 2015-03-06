@@ -2,12 +2,9 @@
 
 if [ -n "${1}" ]; then
   if [ "${1}" == "stop" ]; then
-    sudo sudo -u rybalkin killall -q heaven-proxy
-    sudo sudo -u rybalkin killall -q ssh
-    if [ -f /tmp/rybalkin.fetchmail.pid ]; then
-      sudo sudo -u rybalkin kill `head -n 1 /tmp/rybalkin.fetchmail.pid`
-    fi
-    sudo killall -SIGINT tor >/dev/null 2>&1
+    heaven-proxy stop
+    email stop
+    tor-proxy stop
     sudo /root/bin/uwifi
     exit 0
   fi

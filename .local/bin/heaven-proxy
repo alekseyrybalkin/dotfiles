@@ -1,3 +1,10 @@
 #!/bin/sh
 
+if [ -n "${1}" ]; then
+  if [ "${1}" == "stop" ]; then
+    sudo sudo -u rybalkin killall -q ssh
+    exit 0
+  fi
+fi
+
 ssh -N -D 9051 ${HEAVEN} >/dev/null 2>&1
