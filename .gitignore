@@ -8,7 +8,6 @@
 /.sl/
 /.ssh/
 /.Xauthority
-/.bash_history
 /.bashrc.local
 /.fetchmailrc
 /.procmailrc
