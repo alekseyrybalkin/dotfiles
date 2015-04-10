@@ -1,7 +1,9 @@
 # Check for an interactive session
 [ -z "${PS1}" ] && return
 
-export HISTFILESIZE=10000
+export HISTFILE=~/.cache/bash_history
+export HISTSIZE=3000
+export HISTFILESIZE=3000
 
 # colored ls for FreeBSD
 if [ `uname` = "FreeBSD" ]; then
