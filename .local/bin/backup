@@ -70,7 +70,7 @@ fi
 ssh ${HEAVEN} "sudo git --git-dir=/root/.git --work-tree=/root pull; sudo /root/.local/bin/backup heaven"
 file=`ssh ${HEAVEN} "cat /tmp/backup-take"`
 echo " *** downloading rybalkin.org backup to ritchie..."
-scp ${HEAVEN}:/tmp/${file} ~/.local/backup/
+scp ${HEAVEN}:/tmp/${file} /var/backups/
 ssh ${HEAVEN} "rm /tmp/${file} /tmp/backup-take"
 echo " *** done downloading rybalkin.org backup to ritchie"
 
