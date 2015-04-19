@@ -11,7 +11,7 @@ if [ `hostname` == "ritchie" ]; then
     let DIFF=$NOW-$LASTTIME
     # one week (86400*7) is enough or so we think
     if [ $DIFF -gt 604800 ]; then
-      echo "###BACKUP### $DIFF"
+      echo "###BACKUP###"
     fi
   fi
 fi

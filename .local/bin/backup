@@ -67,6 +67,13 @@ if [ `hostname` != "ritchie" ]; then
   exit 1
 fi
 
+if [ -z "`mount | grep seagate`" ]; then
+  if [ "${1}" != "--no-seagate" ]; then
+    echo "no seagate mounted, will not proceed (use --no-seagate to override)"
+    exit 1
+  fi
+fi
+
 ssh ${HEAVEN} "sudo git --git-dir=/root/.git --work-tree=/root pull; sudo /root/.local/bin/backup heaven"
 file=`ssh ${HEAVEN} "cat /tmp/backup-take"`
 echo " *** downloading rybalkin.org backup to ritchie..."
@@ -97,7 +104,15 @@ gpg -c --passphrase-fd 3 3<~/.config/encryptpass ${name}${ext}
 echo " *** done creating backup for ritchie"
 echo " *** uploading ritchie backup to rybalkin.org..."
 scp ${name}${ext}.gpg ${HEAVEN}:~/.local/backup/
+cp ${name}${ext}.gpg /var/backups/
 cd ~
 rm -rf ${tmpdir}
 echo $NOW > ~/.config/last_backup_timestamp
 echo " *** done uploading ritchie backup to rybalkin.org"
+
+if [ "${1}" != "--no-seagate" ]; then
+  echo " *** copying backups to seagate..."
+  cp /var/backups/${file} /mnt/seagate/backups/
+  cp /var/backups/${name}${ext}.gpg /mnt/seagate/backups/
+  echo " *** done copying backups to seagate"
+fi
