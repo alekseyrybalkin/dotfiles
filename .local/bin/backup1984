@@ -1,4 +1,0 @@
-#!/bin/bash
-
-file=`ssh aleksey@rybalkin.org "cat /tmp/take"`
-scp aleksey@rybalkin.org:/tmp/${file} ~/.local/archive/rybalkin.org/
