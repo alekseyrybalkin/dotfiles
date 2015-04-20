@@ -1,4 +1,4 @@
 #!/bin/sh
 
-sudo cryptsetup -d /root/luks/seagate.key luksOpen /dev/sdb1 seagate
+sudo cryptsetup -d /root/.local/secrets/luks/seagate.key luksOpen /dev/sdb1 seagate
 sudo mount /mnt/seagate
