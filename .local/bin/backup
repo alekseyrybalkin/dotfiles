@@ -107,7 +107,7 @@ scp ${name}${ext}.gpg ${HEAVEN}:~/.local/backup/
 cp ${name}${ext}.gpg /var/backups/
 cd ~
 rm -rf ${tmpdir}
-echo $NOW > ~/.config/last_backup_timestamp
+echo $NOW > ~/.local/secrets/last_backup_timestamp
 echo " *** done uploading ritchie backup to rybalkin.org"
 
 if [ "${1}" != "--no-seagate" ]; then

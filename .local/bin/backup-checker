@@ -3,11 +3,11 @@
 if [ `hostname` == "ritchie" ]; then
   if [ $USER == "rybalkin" ]; then
     NOW=`date +%s`
-    FILE=".config/last_backup_timestamp"
+    FILE="~/.local/secrets/last_backup_timestamp"
     if [ ! -f $FILE ]; then
       echo $NOW > $FILE
     fi
-    LASTTIME=`cat .config/last_backup_timestamp`
+    LASTTIME=`cat ~/.local/secrets/last_backup_timestamp`
     let DIFF=$NOW-$LASTTIME
     # one week (86400*7) is enough or so we think
     if [ $DIFF -gt 604800 ]; then
