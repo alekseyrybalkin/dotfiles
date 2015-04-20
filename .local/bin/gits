@@ -42,7 +42,6 @@ for i in ${special_projects}; do
   check_git_repo ${i}
 done
 ls ~/download
-ls ~/video
 ls /home/firefox/download
 ls /home/skype
 ls ~/.distlib 2>/dev/null && echo distlib
