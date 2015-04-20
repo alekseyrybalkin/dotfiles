@@ -5,9 +5,9 @@ if [ -n "${1}" ]; then
     heaven-proxy stop
     email stop
     tor-proxy stop
-    sudo /root/bin/uwifi
+    sudo /usr/bin/uwifi
     exit 0
   fi
 fi
 
-sudo /root/bin/wifi
+sudo /usr/bin/wifi
