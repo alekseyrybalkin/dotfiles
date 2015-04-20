@@ -100,7 +100,7 @@ cp -av ~arwen/.wine.baldurs-gate-2/drive_c/goggames/baldurs-gate-2/save ./${name
 cp -av ~/projects/pbm ./${name}
 
 tar -cpavf ${name}${ext} ./${name}
-gpg -c --passphrase-fd 3 3<~/.config/encryptpass ${name}${ext}
+gpg -c --passphrase-fd 3 3<~/.local/secrets/encryptpass ${name}${ext}
 echo " *** done creating backup for ritchie"
 echo " *** uploading ritchie backup to rybalkin.org..."
 scp ${name}${ext}.gpg ${HEAVEN}:~/.local/backup/
