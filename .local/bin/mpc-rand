@@ -8,7 +8,7 @@ fi
 
 mpc clear
 for i in $(seq 1 ${count}); do
-  cd ~/music
+  cd /var/multimedia/music
   chosen=`for album in *; do echo "${album}"; done | sort -R | head -n 1`
   cd ${chosen}
   coin=$((${RANDOM}%2))
