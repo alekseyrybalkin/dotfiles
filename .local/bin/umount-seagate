@@ -1,4 +1,0 @@
-#!/bin/sh
-
-sudo umount /mnt/seagate
-sudo cryptsetup luksClose seagate
