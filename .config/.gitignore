@@ -1,9 +1,7 @@
 /*
-!/mc/
-!/fontconfig/
-!/gtk-3.0/
-!/mpv/
 !/.gitignore
-!/user-dirs.dirs
 !/pythonstartup.py
 !/tmux.conf
+!/mpv/
+!/mc/
+!/fontconfig/

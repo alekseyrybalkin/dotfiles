@@ -41,7 +41,7 @@ which ack >/dev/null 2>&1 && {
 }
 which ack-grep >/dev/null 2>&1 && {
   alias mark='echo -e "\E[31;41m\033[1m###########################################################################\033[0m"'
-  ack_version=`ack-grep --version | head -n 1 | sed 's/ack-grep\ //g'`
+  ack_version=`ack-grep --version | head -n 1 | sed 's/ack-grep\ //g' | sed 's/ack\ //g'`
   if [ "${ack_version:0:1}" -ge 2 ]; then
     alias f='mark && ack-grep'
   else
@@ -84,7 +84,7 @@ stty -ixon
 
 if [ `hostname` == "ritchie" ] || [ `hostname` == "archiso" ]; then
   if [ "$USER" == "rybalkin" ]; then
-    export PATH="/home/$USER/.local/bin:/usr/bin"
+    export PATH="/home/$USER/.local/bin:/usr/bin:/bin"
     alias mpd-start="mpd /etc/mpd.conf"
     alias mpd-stop="mpd --kill /etc/mpd.conf"
     alias sshd-start="sudo /usr/bin/sshd"
