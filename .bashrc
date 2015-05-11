@@ -89,7 +89,6 @@ if [ `hostname` == "ritchie" ] || [ `hostname` == "archiso" ]; then
     alias mpd-stop="mpd --kill /etc/mpd.conf"
     alias sshd-start="sudo /usr/bin/sshd"
     alias sshd-stop="cat /run/sshd.pid | xargs sudo kill"
-    umask 077
   fi
 fi
 if [ "$USER" != "rybalkin" ]; then
