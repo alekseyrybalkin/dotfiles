@@ -84,11 +84,11 @@ stty -ixon
 
 if [ `hostname` == "ritchie" ] || [ `hostname` == "archiso" ]; then
   if [ "$USER" == "rybalkin" ]; then
-    export PATH="/home/$USER/.local/bin:/usr/bin:/bin"
     alias mpd-start="mpd /etc/mpd.conf"
     alias mpd-stop="mpd --kill /etc/mpd.conf"
     alias sshd-start="sudo /usr/bin/sshd"
     alias sshd-stop="cat /run/sshd.pid | xargs sudo kill"
+    umask 077
   fi
 fi
 if [ "$USER" != "rybalkin" ]; then

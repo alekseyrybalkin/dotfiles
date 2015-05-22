@@ -2,6 +2,8 @@
 !/.gitignore
 !/pythonstartup.py
 !/tmux.conf
+!/user-dirs.dirs
 !/mpv/
 !/mc/
 !/fontconfig/
+!/gtk-3.0/
