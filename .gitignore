@@ -6,6 +6,7 @@
 /music/
 /video/
 /.cache/
+/.dbus/
 /.ssh/
 /.sl/
 /.Xauthority

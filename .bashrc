@@ -82,7 +82,7 @@ echo $PATH | grep -q "$USER/.local/bin" || {
 # disable xon/xoff flow control (^s/^q) in rxvt
 stty -ixon
 
-if [ `hostname` == "ritchie" ] || [ `hostname` == "archiso" ]; then
+if [ `hostname` == "calcatrix" ] || [ `hostname` == "archiso" ]; then
   if [ "$USER" == "rybalkin" ]; then
     alias mpd-start="mpd /etc/mpd.conf"
     alias mpd-stop="mpd --kill /etc/mpd.conf"
