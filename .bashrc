@@ -114,6 +114,9 @@ export PYTHONSTARTUP=${HOME}/.config/pythonstartup.py
 
 export MYSQL_HISTFILE=/dev/null
 
+alias encri='gpg --batch -c --passphrase-fd 3 3<~/.local/secrets/encryptpass'
+alias decri='gpg --batch --passphrase-fd 3 3<~/.local/secrets/encryptpass'
+
 # load local untracked options
 if [ -e ~/.bashrc.local ]; then
   source ~/.bashrc.local
