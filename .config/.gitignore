@@ -3,6 +3,7 @@
 !/pythonstartup.py
 !/tmux.conf
 !/user-dirs.dirs
+!/psqlrc
 !/mpv/
 !/mc/
 !/fontconfig/
