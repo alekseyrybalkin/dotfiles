@@ -117,6 +117,6 @@ if [ "${USER}" == "rybalkin" ]; then
 fi
 
 # load local untracked options
-if [ -e ~/.bashrc.local ]; then
+if [ -e ~/.config/bashrc.local ]; then
   source ~/.config/bashrc.local
 fi
