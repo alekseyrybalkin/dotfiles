@@ -118,5 +118,5 @@ fi
 
 # load local untracked options
 if [ -e ~/.bashrc.local ]; then
-  source ~/.bashrc.local
+  source ~/.config/bashrc.local
 fi
