@@ -42,21 +42,6 @@ set ignorecase
 " highlight matches while typing
 set hlsearch
 set incsearch
-" use 2 spaces by default for scala, perl and shell code
-au filetype perl set shiftwidth=2
-au filetype perl set softtabstop=2
-au filetype sh set shiftwidth=2
-au filetype sh set softtabstop=2
-au filetype html set shiftwidth=2
-au filetype html set softtabstop=2
-au filetype mako set shiftwidth=2
-au filetype mako set softtabstop=2
-au filetype python set shiftwidth=4
-au filetype python set softtabstop=4
-au filetype javascript set shiftwidth=4
-au filetype javascript set softtabstop=4
-" treat tt2 templates like html
-au BufNewFile,BufRead *.tt2 set filetype=html
 " remember some history
 set history=1000
 " maximum number of changes that can be undone
@@ -92,7 +77,7 @@ cmap w!! w !sudo tee % >/dev/null
 set mouse=a
 " do not highlight syntax for long lines
 set synmaxcol=320
-" highlight current line, but not column
+" do not highlight current line and column (for speed)
 set nocursorline
 set nocursorcolumn
 " show line numbers (with width 2)
