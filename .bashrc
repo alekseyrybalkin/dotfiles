@@ -111,7 +111,7 @@ if [ "${USER}" == "rybalkin" ]; then
   export HEAVEN_DOMAIN='rybalkin.org'
   export HEAVEN_USER='aleksey'
   export HEAVEN=${HEAVEN_USER}@${HEAVEN_DOMAIN}
-  if [ `hostname` == "calcatrix" ] || [ `hostname` == "archiso" ]; then
+  if [ `hostname` == "sol" ] || [ `hostname` == "archiso" ]; then
     umask 077
   fi
 fi
