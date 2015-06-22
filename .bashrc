@@ -41,6 +41,8 @@ alias mpd-stop="mpd --kill /etc/mpd.conf"
 alias wine='LIBGL_DRIVERS_PATH=/usr/lib32/xorg/modules/dri WINEARCH=win32 wine'
 alias encri='gpg --batch -c --passphrase-fd 3 3<~/.local/secrets/encryptpass'
 alias decri='gpg --batch --passphrase-fd 3 3<~/.local/secrets/encryptpass'
+alias tpon='synclient TouchpadOff=0'
+alias tpoff='synclient TouchpadOff=1'
 
 # X settings
 alias startx='startx -- -nolisten tcp -iglx'
