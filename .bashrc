@@ -13,6 +13,7 @@ export MYSQL_HISTFILE=/dev/null
 # use ~/.config for config files
 export GNUPGHOME=~/.config/gnupg
 export PSQLRC=~/.config/psqlrc
+export GIMP2_DIRECTORY=.config/gimp
 alias mutt='mutt -F ~/.config/mutt/muttrc'
 alias links='CONFIG_DIR=.config links'
 alias tmux='tmux -f ~/.config/tmux.conf'
