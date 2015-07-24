@@ -42,9 +42,6 @@ set ignorecase
 " highlight matches while typing
 set hlsearch
 set incsearch
-" use 2 spaces by default for shell code
-au filetype sh set shiftwidth=2
-au filetype sh set softtabstop=2
 " remember some history
 set history=1000
 " maximum number of changes that can be undone
