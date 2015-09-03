@@ -8,7 +8,7 @@ synclient TouchpadOff=1
 chmod 644 ~/.Xauthority
 
 # set brightness
-xbacklight -set 70
+xbacklight -set 60
 
 # now run fluxbox
 startfluxbox
