@@ -46,6 +46,8 @@ alias tpoff='synclient TouchpadOff=1'
 
 # X settings
 alias startx='startx -- -nolisten tcp -iglx'
+export DISPLAY=:0.0
+export XAUTHORITY=/home/rybalkin/.Xauthority
 
 # ack settings
 ACK=ack
