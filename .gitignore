@@ -6,8 +6,4 @@
 /.cache/
 /.dbus/
 /.ssh/
-/.sl/
 /.Xauthority
-/.bashrc.local
-/.fetchmailrc
-/.procmailrc
