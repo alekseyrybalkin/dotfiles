@@ -14,6 +14,7 @@ export MYSQL_HISTFILE=/dev/null
 export GNUPGHOME=~/.config/gnupg
 export PSQLRC=~/.config/psqlrc
 export GIMP2_DIRECTORY=.config/gimp
+export INPUTRC=~/.config/inputrc
 alias mutt='mutt -F ~/.config/mutt/muttrc'
 alias links='CONFIG_DIR=.config links'
 alias tmux='tmux -f ~/.config/tmux.conf'

@@ -4,6 +4,7 @@
 !/tmux.conf
 !/user-dirs.dirs
 !/psqlrc
+!/inputrc
 !/mpv/
 !/mc/
 !/fontconfig/
