@@ -5,6 +5,7 @@
 !/user-dirs.dirs
 !/psqlrc
 !/inputrc
+!/weston.ini
 !/mpv/
 !/mc/
 !/fontconfig/
