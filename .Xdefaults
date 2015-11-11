@@ -8,9 +8,9 @@ URxvt.underlineColor:   yellow
 URxvt.font:             xft:Ubuntu Mono:pixelsize=15:antialias=true
 URxvt.boldFont:         xft:Ubuntu Mono:bold:pixelsize=15:antialias=true
 URxvt.perl-ext-common:  default,tabbed
-URxvt.title:            Debian GNU/Linux
+URxvt.title:            GNU/Linux
 URxvt.perl-ext-common:  default,matcher
-URxvt.urlLauncher:      firefox
+URxvt.urlLauncher:      true
 URxvt.matcher.button:   1
 URxvt.scrollBar:        False
 URxvt.geometry:         200x80
