@@ -58,6 +58,7 @@ session.screen0.windowMenu:	~/.fluxbox/windowmenu
 session.screen0.edgeSnapThreshold:	10
 session.screen0.strftimeFormat:	%k:%M
 session.colorsPerChannel:	4
+session.menuSearch:	itemstart
 session.styleOverlay:	~/.fluxbox/overlay
 session.appsFile:	~/.fluxbox/apps
 session.configVersion:	13
