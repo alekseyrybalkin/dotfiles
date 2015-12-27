@@ -32,14 +32,10 @@ export PAGER=/usr/bin/less
 export LESS="-i -g -M -R -x4 -X -f -F -z-1"
 export PYTHONDOCS=/usr/share/doc/python3/html
 export PYTHONSTARTUP=~/.config/pythonstartup.py
-export SDL_AUDIODRIVER="alsa"
 complete -cf sudo
 
 # misc aliases
 alias cal='cal -m'
-alias mpd-start="mpd /etc/mpd.conf"
-alias mpd-stop="mpd --kill /etc/mpd.conf"
-alias wine='LIBGL_DRIVERS_PATH=/usr/lib32/xorg/modules/dri WINEARCH=win32 wine'
 alias encri='gpg --batch -c --passphrase-fd 3 3<~/.local/secrets/encryptpass'
 alias decri='gpg --batch --passphrase-fd 3 3<~/.local/secrets/encryptpass'
 alias tpon='synclient TouchpadOff=0'
