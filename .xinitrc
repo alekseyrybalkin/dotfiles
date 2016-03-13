@@ -8,7 +8,7 @@ synclient TouchpadOff=1
 chmod 644 ~/.Xauthority
 
 # set brightness
-xbacklight -set 60
+xbacklight -set 90
 
 # remap insert into end for thinkpad x250
 xmodmap -e "keycode 118 = End NoSymbol End"

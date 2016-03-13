@@ -20,7 +20,7 @@ alias links='CONFIG_DIR=.config links'
 alias tmux='tmux -f ~/.config/tmux.conf'
 
 # c, c++, make flags
-export CFLAGS="-march=core2 -O2 -pipe"
+export CFLAGS="-march=native -O2 -pipe"
 export CXXFLAGS="${CFLAGS}"
 export MAKEFLAGS="-j$((`nproc 2>/dev/null` + 1))"
 
