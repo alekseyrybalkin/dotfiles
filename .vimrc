@@ -93,6 +93,8 @@ if version >= 702
 endif
 " do not save viminfo, please
 set viminfo=
+" no .netrwhist, please
+let g:netrw_dirhistmax=0
 " fuzzyfinder: do not create .vim-fuf-data directory
 let g:fuf_dataDir = ""
 autocmd BufEnter * :syntax sync fromstart
