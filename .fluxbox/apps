@@ -5,9 +5,6 @@
 [app] (name=urxvt)
   [Maximized] {yes}
 [end]
-[app] (name=gajim)
-  [Maximized] {yes}
-[end]
 [app] (name=firefox)
   [Maximized] {yes}
 [end]

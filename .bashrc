@@ -8,7 +8,6 @@ export HISTFILE=~/.cache/bash_history
 
 # disable unnecessary history files
 export LESSHISTFILE="-"
-export MYSQL_HISTFILE=/dev/null
 
 # use ~/.config for config files
 export GNUPGHOME=~/.config/gnupg
@@ -18,6 +17,10 @@ export INPUTRC=~/.config/inputrc
 alias mutt='mutt -F ~/.config/mutt/muttrc'
 alias links='CONFIG_DIR=.config links'
 alias tmux='tmux -f ~/.config/tmux.conf'
+
+# disable gegl swap and pip cache
+export GEGL_SWAP=RAM
+alias pip='pip --no-cache-dir'
 
 # c, c++, make flags
 export CFLAGS="-march=native -O2 -pipe"
