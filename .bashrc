@@ -32,7 +32,7 @@ export CXXFLAGS="${CFLAGS}"
 export MAKEFLAGS="-j$((`nproc 2>/dev/null` + 1))"
 
 # misc settings
-export PATH=/home/${USER}/projects/bin:/usr/bin:/bin:/usr/bin/vendor_perl
+export PATH=${HOME}/projects/bin:/usr/bin:/bin:/usr/bin/vendor_perl
 export EDITOR=/usr/bin/vim
 export VIEWER=/usr/bin/vim
 export PAGER=/usr/bin/less
