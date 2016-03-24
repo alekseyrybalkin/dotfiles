@@ -4,7 +4,11 @@
 # bash history settings
 export HISTSIZE=3000
 export HISTFILESIZE=3000
-export HISTFILE=~/.cache/bash_history
+export HISTFILE=~/.config/bash_history
+
+# move cache folder into /tmp
+export XDG_CACHE_HOME=/tmp/.${USER}-cache
+export XDG_DATA_HOME=/tmp/.${USER}-data
 
 # disable unnecessary history files
 export LESSHISTFILE="-"
@@ -28,7 +32,7 @@ export CXXFLAGS="${CFLAGS}"
 export MAKEFLAGS="-j$((`nproc 2>/dev/null` + 1))"
 
 # misc settings
-export PATH=/home/${USER}/.local/bin:/usr/bin:/bin:/usr/bin/vendor_perl
+export PATH=/home/${USER}/projects/bin:/usr/bin:/bin:/usr/bin/vendor_perl
 export EDITOR=/usr/bin/vim
 export VIEWER=/usr/bin/vim
 export PAGER=/usr/bin/less
@@ -39,8 +43,8 @@ complete -cf sudo
 
 # misc aliases
 alias cal='cal -m'
-alias encri='gpg --batch -c --passphrase-fd 3 3<~/.local/secrets/encryptpass'
-alias decri='gpg --batch --passphrase-fd 3 3<~/.local/secrets/encryptpass'
+alias encri='gpg --batch -c --passphrase-fd 3 3<~/.config/secrets/encryptpass'
+alias decri='gpg --batch --passphrase-fd 3 3<~/.config/secrets/encryptpass'
 alias tpon='synclient TouchpadOff=0'
 alias tpoff='synclient TouchpadOff=1'
 
