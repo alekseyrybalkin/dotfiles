@@ -1,3 +1,6 @@
+# load .Xresources
+[[ -f ~/.config/xresources ]] && xrdb -merge ~/.config/xresources
+
 # make my keyboard fast
 xset r rate 200 30
 

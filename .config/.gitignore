@@ -1,11 +1,11 @@
 /*
 !/.gitignore
+!/inputrc
+!/psqlrc
 !/pythonstartup.py
 !/tmux.conf
 !/user-dirs.dirs
-!/psqlrc
-!/inputrc
-!/weston.ini
+!/xresources
 !/mpv/
 !/mc/
 !/fontconfig/
