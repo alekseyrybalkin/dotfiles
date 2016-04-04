@@ -2,7 +2,7 @@ Control q k :Close
 Control q c :Exec urxvt
 Control q space :NextWindow {groups} (workspace=[current])
 Control q Shift 1 :Exec fbrun
-Control q l :Exec sflock
+Control q l :Exec physlock
 Control q s :Exec maim
 Control q BackSpace :Exit
 
