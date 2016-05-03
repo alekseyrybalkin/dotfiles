@@ -1,14 +1,14 @@
 # Check for an interactive session
 [ -z "${PS1}" ] && return
 
-# bash history settings
-export HISTSIZE=3000
-export HISTFILESIZE=3000
-export HISTFILE=~/.config/bash_history
-
 # move cache folder into /tmp
 export XDG_CACHE_HOME=/tmp/.${USER}-cache
 export XDG_DATA_HOME=/tmp/.${USER}-data
+
+# bash history settings
+export HISTSIZE=3000
+export HISTFILESIZE=3000
+export HISTFILE=${XDG_CACHE_HOME}/bash_history
 
 # disable unnecessary history files
 export LESSHISTFILE="-"
