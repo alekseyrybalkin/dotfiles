@@ -44,8 +44,6 @@ complete -cf sudo
 
 # misc aliases
 alias cal='cal -m'
-alias encri='gpg2 --batch -c --passphrase-fd 3 3<~/.config/secrets/encryptpass'
-alias decri='gpg2 --batch --passphrase-fd 3 3<~/.config/secrets/encryptpass'
 alias tpon='synclient TouchpadOff=0'
 alias tpoff='synclient TouchpadOff=1'
 
