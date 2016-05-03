@@ -8,7 +8,7 @@ export XDG_DATA_HOME=/tmp/.${USER}-data
 # bash history settings
 export HISTSIZE=3000
 export HISTFILESIZE=3000
-export HISTFILE=${XDG_CACHE_HOME}/bash_history
+export HISTFILE=/tmp/.${USER}-bash_history
 
 # disable unnecessary history files
 export LESSHISTFILE="-"
