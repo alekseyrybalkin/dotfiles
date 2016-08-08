@@ -46,6 +46,7 @@ complete -cf sudo
 alias cal='cal -m'
 alias tpon='synclient TouchpadOff=0'
 alias tpoff='synclient TouchpadOff=1'
+alias diff='diff --color'
 
 # X settings
 alias startx='startx -- -nolisten tcp -iglx'
