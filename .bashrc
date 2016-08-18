@@ -40,6 +40,7 @@ export PAGER=/usr/bin/less
 export LESS="-i -g -M -R -x4 -X -f -F -z-1"
 export PYTHONDOCS=/usr/share/doc/python3/html
 export PYTHONSTARTUP=~/.config/pythonstartup.py
+export GPG_TTY=$(tty)
 complete -cf sudo
 
 # misc aliases
@@ -109,7 +110,7 @@ esac
 
 # user- and hostname-specific settings
 if [ "${USER}" == "rybalkin" ]; then
-  export GPGKEY=5CA1EB8A
+  export GPGKEY=4D8CAE8DB5B76A04F7199BC65B89C7585CA1EB8A
   export DEBFULLNAME='Aleksey Rybalkin'
   export DEBEMAIL='aleksey@rybalkin.org'
 

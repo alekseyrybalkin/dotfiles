@@ -1,7 +1,7 @@
 [user]
     name = Aleksey Rybalkin
     email = aleksey@rybalkin.org
-    signingkey = 5CA1EB8A
+    signingkey = 4D8CAE8DB5B76A04F7199BC65B89C7585CA1EB8A
 [color]
     ui = true
 [color.status]
@@ -14,3 +14,5 @@
     default = upstream
 [alias]
     sorted-tags = for-each-ref --sort='*authordate' --format='%(tag)' refs/tags
+[gpg]
+    program = /usr/bin/gpg2
