@@ -1,0 +1,33 @@
+#!/bin/bash
+
+SUPPRESS=1
+acpi | grep -i charging >/dev/null 2>&1
+if [ "${?}" -eq 0 ]; then
+    SUPPRESS=0
+fi
+
+EMERGENCY=1
+OUTPUT=
+for i in `acpi | cut -d ' ' --fields=4 | sed 's/[,%]//g'`; do
+    if [ "${i}" -gt 15 ]; then
+        EMERGENCY=0
+    fi
+    if [ "${i}" -lt 95 ]; then
+        SUPPRESS=0
+    fi
+    OUTPUT="${OUTPUT}${i}% "
+done
+
+if [ "${EMERGENCY}" -gt 0 ]; then
+    if [ "${1}" == "--emergency" ]; then
+        if [ "${SUPPRESS}" -eq 0 ]; then
+            echo ${OUTPUT}
+        fi
+    fi
+else
+    if [ "${1}" != "--emergency" ]; then
+        if [ "${SUPPRESS}" -eq 0 ]; then
+            echo ${OUTPUT}
+        fi
+    fi
+fi
