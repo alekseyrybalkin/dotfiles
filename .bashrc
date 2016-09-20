@@ -41,7 +41,6 @@ export LESS="-i -g -M -R -x4 -X -f -F -z-1"
 export PYTHONDOCS=/usr/share/doc/python3/html
 export PYTHONSTARTUP=~/.config/pythonstartup.py
 export GPG_TTY=$(tty)
-complete -cf sudo
 
 # misc aliases
 alias cal='cal -m'
