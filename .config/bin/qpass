@@ -6,6 +6,7 @@ import itertools
 
 numerals = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
+
 def convert(number, base, numerals):
     if (number == 0):
         return "0"
@@ -13,8 +14,10 @@ def convert(number, base, numerals):
         rest = convert(number // base, base, numerals).lstrip("0")
         return rest + numerals[number % base]
 
+
 def normalize(hasher):
     return convert(int(hasher.hexdigest(), 16), len(numerals), numerals)
+
 
 service = getpass("Service: ").encode("ascii", "ignore")
 for _ in range(1000):

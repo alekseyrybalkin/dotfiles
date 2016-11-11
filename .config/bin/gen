@@ -7,7 +7,7 @@ if len(sys.argv) > 1 and sys.argv[1] == "pass":
     c = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ~`!@#$%^&*()-_+=\|{}[]:;\"',./?><"
     s = ""
     rnd = random.SystemRandom()
-    for i in range(0,12):
+    for i in range(0, 12):
         s += rnd.choice(c)
     print(s)
     sys.exit(0)
@@ -16,7 +16,7 @@ if len(sys.argv) > 1 and sys.argv[1] == "longpass":
     c = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-_"
     s = ""
     rnd = random.SystemRandom()
-    for i in range(0,50):
+    for i in range(0, 50):
         s += rnd.choice(c)
     print(s)
     sys.exit(0)
@@ -28,8 +28,8 @@ if len(sys.argv) > 1 and sys.argv[1] == "word":
     # numbers from http://www.math.cornell.edu/~mec/2003-2004/cryptography/subs/frequencies.html
     c_freq = [14810, 21912, 13318, 14003, 5246]
     v_freq = [2715, 4943, 7874, 4200, 3693, 10795, 188, 1257,
-            7253, 4761, 12666, 3316, 205, 10977, 11450, 16587,
-            2019, 3819, 315, 128, 3853]
+              7253, 4761, 12666, 3316, 205, 10977, 11450, 16587,
+              2019, 3819, 315, 128, 3853]
 
     rnd = random.SystemRandom()
 
