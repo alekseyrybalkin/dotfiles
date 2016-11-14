@@ -12,7 +12,7 @@ for i in `acpi | cut -d ' ' --fields=4 | sed 's/[,%]//g'`; do
     if [ "${i}" -gt 15 ]; then
         EMERGENCY=0
     fi
-    if [ "${i}" -lt 95 ]; then
+    if [ "${i}" -lt 94 ]; then
         SUPPRESS=0
     fi
     OUTPUT="${OUTPUT}${i}% "
