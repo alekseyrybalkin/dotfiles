@@ -47,6 +47,7 @@ alias cal='cal -m'
 alias tpon='synclient TouchpadOff=0'
 alias tpoff='synclient TouchpadOff=1'
 alias diff='diff --color'
+alias pep8='pycodestyle --first --show-source --ignore=E501'
 
 # X settings
 alias startx='startx -- -nolisten tcp -iglx'
