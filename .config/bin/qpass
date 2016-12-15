@@ -1,8 +1,9 @@
 #!/usr/bin/env python
 
-from getpass import getpass
+import getpass
 import hashlib
 import itertools
+import sys
 
 numerals = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
@@ -19,7 +20,11 @@ def normalize(hasher):
     return convert(int(hasher.hexdigest(), 16), len(numerals), numerals)
 
 
-service = getpass("Service: ").encode("ascii", "ignore")
+try:
+    service = getpass.getpass("Service: ").encode("ascii", "ignore")
+except KeyboardInterrupt as _:
+    print('')
+    sys.exit()
 for _ in range(1000):
     hasher = hashlib.sha512()
     hasher.update(service)
