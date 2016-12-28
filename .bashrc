@@ -55,23 +55,23 @@ alias startx='startx -- -nolisten tcp -iglx'
 # ack settings
 ACK=ack
 which ack-grep >/dev/null 2>&1 && {
-  ACK=ack-grep
+    ACK=ack-grep
 }
 which ${ACK} >/dev/null 2>&1 && {
-  alias mark='echo -e "\E[31;41m\033[1m###########################################################################\033[0m"'
-  ack_version=`${ACK} --version | head -n 1 | sed "s/${ACK}\ //g" | sed "s/ack\ //g"`
-  if [ "${ack_version:0:1}" -ge 2 ]; then
-    alias f="mark && ${ACK}"
-  else
-    alias f="mark && ${ACK} -a"
-  fi
+    alias mark='echo -e "\E[31;41m\033[1m###########################################################################\033[0m"'
+    ack_version=`${ACK} --version | head -n 1 | sed "s/${ACK}\ //g" | sed "s/ack\ //g"`
+    if [ "${ack_version:0:1}" -ge 2 ]; then
+        alias f="mark && ${ACK}"
+    else
+        alias f="mark && ${ACK} -a"
+    fi
 }
 
 # terminal settings
 export TERMINFO=/usr/share/terminfo
 if [ ${TERM} = "rxvt-256color" ]; then
-  alias screen='screen -T rxvt-256color'
-  export COLORTERM='rxvt'
+    alias screen='screen -T rxvt-256color'
+    export COLORTERM='rxvt'
 fi
 [ -n "${TMUX}" ] && [ -n "${COLORTERM}" ] && [[ ${COLORTERM} == *rxvt* ]] && export TERM=screen-256color && alias mc='TERM=xterm-256color mc'
 [ -n "${TMUX}" ] && [ -z "${COLORTERM}" ] && alias mc='TERM=screen.rxvt mc'
@@ -83,46 +83,46 @@ stty -ixon
 export GCC_COLORS=1
 alias grep='grep --color=auto'
 if [ `uname` = "FreeBSD" ]; then
-  alias ls='ls -G'
+    alias ls='ls -G'
 fi
 if [ `uname` = "Linux" ]; then
-  COREUTILS_VERSION=`ls --version | grep -m 1 "" | sed "s/ls (GNU coreutils) //g"`
-  if [ ${COREUTILS_VERSION:0:1} -ge 6 ]; then
-    alias ls='ls --color=auto --group-directories-first'
-  else
-    alias ls='ls --color=auto'
-  fi
-  eval `dircolors -b`
+    COREUTILS_VERSION=`ls --version | grep -m 1 "" | sed "s/ls (GNU coreutils) //g"`
+    if [ ${COREUTILS_VERSION:0:1} -ge 6 ]; then
+        alias ls='ls --color=auto --group-directories-first'
+    else
+        alias ls='ls --color=auto'
+    fi
+    eval `dircolors -b`
 fi
 
 # command prompt
 case ${USER} in
-  "rybalkin")
-    PS1="\[\e[1;32m\]\h\[\e[0m\] \w $ "
-    ;;
-  "root")
-    PS1="\[\e[1;31m\]ROOT\[\e[0m\] \w # "
-    ;;
-  *)
-    PS1="\[\e[1;34m\]\h\[\e[0m\] \w $ "
-    ;;
+    "rybalkin")
+        PS1="\[\e[1;32m\]\h\[\e[0m\] \w $ "
+        ;;
+    "root")
+        PS1="\[\e[1;31m\]ROOT\[\e[0m\] \w # "
+        ;;
+    *)
+        PS1="\[\e[1;34m\]\h\[\e[0m\] \w $ "
+        ;;
 esac
 
 # user- and hostname-specific settings
 if [ "${USER}" == "rybalkin" ]; then
-  export GPGKEY=4D8CAE8DB5B76A04F7199BC65B89C7585CA1EB8A
-  export DEBFULLNAME='Aleksey Rybalkin'
-  export DEBEMAIL='aleksey@rybalkin.org'
+    export GPGKEY=4D8CAE8DB5B76A04F7199BC65B89C7585CA1EB8A
+    export DEBFULLNAME='Aleksey Rybalkin'
+    export DEBEMAIL='aleksey@rybalkin.org'
 
-  export HEAVEN_DOMAIN='rybalkin.org'
-  export HEAVEN_USER='aleksey'
-  export HEAVEN=${HEAVEN_USER}@${HEAVEN_DOMAIN}
-  if [ `hostname` == "sol" ] || [ `hostname` == "archiso" ]; then
-    umask 077
-  fi
+    export HEAVEN_DOMAIN='rybalkin.org'
+    export HEAVEN_USER='aleksey'
+    export HEAVEN=${HEAVEN_USER}@${HEAVEN_DOMAIN}
+    if [ `hostname` == "sol" ] || [ `hostname` == "archiso" ]; then
+        umask 077
+    fi
 fi
 
 # load local untracked options
 if [ -e ~/.config/bashrc.local ]; then
-  source ~/.config/bashrc.local
+    source ~/.config/bashrc.local
 fi
