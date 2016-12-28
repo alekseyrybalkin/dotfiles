@@ -83,7 +83,7 @@ if len(sys.argv) > 1 and sys.argv[1] == "word":
         else:
             if prev == 'v':
                 roll = rnd.randint(1, 100)
-                if roll <= v_repeat[cnt-1]:
+                if roll <= v_repeat[cnt - 1]:
                     word += random_v()
                     cnt += 1
                 else:
@@ -93,7 +93,7 @@ if len(sys.argv) > 1 and sys.argv[1] == "word":
                     c_was = True
             else:
                 roll = rnd.randint(1, 100)
-                if roll <= c_repeat[cnt-1]:
+                if roll <= c_repeat[cnt - 1]:
                     word += random_c()
                     cnt += 1
                     c_was = True
