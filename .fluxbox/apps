@@ -14,3 +14,6 @@
 [app] (name=gimp)
   [Maximized] {yes}
 [end]
+[app] (name=gnumeric)
+  [Maximized] {yes}
+[end]
