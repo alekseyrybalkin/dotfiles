@@ -1,0 +1,51 @@
+#!/bin/bash
+
+# dependencies: mpv, socat
+
+MUSICA=/home/musica
+SOCKET=/run/mpv-${USER}.socket
+PLAYLIST=/tmp/mpv-${USER}-playlist.txt
+
+echo '{ "command": ["get_property", "volume"] }' | socat - ${SOCKET} >/dev/null 2>&1 || {
+    mpv --input-ipc-server=${SOCKET} --idle=yes --loop=inf >/dev/null 2>&1 &
+    sleep 0.1
+}
+
+if [ "${1}" == "pause" ]; then
+    echo '{ "command": ["set_property", "pause", true] }' | socat - ${SOCKET}
+    exit 0
+fi
+
+if [ "${1}" == "play" ]; then
+    echo '{ "command": ["set_property", "pause", false] }' | socat - ${SOCKET}
+    exit 0
+fi
+
+if [ "${1}" == "next" ]; then
+    echo '{ "command": ["playlist-next"] }' | socat - ${SOCKET}
+    exit 0
+fi
+
+if [ "${1}" == "prev" ]; then
+    echo '{ "command": ["playlist-prev"] }' | socat - ${SOCKET}
+    exit 0
+fi
+
+if [ "${1}" == "ls" ]; then
+    F=`echo '{ "command": ["get_property", "filename"] }' | socat - ${SOCKET} | sed 's/{"data":"//g' | sed 's/","error":"success"}//g'`
+    cat ${PLAYLIST} | grep --color=always -E "${F}|$" | less
+    exit 0
+fi
+
+if [ "${1}" == "stop" ]; then
+    echo '{ "command": ["stop"] }' | socat - ${SOCKET}
+    exit 0
+fi
+
+if [ "${1}" == "quit" ]; then
+    echo '{ "command": ["quit"] }' | socat - ${SOCKET}
+    exit 0
+fi
+
+find ${MUSICA} -type f | grep -i "${1}" | sort -R > ${PLAYLIST}
+echo "{ \"command\": [\"loadlist\", \"${PLAYLIST}\"] }" | socat - ${SOCKET}
