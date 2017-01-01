@@ -6,7 +6,7 @@ MUSICA=/home/musica
 SOCKET=/run/mpv-${USER}.socket
 PLAYLIST=/tmp/mpv-${USER}-playlist.txt
 
-echo '{ "command": ["get_property", "volume"] }' | socat - ${SOCKET} >/dev/null 2>&1 || {
+echo '{ "command": ["get_property", "volume"] }' | socat - ${SOCKET} 2>&1 | grep success >/dev/null 2>&1 || {
     mpv --input-ipc-server=${SOCKET} --idle=yes --loop=inf >/dev/null 2>&1 &
     sleep 0.1
 }
