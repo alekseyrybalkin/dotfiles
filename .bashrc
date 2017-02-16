@@ -28,7 +28,7 @@ export GEGL_SWAP=RAM
 alias pip='pip --no-cache-dir'
 
 # c, c++, make flags
-export CFLAGS="-march=x86-64 -O2 -pipe"
+export CFLAGS="-march=native -O2 -pipe"
 export CXXFLAGS="${CFLAGS}"
 export MAKEFLAGS="-j$((`nproc 2>/dev/null` + 1))"
 
