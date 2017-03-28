@@ -1,23 +1,22 @@
 #!/bin/sh
-#
-# fluxbox startup-script:
-#
-# Lines starting with a '#' are ignored.
 
-# Change your keymap:
-#xmodmap "/home/rybalkin/.Xmodmap"
+# startup - fluxbox startup-script
 
-# Applications you want to run with fluxbox.
-# MAKE SURE THAT APPS THAT KEEP RUNNING HAVE AN ''&'' AT THE END.
-#
-# unclutter -idle 2 &
-# wmnd &
-# wmsmixer -w &
-# idesk &
+# Copyright (C) 2013-2017 Aleksey Rybalkin
 
-# And last but not least we start fluxbox.
-# Because it is the last app you have to run it with ''exec'' before it.
+# This file is part of unix-home.
+
+# unix-home is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+
+# unix-home is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+
+# You should have received a copy of the GNU General Public License
+# along with unix-home.  If not, see <http://www.gnu.org/licenses/>.
 
 exec fluxbox
-# or if you want to keep a log:
-# exec fluxbox -log "/home/rybalkin/.fluxbox/log"
