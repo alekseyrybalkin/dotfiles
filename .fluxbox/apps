@@ -36,3 +36,6 @@
 [app] (name=gnumeric)
   [Maximized] {yes}
 [end]
+[app] (name=soffice.bin)
+  [Maximized] {yes}
+[end]
