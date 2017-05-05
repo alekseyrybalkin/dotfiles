@@ -35,3 +35,5 @@
     sorted-tags = for-each-ref --sort='*authordate' --format='%(tag)' refs/tags
 [gpg]
     program = /usr/bin/gpg2
+[sendemail]
+    smtpServer = /usr/bin/sendmail-custom
