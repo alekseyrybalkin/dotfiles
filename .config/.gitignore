@@ -17,18 +17,15 @@
 # You should have received a copy of the GNU General Public License
 # along with unix-home.  If not, see <http://www.gnu.org/licenses/>.
 
-/abiword/
 /gimp/
 /gnupg/
 /gtk-2.0/
-/libreoffice/
 /links/
 /mutt/
 /sl/
 /transmission/
 /bareboard/
 /telegram-cli/
-/bashrc.local
 /fetchmailrc
 /procmailrc
 /.fossil
