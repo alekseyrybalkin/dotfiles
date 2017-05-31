@@ -21,21 +21,9 @@
   [Position] (WINCENTER) {0 0}
   [Layer] {2}
 [end]
-[app] (name=urxvt)
+[app] (name!=fbrun)
   [Maximized] {yes}
 [end]
-[app] (name=firefox)
-  [Maximized] {yes}
-[end]
-[app] (name=evince)
-  [Maximized] {yes}
-[end]
-[app] (name=gimp)
-  [Maximized] {yes}
-[end]
-[app] (name=gnumeric)
-  [Maximized] {yes}
-[end]
-[app] (name=soffice.bin)
+[transient] (name=.*)
   [Maximized] {yes}
 [end]
