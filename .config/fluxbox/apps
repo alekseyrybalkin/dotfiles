@@ -24,6 +24,18 @@
 [app] (name!=fbrun)
   [Maximized] {yes}
 [end]
-[transient] (name=.*)
+[transient] (name=gnumeric)
+  [Maximized] {yes}
+[end]
+[transient] (name=transmission-gtk)
+  [Maximized] {yes}
+[end]
+[transient] (name=firefox)
+  [Maximized] {yes}
+[end]
+[transient] (name=chromium)
+  [Maximized] {yes}
+[end]
+[transient] (name=evince)
   [Maximized] {yes}
 [end]
