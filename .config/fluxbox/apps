@@ -30,9 +30,6 @@
 [transient] (name=transmission-gtk)
   [Maximized] {yes}
 [end]
-[transient] (name=firefox)
-  [Maximized] {yes}
-[end]
 [transient] (name=chromium)
   [Maximized] {yes}
 [end]
