@@ -21,7 +21,6 @@ URxvt.buffered:         true
 URxvt.background:       rgb:00/00/00
 URxvt.foreground:       white
 URxvt.internalBorder:   0
-URxvt.cursorColor:      green
 URxvt.borderColor:      rgb:00/00/00
 URxvt.underlineColor:   yellow
 URxvt.font:             xft:Noto Mono:pixelsize=12:antialias=true
@@ -33,6 +32,9 @@ URxvt.matcher.button:   1
 URxvt.scrollBar:        False
 URxvt.geometry:         200x80
 URxvt.termName:         rxvt-256color
+URxvt.cursorColor:      green
+URxvt.cursorBlink:      0
+URxvt.cursorUnderline:  0
 
 *color4:         rgb:32/4c/80
 *color12:        rgb:40/67/ee
