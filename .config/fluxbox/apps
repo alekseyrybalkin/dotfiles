@@ -36,9 +36,3 @@
 [transient] (name=evince)
   [Maximized] {yes}
 [end]
-[transient] (name=soffice)
-  [Maximized] {yes}
-[end]
-[transient] (name=loffice)
-  [Maximized] {yes}
-[end]
