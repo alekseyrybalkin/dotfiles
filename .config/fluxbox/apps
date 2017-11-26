@@ -24,9 +24,6 @@
 [app] (name!=fbrun)
   [Maximized] {yes}
 [end]
-[transient] (name=gnumeric)
-  [Maximized] {yes}
-[end]
 [transient] (name=transmission-gtk)
   [Maximized] {yes}
 [end]
