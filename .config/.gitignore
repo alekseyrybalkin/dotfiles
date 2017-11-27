@@ -18,6 +18,7 @@
 # along with unix-home.  If not, see <http://www.gnu.org/licenses/>.
 
 /gnupg/
+/ipython/
 /links/
 /mutt/
 /sl/
