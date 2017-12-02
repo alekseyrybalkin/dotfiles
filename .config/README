@@ -1,10 +1,5 @@
 unix-home - dotfiles for GNU/Linux and *BSD.
 
-git clone git://rybalkin.org/unix-home
-
-GitHub mirror:
-https://github.com/alekseyrybalkin/unix-home
-
 Copyright (C) 2010-2017 Aleksey Rybalkin.  See the end of the file for
 license conditions.
 
