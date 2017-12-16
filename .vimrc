@@ -1,3 +1,6 @@
+" Copyright (c) 2010-2017 Aleksey Rybalkin
+" SPDX-License-Identifier: GPL-3.0+
+
 " use vim features
 set nocompatible
 " use utf-8 by default, but understand cp1251 if encountered
