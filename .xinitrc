@@ -1,0 +1,20 @@
+# load .Xresources
+[[ -f ~/.config/xresources ]] && xrdb -merge ~/.config/xresources
+
+# make my keyboard fast
+xset r rate 200 30
+
+# turn off my touchpad
+synclient TouchpadOff=1
+
+# allow other users use our X server
+chmod 644 /run/xauthority
+
+# remap insert into end for thinkpad x250
+xmodmap -e "keycode 118 = End NoSymbol End"
+
+# move mouse to the lower-right corner of the screen
+mousemove 1304 740
+
+# now run fluxbox
+startfluxbox
