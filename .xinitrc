@@ -8,7 +8,7 @@ xset r rate 200 30
 synclient TouchpadOff=1
 
 # allow other users use our X server
-chmod 644 /run/xauthority
+chmod 644 /tmp/xauthority
 
 # remap insert into end for thinkpad x250
 xmodmap -e "keycode 118 = End NoSymbol End"
