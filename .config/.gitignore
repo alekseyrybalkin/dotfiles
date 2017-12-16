@@ -1,6 +1,7 @@
 # Copyright (c) 2010-2017 Aleksey Rybalkin
 # SPDX-License-Identifier: GPL-3.0+
 
+/dconf/
 /gnupg/
 /links/
 /mutt/
@@ -8,4 +9,3 @@
 /telegram-cli/
 /fetchmailrc
 /.fossil
-/.rubberband.wisdom*
