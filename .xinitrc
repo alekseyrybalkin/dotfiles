@@ -5,7 +5,7 @@
 xset r rate 200 30
 
 # turn off my touchpad
-synclient TouchpadOff=1
+xinput set-prop "Synaptics TM3075-002" "Device Enabled" 0
 
 # allow other users use our X server
 chmod 644 /tmp/xauthority
