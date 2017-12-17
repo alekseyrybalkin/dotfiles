@@ -17,7 +17,7 @@ chmod 644 /tmp/xauthority
 xmodmap -e "keycode 118 = End NoSymbol End"
 
 # move mouse to the lower-right corner of the screen
-mousemove 1304 740
+xdotool mousemove 1304 740
 
 # now run fluxbox
 startfluxbox
