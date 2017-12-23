@@ -11,7 +11,7 @@ xset r rate 200 30
 xinput set-prop "Synaptics TM3075-002" "Device Enabled" 0
 
 # allow other users use our X server
-chmod 644 /tmp/xauthority
+chmod 644 /run/rybalkin/public/xauthority
 
 # remap insert into end for thinkpad x250
 xmodmap -e "keycode 118 = End NoSymbol End"
