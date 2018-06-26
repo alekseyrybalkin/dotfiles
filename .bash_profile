@@ -3,4 +3,4 @@
 
 export LANG=en_US.UTF-8
 HISTCONTROL="ignoreboth"
-[[ -f /etc/bash.bashrc ]] && . /etc/bash.bashrc
+[[ -f ~/.bashrc ]] && . ~/.bashrc
