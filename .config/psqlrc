@@ -4,4 +4,3 @@
 */
 
 \set HISTFILE /dev/null
-set search_path=advdream,public
