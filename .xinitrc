@@ -16,5 +16,8 @@ chmod 644 /run/rybalkin/public/xauthority
 # remap insert into end for thinkpad x250
 xmodmap -e "keycode 118 = End NoSymbol End"
 
+# move mouse to the lower-right corner of the screen
+xdotool mousemove 1304 740
+
 # now run fluxbox
 startfluxbox
