@@ -6,4 +6,5 @@
 /sandbox/
 /.ssh/
 /.bash_history
+/.sqlite_history
 /.rubberband.wisdom*
