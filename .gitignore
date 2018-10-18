@@ -4,7 +4,11 @@
 /download/
 /projects/
 /sandbox/
+/arcadia/
+/.ya/
 /.ssh/
+/.CLion*/
+/.java/
 /.bash_history
 /.sqlite_history
 /.rubberband.wisdom*
