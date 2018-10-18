@@ -5,6 +5,9 @@
 /projects/
 /sandbox/
 /arcadia/
+/.ya/
 /.ssh/
+/.CLion*/
+/.java/
 /.bash_history
 /.rubberband.wisdom*
