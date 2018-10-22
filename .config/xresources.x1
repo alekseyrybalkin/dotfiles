@@ -7,8 +7,8 @@ URxvt.foreground:       white
 URxvt.internalBorder:   0
 URxvt.borderColor:      rgb:00/00/00
 URxvt.underlineColor:   yellow
-URxvt.font:             xft:Noto Mono:pixelsize=14:antialias=true
-URxvt.boldFont:         xft:Noto Mono:bold:pixelsize=14:antialias=true
+URxvt.font:             xft:Noto Mono:pixelsize=16:antialias=true
+URxvt.boldFont:         xft:Noto Mono:bold:pixelsize=16:antialias=true
 URxvt.title:            GNU/Linux
 URxvt.perl-ext-common:  default,matcher
 URxvt.urlLauncher:      true
