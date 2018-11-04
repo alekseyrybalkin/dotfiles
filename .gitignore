@@ -10,6 +10,8 @@
 /.CLion*/
 /.java/
 /.ansible/
+/.audacity-data
 /.bash_history
 /.sqlite_history
 /.rubberband.wisdom*
+/.pdsettings
