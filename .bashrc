@@ -43,7 +43,7 @@ export CXXFLAGS="${CFLAGS}"
 export MAKEFLAGS="-j${NPROC}"
 
 # misc settings
-export PATH=/usr/bin:/usr/bin/vendor_perl
+export PATH=/usr/bin:/usr/bin/vendor_perl:/bin:/sbin
 export EDITOR=/usr/bin/vim
 export VIEWER=/usr/bin/vim
 export PAGER=/usr/bin/less
