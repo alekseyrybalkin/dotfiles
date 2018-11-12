@@ -90,9 +90,6 @@ fi
 export GCC_COLORS=1
 alias grep='grep --color=auto'
 alias ls='ls --color=auto --group-directories-first'
-if [ `uname` = "FreeBSD" ]; then
-    alias ls='ls -G'
-fi
 
 # command prompt
 case "${USER}" in
