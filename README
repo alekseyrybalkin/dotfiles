@@ -1,5 +1,5 @@
 Copyright (c) 2010-2018 Aleksey Rybalkin <aleksey@rybalkin.org>
 SPDX-License-Identifier: GPL-3.0+
-License-Filename: .config/COPYING
+License-Filename: COPYING
 
 unix-home - dotfiles for GNU/Linux and *BSD.

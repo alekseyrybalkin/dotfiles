@@ -1,0 +1,22 @@
+# Copyright (c) 2010-2018 Aleksey Rybalkin
+# SPDX-License-Identifier: GPL-3.0+
+
+[user]
+    name = Aleksey Rybalkin
+    email = aleksey@rybalkin.org
+    signingkey = 4D8CAE8DB5B76A04F7199BC65B89C7585CA1EB8A
+[color]
+    ui = true
+[color.status]
+    header = white bold
+    branch = green
+[merge]
+    tool = vimdiff
+    defaultToUpstream = true
+[push]
+    default = upstream
+    followTags = true
+[alias]
+    sorted-tags = for-each-ref --sort='*authordate' --format='%(tag)' refs/tags
+[gpg]
+    program = /usr/bin/gpg
