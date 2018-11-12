@@ -5,6 +5,8 @@
 /projects/
 /sandbox/
 /arcadia/
+/.cache/
+/.local/
 /.ya/
 /.yt/
 /.ssh/

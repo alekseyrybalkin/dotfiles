@@ -15,10 +15,6 @@ stty -ixon
 # colors
 eval `dircolors -b`
 
-# move cache folder into /tmp
-export XDG_CACHE_HOME=/tmp/.${USER}-cache
-export XDG_DATA_HOME=/tmp/.${USER}-data
-
 # bash history settings
 export HISTSIZE=5000
 export HISTFILESIZE=5000
