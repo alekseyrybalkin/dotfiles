@@ -49,7 +49,6 @@ export VIEWER=/usr/bin/vim
 export PAGER=/usr/bin/less
 export LESS="-i -g -M -R -x4 -X -f -F -z-1"
 export PYTHONDOCS=file:///usr/share/doc/python/html/library
-export PYTHONSTARTUP=~/.config/pythonstartup.py
 export GPG_TTY=${THIS_TTY}
 
 # misc aliases
