@@ -2,7 +2,7 @@
 ! SPDX-License-Identifier: GPL-3.0+
 
 URxvt.buffered:         true
-URxvt.background:       rgb:00/00/00
+URxvt.background:       rgb:12/12/12
 URxvt.foreground:       white
 URxvt.internalBorder:   0
 URxvt.borderColor:      rgb:00/00/00
