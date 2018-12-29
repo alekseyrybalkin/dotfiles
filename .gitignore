@@ -1,24 +1,14 @@
 # Copyright (c) 2010-2018 Aleksey Rybalkin
 # SPDX-License-Identifier: GPL-3.0+
 
-/download/
 /projects/
 /sandbox/
-/arcadia/
 /.cache/
 /.local/
-/.ya/
-/.yt/
 /.ssh/
-/.CLion*/
-/.java/
-/.ansible/
-/.audacity-data
 /.bash_history
 /.sqlite_history
 /.rubberband.wisdom*
-/.pdsettings
 /.sudo_as_admin_successful
 /.rnd
 /.python_history
-/.mysql_history
