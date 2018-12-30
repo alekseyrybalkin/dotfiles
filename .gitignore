@@ -4,6 +4,7 @@
 /projects/
 /sandbox/
 /.cache/
+/.crawl/
 /.local/
 /.ssh/
 /.bash_history
