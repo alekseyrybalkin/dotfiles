@@ -1,4 +1,4 @@
-# Copyright (c) 2010-2018 Aleksey Rybalkin
+# Copyright (c) 2010-2019 Aleksey Rybalkin
 # SPDX-License-Identifier: GPL-3.0+
 
 # One lang to rule them all
