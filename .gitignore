@@ -3,6 +3,7 @@
 
 /projects/
 /sandbox/
+/.data/
 /.ssh/
 /.bash_history
 /.rubberband.wisdom*
