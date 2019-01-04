@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: GPL-3.0+
 
 # load .Xresources
-[[ -f ~/.config/xresources.$(hostname) ]] && xrdb -merge ~/.config/xresources.$(hostname)
+[[ -f ~/.config/xresources ]] && xrdb -merge ~/.config/xresources
 
 # make my keyboard fast
 xset r rate 200 30
