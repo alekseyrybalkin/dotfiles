@@ -85,3 +85,5 @@ set viminfo=
 " no .netrwhist, please
 let g:netrw_dirhistmax=0
 autocmd BufEnter * :syntax sync fromstart
+" no context lines above or below cursor
+set scrolloff=0
