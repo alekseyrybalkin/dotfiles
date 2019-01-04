@@ -3,12 +3,6 @@
 
 /projects/
 /sandbox/
-/.cache/
-/.local/
 /.ssh/
 /.bash_history
-/.sqlite_history
 /.rubberband.wisdom*
-/.sudo_as_admin_successful
-/.rnd
-/.python_history
