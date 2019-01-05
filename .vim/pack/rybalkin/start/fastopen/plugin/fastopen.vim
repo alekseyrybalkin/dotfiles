@@ -13,16 +13,17 @@ import os
 import vim
 
 names = []
-for root, dirs, files in os.walk(os.getcwd()):
+for root, dirs, files in os.walk(os.getcwd(), topdown=True):
     root = root.replace(os.getcwd(), '')
     if root.startswith('/'):
         root = root[1:]
     if len(root) > 0:
         root += '/'
-    if root.startswith('target/'):
-        continue
-    if root.startswith('.git/') or '/.git/' in root:
-        continue
+    for skip in ['target', '.data', '.git']:
+        try:
+            dirs.remove(skip)
+        except ValueError as e:
+            pass
     for f in files:
         if f.endswith('.pyc'):
             continue
