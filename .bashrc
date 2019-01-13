@@ -65,6 +65,8 @@ alias slashr='sed -i "s/\r//g"'
 alias ipython='ipython --no-confirm-exit'
 
 # X settings
+export DISPLAY=:0.0
+export XAUTHORITY=/run/rybalkin/public/xauthority
 alias startx='startx -- -nolisten tcp -iglx'
 
 # ack settings
@@ -104,10 +106,6 @@ case "${USER}" in
         PS1="\[\e[1;34m\]\h\[\e[0m\] \w $ "
         ;;
 esac
-
-# X settings
-export DISPLAY=:0.0
-export XAUTHORITY=/run/rybalkin/public/xauthority
 
 # Load custom settings from /etc
 [[ -f /etc/bash.custom.bashrc ]] && . /etc/bash.custom.bashrc
