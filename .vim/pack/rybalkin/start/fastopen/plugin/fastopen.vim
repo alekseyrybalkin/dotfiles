@@ -108,4 +108,4 @@ endfunction
 
 command! -nargs=0 E call FastOpen()
 
-map <C-o> :E<cr>
+map <C-s> :E<cr>
