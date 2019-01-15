@@ -87,3 +87,5 @@ let g:netrw_dirhistmax=0
 autocmd BufEnter * :syntax sync fromstart
 " no context lines above or below cursor
 set scrolloff=0
+" disable folding (e.g. in *.rst files)
+set nofoldenable
