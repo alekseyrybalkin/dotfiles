@@ -50,7 +50,7 @@ if &t_Co == 256
 
     " -> Search
     hi Search         ctermbg=241  ctermfg=227  cterm=none
-    hi IncSearch      ctermbg=241  ctermfg=227  cterm=none
+    hi IncSearch      ctermbg=227  ctermfg=241  cterm=none
 
     " -> Diff
     hi DiffAdd        ctermbg=22   ctermfg=208  cterm=none
