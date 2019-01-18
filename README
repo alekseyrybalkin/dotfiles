@@ -3,3 +3,6 @@ SPDX-License-Identifier: GPL-3.0+
 License-Filename: COPYING
 
 unix-home - dotfiles for GNU/Linux and *BSD.
+
+vim-glsl plugin license: MIT,
+https://github.com/tikhomirov/vim-glsl/blob/master/LICENSE
