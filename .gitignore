@@ -4,6 +4,8 @@
 /projects/
 /sandbox/
 /.data/
+/.offlineimap/
 /.ssh/
 /.bash_history
+/.offlineimaprc
 /.rubberband.wisdom*
