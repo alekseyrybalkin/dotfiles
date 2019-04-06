@@ -23,5 +23,5 @@
     program = /usr/bin/gpg
 [diff]
     submodule = log
-#[status]
-#    submodulesummary = true
+[status]
+    submodulesummary = true
