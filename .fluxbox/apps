@@ -14,6 +14,9 @@
 [transient] (name=chromium)
   [Maximized] {yes}
 [end]
+[transient] (name=firefox)
+  [Maximized] {yes}
+[end]
 [transient] (name=evince)
   [Maximized] {yes}
 [end]
