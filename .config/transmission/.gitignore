@@ -1,6 +1,8 @@
 # Copyright (c) 2017-2019 Aleksey Rybalkin
 # SPDX-License-Identifier: GPL-3.0+
 
-dht.dat
-settings.json
-stats.json
+/torrents/
+/resume/
+/dht.dat
+/settings.json
+/stats.json
