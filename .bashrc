@@ -118,3 +118,6 @@ fi
 
 # Load custom settings from /etc
 [[ -f /etc/bash.custom.bashrc ]] && . /etc/bash.custom.bashrc
+
+# Load custom settings from home folder
+[[ -f ~/.bashrc.local ]] && . ~/.bashrc.local
