@@ -108,5 +108,13 @@ case "${USER}" in
         ;;
 esac
 
+# privoxy
+if [ "${USER}@$(hostname)" == "rybalkin@x250" ] || [ "${USER}@$(hostname)" == "aleksey@rybalkin.org" ]; then
+    export http_proxy=http://127.0.0.1:8118
+    export HTTP_PROXY=${http_proxy}
+    export https_proxy=${http_proxy}
+    export HTTPS_PROXY=${http_proxy}
+fi
+
 # Load custom settings from /etc
 [[ -f /etc/bash.custom.bashrc ]] && . /etc/bash.custom.bashrc
