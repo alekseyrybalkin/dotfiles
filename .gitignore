@@ -11,3 +11,7 @@
 /.bashrc.local
 /.offlineimaprc
 /.rubberband.wisdom*
+
+#FIXME: remove after 21.06.2019
+/.android/
+/.com.xiaomitool.v2.gui.MainWindow/
