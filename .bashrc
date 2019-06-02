@@ -63,6 +63,7 @@ alias essay='vim "+set tw=72"'
 alias xclip='xclip -selection clipboard'
 alias xoff='xset dpms force off'
 alias slashr='sed -i "s/\r//g"'
+alias python='python -q'
 alias ipython='ipython --no-confirm-exit'
 
 # X settings
