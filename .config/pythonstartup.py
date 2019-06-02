@@ -1,6 +1,8 @@
 # Copyright (c) 2014-2019 Aleksey Rybalkin
 # SPDX-License-Identifier: GPL-3.0+
 import itertools
+import math
+import os
 import shutil
 import sys
 
