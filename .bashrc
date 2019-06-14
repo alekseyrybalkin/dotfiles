@@ -38,7 +38,7 @@ alias tmux='tmux -f ~/.config/tmux.conf'
 alias pip='pip --no-cache-dir'
 
 # c, c++, make flags
-export CFLAGS="-march=x86-64 -O2 -pipe"
+export CFLAGS="-march=native -O2 -pipe"
 export CXXFLAGS="${CFLAGS}"
 export MAKEFLAGS="-j${NPROC}"
 
@@ -99,7 +99,11 @@ alias ls='ls --color=auto --group-directories-first'
 case "${USER}" in
     "rybalkin")
         # https://unix.stackexchange.com/a/124409
-        PS1="\[\033[38;5;154m\]\h\[\033[0m\] \w $ "
+        if [ -f /etc/kiin.conf.bash ]; then
+            PS1="\[\033[38;5;124m\]\h\[\033[0m\] \w $ "
+        else
+            PS1="\[\033[38;5;154m\]\h\[\033[0m\] \w $ "
+        fi
         ;;
     "root")
         PS1="\[\e[1;31m\]\h\[\e[0m\] \w # "
