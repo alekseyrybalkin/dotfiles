@@ -113,7 +113,7 @@ case "${USER}" in
         ;;
 esac
 
-# privoxy
+# http proxy
 if [ "${USER}@$(hostname)" == "rybalkin@x250" ]; then
     export http_proxy=http://127.0.0.1:8118
     export HTTP_PROXY=${http_proxy}
