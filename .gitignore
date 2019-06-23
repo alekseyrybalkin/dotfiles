@@ -8,6 +8,7 @@
 /.offlineimap/
 /.ssh/
 /.pki/
+/.mozilla/
 /.bash_history
 /.bashrc.local
 /.offlineimaprc
