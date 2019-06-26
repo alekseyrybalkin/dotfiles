@@ -7,8 +7,8 @@ URxvt.foreground:       white
 URxvt.internalBorder:   0
 URxvt.borderColor:      rgb:00/00/00
 URxvt.underlineColor:   yellow
-URxvt.font:             xft:Ubuntu Mono:pixelsize=14:antialias=true
-URxvt.boldFont:         xft:Ubuntu Mono:bold:pixelsize=14:antialias=true
+URxvt.font:             xft:Ubuntu Mono:pixelsize=16:antialias=true
+URxvt.boldFont:         xft:Ubuntu Mono:bold:pixelsize=16:antialias=true
 URxvt.title:            GNU/Linux
 URxvt.perl-ext-common:  default,matcher
 URxvt.urlLauncher:      true
@@ -16,7 +16,7 @@ URxvt.matcher.button:   1
 URxvt.scrollBar:        False
 URxvt.geometry:         200x80
 URxvt.termName:         rxvt-256color
-URxvt.cursorColor:      rgb:66/b2/ff
+URxvt.cursorColor:      rgb:00/af/ff
 URxvt.cursorBlink:      0
 URxvt.cursorUnderline:  0
 
