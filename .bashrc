@@ -99,17 +99,13 @@ alias ls='ls --color=auto --group-directories-first'
 case "${USER}" in
     "rybalkin")
         # https://unix.stackexchange.com/a/124409
-        if [ -f /etc/kiin.conf.bash ]; then
-            PS1="\[\033[38;5;124m\]\h\[\033[0m\] \w $ "
-        else
-            PS1="\[\033[38;5;154m\]\h\[\033[0m\] \w $ "
-        fi
+        PS1="\[\033[38;5;39m\]\h\[\033[0m\] \w $ "
         ;;
     "root")
         PS1="\[\e[1;31m\]\h\[\e[0m\] \w # "
         ;;
     *)
-        PS1="\[\e[1;34m\]\h\[\e[0m\] \w $ "
+        PS1="\[\033[38;5;208m\]\h\[\033[0m\] \w $ "
         ;;
 esac
 

@@ -16,7 +16,7 @@ URxvt.matcher.button:   1
 URxvt.scrollBar:        False
 URxvt.geometry:         200x80
 URxvt.termName:         rxvt-256color
-URxvt.cursorColor:      green
+URxvt.cursorColor:      rgb:66/b2/ff
 URxvt.cursorBlink:      0
 URxvt.cursorUnderline:  0
 
