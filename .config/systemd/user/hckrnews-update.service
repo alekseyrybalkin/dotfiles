@@ -1,0 +1,8 @@
+[Unit]
+Description=hckrnews-update
+
+[Service]
+User=rybalkin
+Group=rybalkin
+Type=oneshot
+ExecStart=/usr/bin/python /usr/bin/hckrnews update
