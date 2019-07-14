@@ -1,0 +1,8 @@
+[Unit]
+Description=reuters-sync
+
+[Service]
+User=rybalkin
+Group=rybalkin
+Type=oneshot
+ExecStart=/bin/bash /usr/lib/addons/reuters-sync.bash

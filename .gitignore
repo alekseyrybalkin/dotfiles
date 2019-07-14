@@ -5,6 +5,7 @@
 /sandbox/
 /.android/
 /.data/
+/.local/
 /.offlineimap/
 /.ssh/
 /.pki/
