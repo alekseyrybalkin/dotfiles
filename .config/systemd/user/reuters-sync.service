@@ -1,6 +1,0 @@
-[Unit]
-Description=reuters-sync
-
-[Service]
-Type=oneshot
-ExecStart=/bin/bash /usr/lib/addons/reuters-sync.bash
