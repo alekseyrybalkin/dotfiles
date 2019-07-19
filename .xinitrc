@@ -16,8 +16,5 @@ chmod 644 /run/rybalkin/public/xauthority
 # remap insert into end for thinkpad x250
 xmodmap -e "keycode 118 = End NoSymbol End"
 
-# run compton
-compton &
-
 # now run fluxbox
-i3
+startfluxbox
