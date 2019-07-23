@@ -82,7 +82,7 @@ type ${ACK} >/dev/null 2>&1 && {
 
 # terminal settings
 export TERMINFO=/usr/share/terminfo
-if [ ${TERM} = "rxvt-256color" ]; then
+if [ ${TERM} = "xterm-kitty" ] || [ ${TERM} = "rxvt-256color" ]; then
     alias screen='screen -T rxvt-256color'
     export COLORTERM='rxvt'
 fi
