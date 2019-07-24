@@ -23,4 +23,4 @@ URxvt.cursorUnderline:  0
 *color4:         rgb:32/4c/80
 *color12:        rgb:40/67/ee
 
-Xcursor.theme: Neutral
+Xcursor.theme: Adwaita
