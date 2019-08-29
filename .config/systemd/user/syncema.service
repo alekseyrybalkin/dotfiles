@@ -1,0 +1,6 @@
+[Unit]
+Description=syncema
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python /usr/bin/syncema

@@ -6,11 +6,9 @@
 /.android/
 /.data/
 /.local/
-/.offlineimap/
 /.ssh/
 /.pki/
 /.mozilla/
 /.bash_history
 /.bashrc.local
-/.offlineimaprc
 /.rubberband.wisdom*
