@@ -1,0 +1,61 @@
+# "From" details
+set realname="Aleksey Rybalkin"
+set from="aleksey@rybalkin.org"
+set use_from=yes
+set envelope_from="yes"
+
+# Speed up folders switch
+set sleep_time = 0
+
+# Sort messages by threads
+set sort=threads
+
+# Folders
+set mbox_type=Maildir
+set folder="/home/rybalkin/.data/mail/aleksey@rybalkin.org"
+set postponed="+.Postponed"
+set mbox="+.i2019"
+set spoolfile="+.i2019"
+set move=no
+
+# Where to save sent mail
+set record="+.Sent"
+
+# Use sendmail over ssh
+set sendmail="ssh aleksey@rybalkin.org /usr/bin/sendmail"
+
+# Watch these mailboxes for new mail
+mailboxes +.i2019 +.Lobby +.Telegram +.Releases
+
+# How to sort entries in the file browser
+set sort_browser=alpha
+
+# Which entries to show in the file browser
+set mask=""
+
+# Use vim as an editor
+set editor="vim -c 'set tw=70 et' '+/^$' "
+set edit_headers=yes
+
+# Odds and ends
+set markers          # mark wrapped lines of text in the pager with a +
+set smart_wrap       # Don't wrap mid-word
+set pager_context=5  # Retain 5 lines of previous page when scrolling.
+set status_on_top    # Status bar on top.
+
+# How often to look for new mail
+set mail_check = 10
+set mail_check_recent = no
+set mark_old = no
+
+# Don't wait too long for user input
+set timeout = 10
+
+# Use `n` to go to next unread mailbox
+bind index n next-unread-mailbox
+
+# Source colors config
+source ~/.config/mutt/mutt_colors
+
+# Source GPG config
+source ~/.config/mutt/gpg

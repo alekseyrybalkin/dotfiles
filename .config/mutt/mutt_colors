@@ -1,0 +1,15 @@
+color   hdrdefault  blue            color233
+color   quoted      blue            color233
+color   signature   blue            color233
+color   attachment  red             color233
+color   message     brightred       color233
+color   error       brightred       color233
+color   indicator   color233        red
+color   status      brightgreen     blue
+color   tree        white           color233
+color   normal      white           color233
+color   markers     red             color233
+color   search      white           color233
+color   tilde       brightmagenta   color233
+color   index       blue            color233 ~F
+color   index       red             color233 "~N|~O"
