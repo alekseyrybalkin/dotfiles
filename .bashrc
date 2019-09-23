@@ -57,8 +57,8 @@ alias cal='cal -m'
 alias tpon="xinput set-prop '${TOUCHPAD_DEVICE}' 'Device Enabled' 1"
 alias tpoff="xinput set-prop '${TOUCHPAD_DEVICE}' 'Device Enabled' 0"
 alias diff='diff --color'
-alias pep8='pycodestyle --first --show-source --ignore=E501'
-alias pep8all='find . -name "*.py" | xargs pycodestyle --first --show-source --ignore=E501'
+alias pep8='pycodestyle'
+alias pep8all='find . -name "*.py" | xargs pycodestyle'
 alias essay='vim "+set tw=72"'
 alias xclip='xclip -selection clipboard'
 alias xoff='xset dpms force off'
