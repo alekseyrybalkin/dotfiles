@@ -23,3 +23,6 @@
 [transient] (name=gimp)
   [Maximized] {yes}
 [end]
+[transient] (name=blender)
+  [Maximized] {yes}
+[end]
