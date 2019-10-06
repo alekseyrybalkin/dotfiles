@@ -26,3 +26,6 @@
 [transient] (name=blender)
   [Maximized] {yes}
 [end]
+[transient] (name=inkscape)
+  [Maximized] {yes}
+[end]
