@@ -25,7 +25,7 @@ set record="+.Sent"
 set sendmail="ssh aleksey@rybalkin.org /usr/bin/sendmail"
 
 # Watch these mailboxes for new mail
-mailboxes +.i2019 +.Lobby +.Telegram +.Releases
+mailboxes +.i2019 +.Lobby +.Telegram +.Releases +.Github
 
 # How to sort entries in the file browser
 set sort_browser=alpha
