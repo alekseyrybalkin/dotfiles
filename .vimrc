@@ -1,4 +1,4 @@
-" Copyright (c) 2010-2019 Aleksey Rybalkin
+" Copyright (c) 2010-2020 Aleksey Rybalkin
 " SPDX-License-Identifier: GPL-3.0+
 
 " use vim features
