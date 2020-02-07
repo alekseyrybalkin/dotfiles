@@ -17,3 +17,6 @@ pager = LESS='FSRX' less
 
 [trusted]
 groups = rybalkin
+
+[worker]
+enabled = false
