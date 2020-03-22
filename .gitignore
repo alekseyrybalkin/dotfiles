@@ -7,7 +7,6 @@
 /.data/
 /.ssh/
 /.pki/
-/.mozilla/
 /.bash_history
 /.bashrc.local
 /.rubberband.wisdom*
