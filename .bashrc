@@ -51,6 +51,7 @@ export LESS="-i -g -M -R -x4 -X -f -F -z-1"
 export PYTHONDOCS=file:///usr/share/doc/python/html/library
 export PYTHONSTARTUP=~/.config/pythonstartup.py
 export GPG_TTY=${THIS_TTY}
+export NO_AT_BRIDGE=1
 
 # misc aliases
 alias cal='cal -m'
