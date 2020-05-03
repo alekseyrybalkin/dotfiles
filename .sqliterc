@@ -1,0 +1,7 @@
+.mode column
+.prompt "# " "... "
+.headers on
+.schema
+.print "================================="
+.tables
+.print "================================="
