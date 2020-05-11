@@ -33,13 +33,13 @@ label_topline 0
 nextpage_topline 0
 color 1
 basic_color terminal
-anchor_color blue
+anchor_color cyan
 image_color green
 form_color red
-mark_color cyan
+mark_color blue
 bg_color terminal
 active_style 0
-active_color cyan
+active_color blue
 visited_anchor 0
 visited_color magenta
 pagerline 10000
