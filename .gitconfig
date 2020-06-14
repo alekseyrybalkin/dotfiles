@@ -17,6 +17,8 @@
     default = upstream
     followTags = true
     recurseSubmodules = on-demand
+[pull]
+    ff = only
 [alias]
     sorted-tags = for-each-ref --sort='*authordate' --format='%(tag)' refs/tags
 [gpg]
