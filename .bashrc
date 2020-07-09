@@ -80,7 +80,7 @@ type ack-grep >/dev/null 2>&1 && {
 }
 type ${ACK} >/dev/null 2>&1 && {
     alias mark='echo -e "\E[31;41m\033[1m###########################################################################\033[0m"'
-    alias f="mark && ${ACK} --ignore-dir=.data"
+    alias f="mark && ${ACK}"
 }
 
 # terminal settings
