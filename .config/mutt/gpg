@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: GPL-3.0+
 
 # always attempt to cryptographically sign outgoing messages
-set crypt_autosign = yes
+set crypt_autosign = no
 
 # gnupg > 2.1 now requires to use gpg_agent
 set pgp_use_gpg_agent = yes
