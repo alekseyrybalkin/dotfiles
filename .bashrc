@@ -29,7 +29,6 @@ export GNUPGHOME=~/.config/gnupg
 export PSQLRC=~/.config/psqlrc
 export INPUTRC=~/.config/inputrc
 export FOSSIL_HOME=~/.config
-export IPYTHONDIR=/tmp/.${USER}-ipython
 export MPLCONFIGDIR=/tmp/.${USER}-matplotlib
 alias mutt='mutt -F ~/.config/mutt/muttrc'
 alias tmux='tmux -f ~/.config/tmux.conf'
@@ -66,7 +65,6 @@ alias xclip='xclip -selection clipboard'
 alias xoff='xset dpms force off'
 alias slashr='sed -i "s/\r//g"'
 alias python='python -q'
-alias ipython='ipython --no-confirm-exit'
 
 # X settings
 export DISPLAY=:0.0
