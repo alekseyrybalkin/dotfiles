@@ -65,6 +65,7 @@ alias xclip='xclip -selection clipboard'
 alias xoff='xset dpms force off'
 alias slashr='sed -i "s/\r//g"'
 alias python='python -q'
+alias httpserver="python -c 'import http.server; http.server.test(HandlerClass = http.server.SimpleHTTPRequestHandler)'"
 
 # X settings
 export DISPLAY=:0.0
