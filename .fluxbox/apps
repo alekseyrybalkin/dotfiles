@@ -8,22 +8,13 @@
 [app] (name!=fbrun)
   [Maximized] {yes}
 [end]
-[transient] (name=transmission-gtk)
-  [Maximized] {yes}
-[end]
 [transient] (name=chromium)
-  [Maximized] {yes}
-[end]
-[transient] (name=firefox)
   [Maximized] {yes}
 [end]
 [transient] (name=evince)
   [Maximized] {yes}
 [end]
 [transient] (name=gimp)
-  [Maximized] {yes}
-[end]
-[transient] (name=blender)
   [Maximized] {yes}
 [end]
 [transient] (name=inkscape)
