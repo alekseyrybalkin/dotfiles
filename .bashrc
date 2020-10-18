@@ -21,8 +21,6 @@ export HISTFILESIZE=5000
 
 # disable unnecessary history files
 export LESSHISTFILE="-"
-export BZR_LOG=/dev/null
-export BRZ_LOG=/dev/null
 
 # use ~/.config for config files
 export GNUPGHOME=~/.config/gnupg
