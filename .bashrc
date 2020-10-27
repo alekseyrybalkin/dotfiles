@@ -9,9 +9,6 @@ NPROC=$((`nproc 2>/dev/null` + 1))
 THIS_TTY=`tty`
 USER=`whoami`
 
-# disable xon/xoff flow control (^s/^q) in rxvt
-stty -ixon
-
 # colors
 eval `dircolors -b`
 
@@ -24,10 +21,8 @@ export LESSHISTFILE="-"
 
 # use ~/.config for config files
 export GNUPGHOME=~/.config/gnupg
-export PSQLRC=~/.config/psqlrc
 export INPUTRC=~/.config/inputrc
 export FOSSIL_HOME=~/.config
-export MPLCONFIGDIR=/tmp/.${USER}-matplotlib
 alias mutt='mutt -F ~/.config/mutt/muttrc'
 alias tmux='tmux -f ~/.config/tmux.conf'
 
@@ -45,7 +40,6 @@ export EDITOR=/usr/bin/vim
 export VIEWER=/usr/bin/vim
 export PAGER=/usr/bin/less
 export LESS="-i -g -M -R -x4 -X -f -F -z-1"
-export PYTHONDOCS=file:///usr/share/doc/python/html/library
 export PYTHONSTARTUP=~/.config/pythonstartup.py
 export GPG_TTY=${THIS_TTY}
 export NO_AT_BRIDGE=1

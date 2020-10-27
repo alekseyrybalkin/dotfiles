@@ -1,6 +1,0 @@
-/*
- * Copyright (c) 2015-2020 Aleksey Rybalkin
- * SPDX-License-Identifier: GPL-3.0+
-*/
-
-\set HISTFILE /dev/null
