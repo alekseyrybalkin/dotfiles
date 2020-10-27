@@ -6,7 +6,7 @@ Control q c :Exec kitty
 Control q space :NextWindow {groups} (workspace=[current])
 Control q Shift 1 :Exec fbrun
 Control q l :Exec physlock
-Control q s :Exec take-screenshot
+Control q s :Exec sss
 Control q BackSpace :Exit
 
 # click on the desktop to get menus
