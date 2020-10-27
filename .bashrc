@@ -49,7 +49,6 @@ export PYTHONDOCS=file:///usr/share/doc/python/html/library
 export PYTHONSTARTUP=~/.config/pythonstartup.py
 export GPG_TTY=${THIS_TTY}
 export NO_AT_BRIDGE=1
-export WWW_HOME=file://${HOME}/projects/journal/reader.html
 
 # misc aliases
 alias cal='cal -m'
