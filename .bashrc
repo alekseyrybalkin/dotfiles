@@ -8,10 +8,7 @@
 NPROC=$((`nproc 2>/dev/null` + 1))
 THIS_TTY=`tty`
 USER=`whoami`
-export HOST_DISTRO=`cat /etc/hostdistro`
-if [ -z "${HOST_DISTRO}" ]; then
-    export HOST_DISTRO=unknown
-fi
+HOST_DISTRO=$(cat /etc/hostdistro 2>/dev/null || echo "unknown")
 
 # colors
 eval `dircolors -b`
