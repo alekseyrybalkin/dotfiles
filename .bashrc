@@ -25,6 +25,7 @@ export INPUTRC=~/.config/inputrc
 export FOSSIL_HOME=~/.config
 alias mutt='mutt -F ~/.config/mutt/muttrc'
 alias tmux='tmux -f ~/.config/tmux.conf'
+export TMUX_TMPDIR=/run
 
 # disable pip cache
 alias pip='pip --no-cache-dir'
