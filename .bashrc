@@ -8,6 +8,10 @@
 NPROC=$((`nproc 2>/dev/null` + 1))
 THIS_TTY=`tty`
 USER=`whoami`
+export HOST_DISTRO=`cat /etc/hostdistro`
+if [ -z "${HOST_DISTRO}" ]; then
+    export HOST_DISTRO=unknown
+fi
 
 # colors
 eval `dircolors -b`
@@ -25,7 +29,7 @@ export INPUTRC=~/.config/inputrc
 export FOSSIL_HOME=~/.config
 alias mutt='mutt -F ~/.config/mutt/muttrc'
 alias tmux='tmux -f ~/.config/tmux.conf'
-export TMUX_TMPDIR=/run/tmux
+export TMUX_TMPDIR=/run/${HOST_DISTRO}/tmux
 
 # disable pip cache
 alias pip='pip --no-cache-dir'
