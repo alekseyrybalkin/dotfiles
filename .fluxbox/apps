@@ -14,9 +14,3 @@
 [transient] (name=evince)
   [Maximized] {yes}
 [end]
-[transient] (name=gimp)
-  [Maximized] {yes}
-[end]
-[transient] (name=inkscape)
-  [Maximized] {yes}
-[end]
