@@ -8,7 +8,7 @@
 NPROC=$((`nproc 2>/dev/null` + 1))
 THIS_TTY=`tty`
 USER=`whoami`
-export TMUX_TMPDIR=/run/tmux/$(hostconf)
+export TMUX_TMPDIR=/run/tmux/$(hostconf distro)
 
 # colors
 eval `dircolors -b`
