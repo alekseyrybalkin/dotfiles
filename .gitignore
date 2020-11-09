@@ -1,6 +1,7 @@
 /projects/
 /sandbox/
 /.android/
+/.ccache/
 /.data/
 /.ssh/
 /.pki/
