@@ -1,6 +1,3 @@
-# Copyright (c) 2019-2020 Aleksey Rybalkin
-# SPDX-License-Identifier: GPL-3.0+
-
 # always attempt to cryptographically sign outgoing messages
 set crypt_autosign = no
 

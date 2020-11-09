@@ -1,6 +1,3 @@
-# Copyright (c) 2010-2020 Aleksey Rybalkin
-# SPDX-License-Identifier: GPL-3.0+
-
 # load .Xresources
 [[ -f ~/.config/xresources ]] && xrdb -merge ~/.config/xresources
 

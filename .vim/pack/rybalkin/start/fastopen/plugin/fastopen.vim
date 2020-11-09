@@ -1,6 +1,3 @@
-" Copyright (c) 2017-2020 Aleksey Rybalkin
-" SPDX-License-Identifier: GPL-3.0+
-
 if !has('python3')
     echo "No python3 support"
     finish

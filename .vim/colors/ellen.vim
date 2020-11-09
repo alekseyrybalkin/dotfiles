@@ -1,6 +1,3 @@
-" Copyright (c) 2011-2020 Aleksey Rybalkin
-" SPDX-License-Identifier: GPL-3.0+
-"
 " Vim color file
 " Name:       ellen.vim
 " Author:     Aleksey Rybalkin <aleksey@rybalkin.org>

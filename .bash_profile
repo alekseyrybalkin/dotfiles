@@ -1,6 +1,3 @@
-# Copyright (c) 2010-2020 Aleksey Rybalkin
-# SPDX-License-Identifier: GPL-3.0+
-
 # One lang to rule them all
 export LANG=en_US.UTF-8
 

@@ -1,5 +1,3 @@
-# Copyright (c) 2014-2020 Aleksey Rybalkin
-# SPDX-License-Identifier: GPL-3.0+
 import itertools
 import math
 import os
