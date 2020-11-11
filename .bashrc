@@ -20,7 +20,6 @@ export LESSHISTFILE="-"
 # use ~/.config for config files
 export GNUPGHOME=~/.config/gnupg
 export INPUTRC=~/.config/inputrc
-export FOSSIL_HOME=~/.config
 alias mutt='mutt -F ~/.config/mutt/muttrc'
 alias tmux='tmux -f ~/.config/tmux.conf'
 
