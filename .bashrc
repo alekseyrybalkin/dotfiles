@@ -5,7 +5,7 @@
 NPROC=$((`nproc 2>/dev/null` + 1))
 THIS_TTY=`tty`
 USER=`whoami`
-export TMUX_TMPDIR=/run/tmux/$(hostconf distro)
+export TMUX_TMPDIR=/run/tmux
 
 # colors
 eval `dircolors -b`
@@ -21,7 +21,7 @@ export LESSHISTFILE="-"
 export GNUPGHOME=~/.config/gnupg
 export INPUTRC=~/.config/inputrc
 alias mutt='mutt -F ~/.config/mutt/muttrc'
-alias tmux='tmux -f ~/.config/tmux.conf'
+alias tmux='tmux -f ~/.config/tmux.conf -L $(hostconf kernel)'
 
 # disable pip cache
 alias pip='pip --no-cache-dir'
