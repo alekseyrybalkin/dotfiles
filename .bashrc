@@ -26,6 +26,10 @@ alias tmux='tmux -f ~/.config/tmux.conf'
 # disable pip cache
 alias pip='pip --no-cache-dir'
 
+# move ~/.cache and ~/.local into ~/.data
+export XDG_CACHE_HOME=~/.data/tmp/xdg_cache
+export XDG_DATA_HOME=~/.data/tmp/xdg_data
+
 # c, c++, make flags
 export CFLAGS="-march=native -O2 -pipe"
 export CXXFLAGS="${CFLAGS}"
