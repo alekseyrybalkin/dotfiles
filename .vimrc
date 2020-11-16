@@ -38,7 +38,7 @@ set history=1000
 " maximum number of changes that can be undone
 set undolevels=1000
 " ignore these patterns while completing file names
-set wildignore=*.pyc,*.class
+set wildignore=*.pyc
 " make no backups, use git, please
 set nobackup
 " make no swap files, please
