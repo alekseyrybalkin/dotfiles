@@ -2,13 +2,13 @@
 [ -z "${PS1}" ] && return
 
 # run all needed subprocesses first
-NPROC=$((`nproc 2>/dev/null` + 1))
-THIS_TTY=`tty`
-USER=`whoami`
-export TMUX_TMPDIR=/run/tmux
+NPROC=$(($(nproc 2>/dev/null) + 1))
+THIS_TTY=$(tty)
+USER=$(whoami)
+KERNEL=$(hostconf kernel)
 
 # colors
-eval `dircolors -b`
+eval $(dircolors -b)
 
 # bash history settings
 export HISTSIZE=5000
@@ -20,11 +20,12 @@ export LESSHISTFILE="-"
 # use ~/.config for config files
 export GNUPGHOME=~/.config/gnupg
 export INPUTRC=~/.config/inputrc
-alias mutt='mutt -F ~/.config/mutt/muttrc'
-alias tmux='tmux -f ~/.config/tmux.conf -L $(hostconf kernel)'
+alias mutt="mutt -F ~/.config/mutt/muttrc"
+alias tmux="tmux -f ~/.config/tmux.conf -L ${KERNEL}"
+export TMUX_TMPDIR=/run/tmux
 
 # disable pip cache
-alias pip='pip --no-cache-dir'
+alias pip="pip --no-cache-dir"
 
 # move ~/.cache and ~/.local into ~/.data
 export XDG_CACHE_HOME=~/.data/tmp/xdg_cache
