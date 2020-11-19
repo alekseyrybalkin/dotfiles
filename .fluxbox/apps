@@ -5,7 +5,7 @@
 [app] (name!=fbrun)
   [Maximized] {yes}
 [end]
-[transient] (name=chromium)
+[transient] (name=palemoon)
   [Maximized] {yes}
 [end]
 [transient] (name=evince)
