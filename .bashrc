@@ -38,7 +38,7 @@ export MAKEFLAGS="-j${NPROC}"
 export CCACHE_DIR=~/.ccache
 
 # misc settings
-export PATH=/usr/lib/ccache/bin:/usr/bin:/usr/bin/vendor_perl:/bin:/sbin
+export PATH=/usr/bin:/usr/bin/vendor_perl:/bin:/sbin
 export EDITOR=/usr/bin/vim
 export VIEWER=/usr/bin/vim
 export PAGER=/usr/bin/less
