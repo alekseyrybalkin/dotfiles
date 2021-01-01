@@ -14,8 +14,8 @@ set sort=threads
 set mbox_type=Maildir
 set folder="/home/rybalkin/.data/mail/aleksey@rybalkin.org"
 set postponed="+.Postponed"
-set mbox="+.i2020"
-set spoolfile="+.i2020"
+set mbox="+.i2021"
+set spoolfile="+.i2021"
 set move=no
 
 # Where to save sent mail
@@ -25,7 +25,7 @@ set record="+.Sent"
 set sendmail="ssh aleksey@rybalkin.org /usr/bin/sendmail"
 
 # Watch these mailboxes for new mail
-mailboxes +.i2020 +.Lobby +.Telegram +.Releases +.Github +.Spam
+mailboxes +.i2021 +.Lobby +.Telegram +.Releases +.Github +.Spam
 
 # How to sort entries in the file browser
 set sort_browser=alpha
