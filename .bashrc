@@ -35,7 +35,6 @@ export XDG_DATA_HOME=~/.data/tmp/xdg_data
 export CFLAGS="-march=native -O2 -pipe"
 export CXXFLAGS="${CFLAGS}"
 export MAKEFLAGS="-j${NPROC}"
-export CCACHE_DIR=~/.ccache
 
 # misc settings
 export PATH=/usr/bin:/usr/bin/vendor_perl:/bin:/sbin
