@@ -7,6 +7,8 @@
 [color.status]
     header = white bold
     branch = green
+[init]
+    defaultBranch = main
 [merge]
     tool = vimdiff
     defaultToUpstream = true
