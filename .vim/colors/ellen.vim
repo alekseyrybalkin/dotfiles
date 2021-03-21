@@ -94,7 +94,7 @@ if &t_Co == 256
     hi htmlBoldItalic           ctermbg=233  ctermfg=252   cterm=bold,italic
     hi htmlBoldUnderline        ctermbg=233  ctermfg=252   cterm=bold,underline
     hi htmlBoldUnderlineItalic  ctermbg=233  ctermfg=252   cterm=bold,underline,italic
-    hi htmlItalic               ctermbg=233  ctermfg=252   cterm=italic
+    hi htmlItalic               ctermbg=255  ctermfg=89   cterm=italic
     hi htmlUnderline            ctermbg=233  ctermfg=252   cterm=underline
     hi htmlUnderlineItalic      ctermbg=233  ctermfg=252   cterm=underline,italic
 elseif &t_Co == 8
