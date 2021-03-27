@@ -1,10 +1,8 @@
-Control q k :Close
-Control q c :Exec kitty
-Control q space :NextWindow {groups} (workspace=[current])
-Control q Shift 1 :Exec fbrun
-Control q l :Exec physlock
-Control q s :Exec python -m mr.util.screenshot
-Control q BackSpace :Exit
+Mod1 Shift k :Close
+Mod1 Shift c :Exec kitty
+Mod1 Shift l :Exec physlock
+Mod1 Shift s :Exec python -m mr.util.screenshot
+Control Mod1 BackSpace :Exit
 
 # click on the desktop to get menus
 OnDesktop Mouse1 :HideMenus
