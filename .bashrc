@@ -65,6 +65,10 @@ export DISPLAY=:0.0
 export XAUTHORITY=/run/rybalkin/public/xauthority
 alias startx='startx -- -nolisten tcp -iglx'
 
+# Wayland settings
+export XDG_RUNTIME_DIR=/run/rybalkin/public
+export XDG_SESSION_TYPE=wayland
+
 # ack settings
 ACK=ack
 type ack-grep >/dev/null 2>&1 && {

@@ -1,0 +1,89 @@
+### Input device settings (see `swaymsg -t get_inputs` for ids)
+
+# Keyboard
+input "2522:62995:COMPANY__USB_Device__Keyboard" {
+    xkb_layout "us,ru"
+    xkb_options "grp:caps_toggle,grp_led:caps,terminate:ctrl_alt_bksp"
+}
+input * repeat_rate 30
+input * repeat_delay 200
+
+
+### Variables
+
+set $mod Mod1
+set $term kitty
+
+
+### Visuals
+
+workspace_layout tabbed
+default_border none
+titlebar_border_thickness 0
+titlebar_padding 0
+font pango:monospace 0
+
+
+### Basic key bindings
+
+# Kill focused window
+bindsym $mod+Shift+k kill
+
+# Start a terminal
+bindsym $mod+Shift+c exec $term
+
+# Exit sway
+bindsym Ctrl+$mod+Backspace exit
+
+# Reload the configuration file
+bindsym $mod+Shift+r reload
+
+# Alt+Tab
+bindsym $mod+Tab focus right
+
+
+### Workspaces
+
+# Switch to workspace
+bindsym $mod+F1 workspace number 1
+bindsym $mod+F2 workspace number 2
+bindsym $mod+F3 workspace number 3
+bindsym $mod+F4 workspace number 4
+bindsym $mod+F5 workspace number 5
+
+# Move focused container to workspace
+bindsym Mod4+F1 move container to workspace number 1
+bindsym Mod4+F2 move container to workspace number 2
+bindsym Mod4+F3 move container to workspace number 3
+bindsym Mod4+F4 move container to workspace number 4
+bindsym Mod4+F5 move container to workspace number 5
+
+
+### Layouts
+
+# horizontal and vertical splits
+bindsym $mod+b splith
+bindsym $mod+v splitv
+
+# Switch the current container between different layout styles
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+# Make the current focus fullscreen
+bindsym $mod+F12 fullscreen
+
+# Move focus to the parent container
+bindsym $mod+a focus parent
+
+
+### Floating windows
+
+# Toggle the current focus between tiling and floating mode
+bindsym $mod+Shift+space floating toggle
+
+# Swap focus between the tiling area and the floating area
+bindsym $mod+space focus mode_toggle
+
+# Dragging/resizing
+floating_modifier $mod normal
