@@ -69,6 +69,9 @@ alias startx='startx -- -nolisten tcp -iglx'
 export XDG_RUNTIME_DIR=/run/rybalkin/public
 export XDG_SESSION_TYPE=wayland
 
+# Webkit
+export SSL_CERT_FILE=/etc/ssl/ca-bundle.crt
+
 # ack settings
 ACK=ack
 type ack-grep >/dev/null 2>&1 && {
