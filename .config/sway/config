@@ -12,7 +12,7 @@ input * repeat_delay 200
 ### Variables
 
 set $mod Mod1
-set $term kitty
+set $term foot
 
 
 ### Visuals
@@ -62,8 +62,8 @@ bindsym Mod4+F5 move container to workspace number 5
 ### Layouts
 
 # horizontal and vertical splits
-bindsym $mod+b splith
-bindsym $mod+v splitv
+bindsym $mod+Shift+b splith
+bindsym $mod+Shift+v splitv
 
 # Switch the current container between different layout styles
 bindsym $mod+s layout stacking
