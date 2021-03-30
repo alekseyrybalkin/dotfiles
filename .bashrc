@@ -89,7 +89,7 @@ if [ ${TERM} = "xterm-kitty" ] || [ ${TERM} = "rxvt-256color" ]; then
     alias screen='screen -T rxvt-256color'
     export COLORTERM='rxvt'
 fi
-[ -n "${TMUX}" ] && [ -n "${COLORTERM}" ] && export TERM=foot && alias mc='TERM=xterm-256color mc'
+[ -n "${TMUX}" ] && [ -n "${COLORTERM}" ] && export TERM=foot && alias mc='TERM=xterm-256color mc' && alias vim='TERM=xterm-256color vim'
 [ -n "${TMUX}" ] && [ -n "${COLORTERM}" ] && [[ ${COLORTERM} == *rxvt* ]] && export TERM=screen-256color && alias mc='TERM=xterm-256color mc'
 [ -n "${TMUX}" ] && [ -z "${COLORTERM}" ] && alias mc='TERM=screen.rxvt mc'
 
