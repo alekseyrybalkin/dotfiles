@@ -24,6 +24,13 @@ titlebar_padding 0
 font pango:monospace 0
 
 
+### Idle
+
+exec swayidle -w \
+    timeout 300 'swaymsg "output * dpms off"' \
+    resume 'swaymsg "output * dpms on"'
+
+
 ### Basic key bindings
 
 # Kill focused window
@@ -40,6 +47,9 @@ bindsym $mod+Shift+r reload
 
 # Alt+Tab
 bindsym $mod+Tab focus right
+
+# Lock
+bindsym $mod+Shift+l exec swaylock -c 000000
 
 
 ### Workspaces
