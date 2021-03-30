@@ -1,12 +1,13 @@
 ### Input device settings (see `swaymsg -t get_inputs` for ids)
 
-# Keyboard
-input "2522:62995:COMPANY__USB_Device__Keyboard" {
+# Keyboard / touchpad
+input type:keyboard {
     xkb_layout "us,ru"
-    xkb_options "grp:caps_toggle,grp_led:caps,terminate:ctrl_alt_bksp"
+    xkb_options "grp:caps_toggle,grp_led:caps"
 }
-input * repeat_rate 30
-input * repeat_delay 200
+input type:keyboard repeat_rate 30
+input type:keyboard repeat_delay 200
+input type:touchpad events disabled
 
 
 ### Variables

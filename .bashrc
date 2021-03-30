@@ -50,6 +50,7 @@ export NO_AT_BRIDGE=1
 alias cal='cal -m'
 alias tpon="xinput set-prop '${TOUCHPAD_DEVICE}' 'Device Enabled' 1"
 alias tpoff="xinput set-prop '${TOUCHPAD_DEVICE}' 'Device Enabled' 0"
+alias tptoggle="swaymsg -t command input type:touchpad events toggle enabled disabled"
 alias diff='diff --color'
 alias pep8='pycodestyle'
 alias pep8all='find . -name "*.py" | xargs pycodestyle'
