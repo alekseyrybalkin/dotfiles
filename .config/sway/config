@@ -31,6 +31,10 @@ exec swayidle -w \
     resume 'swaymsg "output * dpms on"'
 
 
+### Share wayland socket
+exec chmod 777 /run/rybalkin/public/wayland-0
+
+
 ### Basic key bindings
 
 # Kill focused window
