@@ -107,12 +107,12 @@ case "${USER}" in
 esac
 
 # Xorg settings
+export XAUTHORITY=/run/rybalkin/public/xauthority
+alias startx='startx -- -nolisten tcp -iglx'
 if [ -n "${XORG_PID}" ]; then
     export DISPLAY=:0.0
-    export XAUTHORITY=/run/rybalkin/public/xauthority
     export TOUCHPAD_DEVICE="SynPS/2 Synaptics TouchPad"
 
-    alias startx='startx -- -nolisten tcp -iglx'
     alias tpon="xinput set-prop '${TOUCHPAD_DEVICE}' 'Device Enabled' 1"
     alias tpoff="xinput set-prop '${TOUCHPAD_DEVICE}' 'Device Enabled' 0"
     alias xclip='xclip -selection clipboard'
