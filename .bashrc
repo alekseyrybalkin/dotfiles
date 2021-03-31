@@ -6,7 +6,6 @@ NPROC=$(($(nproc 2>/dev/null) + 1))
 THIS_TTY=$(tty)
 USER=$(whoami)
 KERNEL=$(hostconf kernel)
-XORG_PID=$(pidof Xorg)
 
 # colors
 eval $(dircolors -b)
@@ -79,12 +78,7 @@ type ${ACK} >/dev/null 2>&1 && {
 
 # terminal settings
 export TERMINFO=/usr/share/terminfo
-if [ ${TERM} = "xterm-kitty" ] || [ ${TERM} = "rxvt-256color" ]; then
-    alias screen='screen -T rxvt-256color'
-    export COLORTERM='rxvt'
-fi
 [ -n "${TMUX}" ] && [ -n "${COLORTERM}" ] && export TERM=foot && alias mc='TERM=xterm-256color mc' && alias vim='TERM=xterm-256color vim'
-[ -n "${TMUX}" ] && [ -n "${COLORTERM}" ] && [[ ${COLORTERM} == *rxvt* ]] && export TERM=screen-256color && alias mc='TERM=xterm-256color mc'
 [ -n "${TMUX}" ] && [ -z "${COLORTERM}" ] && alias mc='TERM=screen.rxvt mc'
 
 # add more color to the terminal
@@ -105,19 +99,6 @@ case "${USER}" in
         PS1="\[\033[38;5;208m\]\h\[\033[0m\] \w $ "
         ;;
 esac
-
-# Xorg settings
-export XAUTHORITY=/run/rybalkin/public/xauthority
-alias startx='startx -- -nolisten tcp -iglx'
-if [ -n "${XORG_PID}" ]; then
-    export DISPLAY=:0.0
-    export TOUCHPAD_DEVICE="SynPS/2 Synaptics TouchPad"
-
-    alias tpon="xinput set-prop '${TOUCHPAD_DEVICE}' 'Device Enabled' 1"
-    alias tpoff="xinput set-prop '${TOUCHPAD_DEVICE}' 'Device Enabled' 0"
-    alias xclip='xclip -selection clipboard'
-    alias xoff='xset dpms force off'
-fi
 
 # Load custom settings from /etc
 [[ -f /etc/bash.custom.bashrc ]] && . /etc/bash.custom.bashrc
