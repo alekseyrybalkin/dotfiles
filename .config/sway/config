@@ -102,6 +102,3 @@ bindsym $mod+space focus mode_toggle
 
 # Dragging/resizing
 floating_modifier $mod normal
-
-# Set the background color
-output * bg #161616 solid_color
