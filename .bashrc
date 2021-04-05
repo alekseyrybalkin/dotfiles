@@ -62,6 +62,8 @@ export XDG_RUNTIME_DIR=/run/rybalkin/public
 if [ -n "${WAYLAND_DISPLAY}" ]; then
     export XDG_SESSION_TYPE=wayland
 fi
+# for libreoffice on wayland
+export SAL_USE_VCLPLUGIN=gtk3
 
 # Webkit
 export SSL_CERT_FILE=/etc/ssl/ca-bundle.crt
