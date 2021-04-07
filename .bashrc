@@ -64,6 +64,8 @@ if [ -n "${WAYLAND_DISPLAY}" ]; then
 fi
 # for libreoffice on wayland
 export SAL_USE_VCLPLUGIN=gtk3
+# for zoom on wayland
+export QT_QPA_PLATFORM=wayland-egl
 
 # Webkit
 export SSL_CERT_FILE=/etc/ssl/ca-bundle.crt
