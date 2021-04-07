@@ -2,6 +2,7 @@
 /sandbox/
 /.data/
 /.ssh/
+/.pki/
 /.bash_history
 /.bashrc.local
 /.rubberband.wisdom*
