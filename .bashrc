@@ -82,7 +82,7 @@ type ${ACK} >/dev/null 2>&1 && {
 
 # terminal settings
 export TERMINFO=/usr/share/terminfo
-[ -n "${TMUX}" ] && [ -n "${COLORTERM}" ] && export TERM=foot && alias mc='TERM=xterm-256color mc' && alias vim='TERM=xterm-256color vim'
+[ -n "${TMUX}" ] && [ -n "${COLORTERM}" ] && export TERM=foot && alias mc='TERM=xterm-256color mc' && alias vim='TERM=xterm-256color vim' && alias mutt='TERM=xterm-256color mutt'
 [ -n "${TMUX}" ] && [ -z "${COLORTERM}" ] && alias mc='TERM=screen.rxvt mc'
 
 # add more color to the terminal
