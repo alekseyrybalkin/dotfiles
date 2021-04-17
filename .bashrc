@@ -6,6 +6,7 @@ NPROC=$(($(nproc 2>/dev/null) + 1))
 THIS_TTY=$(tty)
 USER=$(whoami)
 KERNEL=$(hostconf kernel)
+WAYLAND_DISPLAY=$(test -S /run/rybalkin/public/wayland-? && basename $(ls /run/rybalkin/public/wayland-?))
 
 # colors
 eval $(dircolors -b)
