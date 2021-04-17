@@ -33,7 +33,7 @@ exec swayidle -w \
 
 
 ### Share wayland socket
-exec chmod 777 /run/rybalkin/public/wayland-0
+exec chmod 777 /run/rybalkin/public/wayland-?
 
 
 ### Basic key bindings
