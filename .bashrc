@@ -61,6 +61,7 @@ alias httpserver="python -c 'import http.server; http.server.test(HandlerClass =
 # Wayland settings
 export XDG_RUNTIME_DIR=/run/rybalkin/public
 if [ -n "${WAYLAND_DISPLAY}" ]; then
+    export WAYLAND_DISPLAY
     export XDG_SESSION_TYPE=wayland
 fi
 # for libreoffice on wayland
