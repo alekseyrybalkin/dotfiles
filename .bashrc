@@ -46,6 +46,7 @@ export LESS="-i -g -M -R -x4 -X -f -F -z-1"
 export PYTHONSTARTUP=~/.config/pythonstartup.py
 export GPG_TTY=${THIS_TTY}
 export NO_AT_BRIDGE=1
+export SSL_CERT_FILE=/etc/ssl/ca-bundle.crt
 
 # misc aliases
 alias cal='cal -m'
@@ -68,9 +69,6 @@ fi
 export SAL_USE_VCLPLUGIN=gtk3
 # for zoom on wayland
 export QT_QPA_PLATFORM=wayland-egl
-
-# Webkit
-export SSL_CERT_FILE=/etc/ssl/ca-bundle.crt
 
 # ack settings
 ACK=ack
