@@ -56,6 +56,9 @@ bindsym $mod+Tab focus right
 # Lock
 bindsym $mod+Shift+l exec swaylock -c 000000
 
+# Screenshot
+bindsym $mod+Shift+s exec grim
+
 
 ### Workspaces
 
