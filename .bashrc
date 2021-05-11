@@ -60,6 +60,7 @@ alias python='python -q'
 alias httpserver="python -c 'import http.server; http.server.test(HandlerClass = http.server.SimpleHTTPRequestHandler)'"
 
 # Wayland settings
+XDG_CURRENT_DESKTOP=sway
 export XDG_RUNTIME_DIR=/run/rybalkin/public
 if [ -n "${WAYLAND_DISPLAY}" ]; then
     export WAYLAND_DISPLAY
