@@ -36,10 +36,6 @@ exec swayidle -w \
 exec chmod 777 /run/rybalkin/public/wayland-?
 
 
-### For xdg-desktop-portal-wlr and screen sharing via pipewire
-exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
-
-
 ### Basic key bindings
 
 # Kill focused window
