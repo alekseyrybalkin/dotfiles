@@ -70,6 +70,8 @@ fi
 export SAL_USE_VCLPLUGIN=gtk3
 # for zoom on wayland
 export QT_QPA_PLATFORM=wayland-egl
+# for firefox on wayland
+export MOZ_ENABLE_WAYLAND=1
 
 # ack settings
 ACK=ack
