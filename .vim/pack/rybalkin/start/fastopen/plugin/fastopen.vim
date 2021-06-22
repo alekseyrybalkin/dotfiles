@@ -16,7 +16,7 @@ for root, dirs, files in os.walk(os.getcwd(), topdown=True):
         root = root[1:]
     if len(root) > 0:
         root += '/'
-    for skip in ['target', '.data', '.git']:
+    for skip in ['target', '.data', '.git', '.http.cache']:
         try:
             dirs.remove(skip)
         except ValueError as e:
