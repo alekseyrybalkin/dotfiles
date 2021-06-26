@@ -28,8 +28,8 @@ export TMUX_TMPDIR=/run/tmux
 # disable pip cache
 alias pip="pip --no-cache-dir"
 
-# move ~/.cache and ~/.local into ~/.data
-export XDG_CACHE_HOME=~/.data/tmp/xdg_cache
+# move ~/.cache into /tmp and ~/.local into ~/.data
+export XDG_CACHE_HOME=/tmp/devnull/.${USER}-cache
 export XDG_DATA_HOME=~/.data/tmp/xdg_data
 
 # c, c++, make flags
