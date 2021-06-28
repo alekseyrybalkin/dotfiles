@@ -38,7 +38,8 @@ export CXXFLAGS="${CFLAGS}"
 export MAKEFLAGS="-j${NPROC}"
 
 # misc settings
-export PATH=/usr/bin:/usr/bin/vendor_perl:/bin:/sbin
+export GOPATH=~/.data/go
+export PATH=/usr/bin:/usr/bin/vendor_perl:/bin:/sbin:${GOPATH}/bin
 export EDITOR=/usr/bin/vim
 export VIEWER=/usr/bin/vim
 export PAGER=/usr/bin/less
