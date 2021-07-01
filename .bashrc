@@ -56,9 +56,11 @@ alias diff='diff --color'
 alias pep8='pycodestyle'
 alias pep8all='find . -name "*.py" | xargs pycodestyle'
 alias essay='vim "+set tw=80"'
+alias vimtabs='vim "+set noexpandtab" "+set shiftwidth=8" "+set softtabstop=8"'
 alias slashr='sed -i "s/\r//g"'
 alias python='python -q'
 alias httpserver="python -c 'import http.server; http.server.test(HandlerClass = http.server.SimpleHTTPRequestHandler)'"
+alias su='su --whitelist-environment=COLORTERM'
 
 # Wayland settings
 export LIBSEAT_BACKEND=seatd
@@ -70,8 +72,6 @@ if [ -n "${WAYLAND_DISPLAY}" ]; then
 fi
 # for libreoffice on wayland
 export SAL_USE_VCLPLUGIN=gtk3
-# for zoom on wayland
-export QT_QPA_PLATFORM=wayland-egl
 # for firefox on wayland
 export MOZ_ENABLE_WAYLAND=1
 
