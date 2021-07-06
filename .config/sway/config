@@ -2,7 +2,7 @@
 
 # Keyboard / touchpad
 input type:keyboard {
-    xkb_layout "us,ru"
+    xkb_layout "pl,ru"
     xkb_options "grp:caps_toggle,grp_led:caps"
 }
 input type:keyboard repeat_rate 30
