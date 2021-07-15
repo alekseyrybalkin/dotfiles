@@ -1,5 +1,5 @@
 " Vim color file
-" Name:       ellen.vim
+" Name:       rybalkin.vim
 " Author:     Aleksey Rybalkin <aleksey@rybalkin.org>
 " Version:    0.1.0
 " Notes:      Supports 8 and 256 color modes
@@ -8,7 +8,7 @@ hi clear
 if exists("syntax_on")
     syntax reset
 endif
-let colors_name = "ellen"
+let colors_name = "rybalkin"
 set background=dark
 
 if &t_Co == 256

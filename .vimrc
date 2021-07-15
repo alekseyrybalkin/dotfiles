@@ -1,17 +1,16 @@
 " use vim features
 set nocompatible
-" use utf-8 by default, but understand cp1251 if encountered
+" use utf-8 by default
 set encoding=utf-8
-set fileencodings=utf-8,cp1251
+set fileencodings=utf-8
 " don't close buffers, just hide them
 set hidden
 " detect file types, load plugin and indent files for them
 filetype plugin on
 filetype indent on
-" use syntax highlighting
-" use custom color scheme for this
+" use syntax highlighting with custom color theme
 syntax on
-colorscheme ellen
+colorscheme rybalkin
 " use 4 spaces by default and no tabs
 set shiftwidth=4
 set softtabstop=4
@@ -39,16 +38,13 @@ set history=1000
 set undolevels=1000
 " ignore these patterns while completing file names
 set wildignore=*.pyc
-" make no backups, use git, please
+" make no backups
 set nobackup
 " make no swap files, please
 set noswapfile
-" show me trailing spaces and all tabs to kill,
-" but only in resent vim versions (for speed? <- unverified)
-if version >= 703
-    set listchars=tab:»·,trail:·
-    set list
-endif
+" show trailing spaces and all tabs
+set listchars=tab:»·,trail:·
+set list
 " use F2 to toggle paste-mode
 set pastetoggle=<F2>
 " easy window navigation
@@ -62,13 +58,13 @@ set showtabline=2
 nmap <C-t> :tabnew<cr>
 map <C-t> :tabnew<cr>
 imap <C-t> <ESC>:tabnew<cr>
-" easy file saving as root
-cmap w!! w !sudo tee % >/dev/null
 " use mouse in normal, visual, insert, command-line modes
 set mouse=a
+" highlight from start of file
+autocmd BufEnter * :syntax sync fromstart
 " do not highlight syntax for long lines
 set synmaxcol=320
-" do not highlight current line and column (for speed)
+" do not highlight current line and column
 set nocursorline
 set nocursorcolumn
 " show line numbers (with width 2)
@@ -77,11 +73,10 @@ set numberwidth=2
 " easy split window creation
 map <C-p> :rightb vnew<cr>
 map <C-m> :rightb new<cr>
-" do not save viminfo, please
+" do not save viminfo
 set viminfo=
-" no .netrwhist, please
+" no .netrwhist files
 let g:netrw_dirhistmax=0
-autocmd BufEnter * :syntax sync fromstart
 " no context lines above or below cursor
 set scrolloff=0
 " disable folding (e.g. in *.rst files)
