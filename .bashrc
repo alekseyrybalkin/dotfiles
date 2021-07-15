@@ -2,7 +2,7 @@
 [ -z "${PS1}" ] && return
 
 # run all needed subprocesses first
-NPROC=$(($(nproc 2>/dev/null) + 1))
+NPROC=$(nproc 2>/dev/null)
 THIS_TTY=$(tty)
 USER=$(whoami)
 KERNEL=$(hostconf kernel)
@@ -54,7 +54,6 @@ alias cal='cal -m'
 alias tptoggle="swaymsg -t command input type:touchpad events toggle enabled disabled"
 alias diff='diff --color'
 alias pep8='pycodestyle'
-alias pep8all='find . -name "*.py" | xargs pycodestyle'
 alias essay='vim "+set tw=80"'
 alias vimtabs='vim "+set noexpandtab" "+set shiftwidth=8" "+set softtabstop=8"'
 alias slashr='sed -i "s/\r//g"'
