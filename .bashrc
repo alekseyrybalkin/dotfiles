@@ -30,7 +30,7 @@ alias pip="pip --no-cache-dir"
 
 # move ~/.cache into /tmp and ~/.local into ~/.data
 export XDG_CACHE_HOME=/tmp/devnull/.${USER}-cache
-export XDG_DATA_HOME=~/.data/tmp/xdg_data
+export XDG_DATA_HOME=~/.data/cache/xdg_data
 
 # c, c++, make flags
 export CFLAGS="-march=native -O2 -pipe"
